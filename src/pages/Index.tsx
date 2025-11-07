@@ -15,20 +15,27 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <section className="bg-gradient-to-b from-primary/5 to-background py-20 px-4">
+      <section className="bg-gradient-to-b from-primary/10 to-background py-20 px-4 border-b border-primary/20">
         <div className="container mx-auto text-center max-w-4xl">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 text-primary-foreground mb-6 border border-primary/30">
             <Sparkles className="h-4 w-4" />
-            <span className="text-sm font-medium">Welcome to Sparkle Shop</span>
+            <span className="text-sm font-bold">Welcome to Cryptic Store</span>
           </div>
           
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
-            Discover Amazing Products
+          <h1 className="text-5xl md:text-7xl font-black mb-6 text-foreground drop-shadow-lg">
+            Magic & Music Unleashed
           </h1>
           
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Shop our curated collection of premium products, carefully selected just for you.
+          <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-2xl mx-auto font-medium">
+            Your one-stop shop for everything magic and music by Hip Hop DJ MC Myster?ous
           </p>
+          
+          <div className="mt-8 p-6 bg-card border border-primary/20 rounded-lg max-w-2xl mx-auto shadow-lg">
+            <h2 className="text-2xl font-bold mb-3 text-primary">Imitable Lives Collection</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              Inspired by the ancient lovers Marc Anthony and Cleopatra, who ran a social club called the Imitable Livers Club, celebrating their legendary love of drinking and living life to the fullest.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -67,9 +74,9 @@ const Index = () => {
         )}
       </section>
       
-      <footer className="border-t py-8 px-4 mt-20">
+      <footer className="border-t border-primary/20 py-8 px-4 mt-20 bg-gradient-to-b from-background to-primary/5">
         <div className="container mx-auto text-center text-muted-foreground">
-          <p>&copy; 2025 Sparkle Shop. All rights reserved.</p>
+          <p className="font-medium">&copy; 2025 Cryptic Store. Magic & Music by DJ MC Myster?ous. All rights reserved.</p>
         </div>
       </footer>
     </div>

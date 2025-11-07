@@ -9,7 +9,7 @@ export const Navigation = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <Store className="h-6 w-6 text-primary" />
-            <span className="text-xl font-bold">Sparkle Shop</span>
+            <span className="text-xl font-bold">Cryptic Store</span>
           </Link>
           
           <CartDrawer />
