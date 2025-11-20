@@ -23,17 +23,22 @@ const Index = () => {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-black mb-6 text-foreground drop-shadow-lg">
-            Magic & Music Unleashed
+            Trending Streetwear Drops
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-2xl mx-auto font-medium">
-            Your one-stop shop for everything magic and music by Hip Hop DJ MC Myster?ous
+            Best Selling Magic & Music Apparel by DJ MC Myster?ous
           </p>
           
           <div className="mt-8 p-6 bg-card border border-primary/20 rounded-lg max-w-2xl mx-auto shadow-lg">
-            <h2 className="text-2xl font-bold mb-3 text-primary">Imitable Lives Collection</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              Inspired by the ancient lovers Marc Anthony and Cleopatra, who ran a social club called the Imitable Livers Club, celebrating their legendary love of drinking and living life to the fullest.
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Shop America's hottest <span className="text-primary font-semibold">urban fashion</span> at Cryptic Store. 
+              Discover trending collections including our bestselling <span className="font-semibold">Imitable Lives</span> and 
+              <span className="font-semibold"> Dare2Wear</span> lines.
+            </p>
+            <p className="text-sm text-muted-foreground">
+              From provocative statement pieces to legendary streetwear inspired by Marc Anthony and Cleopatra's 
+              iconic Imitable Livers Club. <span className="text-primary font-semibold">Free shipping on orders over $75.</span>
             </p>
           </div>
         </div>
