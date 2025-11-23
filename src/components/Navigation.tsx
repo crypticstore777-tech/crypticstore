@@ -1,5 +1,6 @@
 import { CartDrawer } from "./CartDrawer";
 import { Link } from "react-router-dom";
+import { Button } from "./ui/button";
 import logo from "@/assets/cryptic-store-logo.jpg";
 
 export const Navigation = () => {
@@ -12,7 +13,18 @@ export const Navigation = () => {
             <span className="text-xl font-bold">Cryptic Store</span>
           </Link>
           
-          <CartDrawer />
+          <div className="flex items-center gap-4">
+            <nav className="hidden md:flex items-center gap-6">
+              <Link to="/">
+                <Button variant="ghost" size="sm">Home</Button>
+              </Link>
+              <Link to="/collections/dare2wear">
+                <Button variant="ghost" size="sm">Dare2Wear</Button>
+              </Link>
+            </nav>
+            
+            <CartDrawer />
+          </div>
         </div>
       </div>
     </nav>
