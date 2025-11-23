@@ -21,6 +21,9 @@ export const Navigation = () => {
               <Link to="/collections/dare2wear">
                 <Button variant="ghost" size="sm">Dare2Wear</Button>
               </Link>
+              <Link to="/youknowwedomagic">
+                <Button variant="ghost" size="sm">#YouKnowWeDoMagic</Button>
+              </Link>
             </nav>
             
             <CartDrawer />
