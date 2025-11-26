@@ -18,11 +18,14 @@ export const Navigation = () => {
               <Link to="/">
                 <Button variant="ghost" size="sm">Home</Button>
               </Link>
+              <Link to="/">
+                <Button variant="ghost" size="sm">Shop</Button>
+              </Link>
               <Link to="/collections/dare2wear">
-                <Button variant="ghost" size="sm">Dare2Wear</Button>
+                <Button variant="ghost" size="sm">Dare2Wear Collection</Button>
               </Link>
               <Link to="/youknowwedomagic">
-                <Button variant="ghost" size="sm">#YouKnowWeDoMagic</Button>
+                <Button variant="ghost" size="sm">Services</Button>
               </Link>
             </nav>
             
