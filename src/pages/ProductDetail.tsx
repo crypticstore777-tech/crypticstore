@@ -9,6 +9,7 @@ import { toast } from "sonner";
 import { ArrowLeft, ShoppingCart } from "lucide-react";
 import { useState } from "react";
 import { Skeleton } from "@/components/ui/skeleton";
+import { Helmet } from "react-helmet";
 
 const ProductDetail = () => {
   const { handle } = useParams<{ handle: string }>();
@@ -60,6 +61,34 @@ const ProductDetail = () => {
 
   const selectedVariant = product.variants.edges[selectedVariantIndex]?.node;
   const firstImage = product.images.edges[0]?.node;
+  const price = parseFloat(selectedVariant?.price.amount || '0');
+  const currencyCode = selectedVariant?.price.currencyCode || 'USD';
+
+  // Generate structured data for SEO
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.title,
+    description: product.description,
+    image: firstImage?.url,
+    brand: {
+      "@type": "Brand",
+      name: "Cryptic Store"
+    },
+    offers: {
+      "@type": "Offer",
+      url: `https://cryptic-store.lovable.app/product/${handle}`,
+      priceCurrency: currencyCode,
+      price: price.toFixed(2),
+      availability: selectedVariant?.availableForSale 
+        ? "https://schema.org/InStock" 
+        : "https://schema.org/OutOfStock",
+      seller: {
+        "@type": "Organization",
+        name: "Cryptic Store"
+      }
+    }
+  };
 
   const handleAddToCart = () => {
     if (!selectedVariant) return;
@@ -79,11 +108,53 @@ const ProductDetail = () => {
     });
   };
 
+  // Generate SEO-friendly meta description
+  const metaDescription = product.description 
+    ? `${product.description.slice(0, 140)}... Shop now at Cryptic Store.`
+    : `Shop ${product.title} at Cryptic Store. Premium streetwear by DJ MC Myster?ous. Free shipping over $75.`;
+
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>{product.title} | Cryptic Store - Streetwear & Urban Fashion</title>
+        <meta name="description" content={metaDescription} />
+        <meta name="keywords" content={`${product.title}, streetwear, urban fashion, Cryptic Store, Dare2Wear, graphic tee, DJ MC Mysterious`} />
+        <link rel="canonical" href={`https://cryptic-store.lovable.app/product/${handle}`} />
+        
+        {/* Open Graph */}
+        <meta property="og:type" content="product" />
+        <meta property="og:title" content={`${product.title} | Cryptic Store`} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:url" content={`https://cryptic-store.lovable.app/product/${handle}`} />
+        {firstImage && <meta property="og:image" content={firstImage.url} />}
+        <meta property="product:price:amount" content={price.toFixed(2)} />
+        <meta property="product:price:currency" content={currencyCode} />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`${product.title} | Cryptic Store`} />
+        <meta name="twitter:description" content={metaDescription} />
+        {firstImage && <meta name="twitter:image" content={firstImage.url} />}
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
+
       <Navigation />
       
-      <div className="container mx-auto px-4 py-8">
+      <main className="container mx-auto px-4 py-8">
+        <nav aria-label="Breadcrumb" className="mb-6">
+          <ol className="flex items-center gap-2 text-sm text-muted-foreground">
+            <li><Link to="/" className="hover:text-foreground transition-colors">Home</Link></li>
+            <li>/</li>
+            <li><Link to="/collections/dare2wear" className="hover:text-foreground transition-colors">Shop</Link></li>
+            <li>/</li>
+            <li className="text-foreground truncate max-w-[200px]">{product.title}</li>
+          </ol>
+        </nav>
+
         <Link to="/">
           <Button variant="ghost" className="mb-8">
             <ArrowLeft className="mr-2 h-4 w-4" />
@@ -91,28 +162,29 @@ const ProductDetail = () => {
           </Button>
         </Link>
 
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-          <div className="aspect-square overflow-hidden rounded-lg bg-secondary/20">
+        <article className="grid md:grid-cols-2 gap-8 lg:gap-12">
+          <figure className="aspect-square overflow-hidden rounded-lg bg-secondary/20">
             {firstImage ? (
               <img
                 src={firstImage.url}
-                alt={firstImage.altText || product.title}
+                alt={firstImage.altText || `${product.title} - Cryptic Store streetwear`}
                 className="w-full h-full object-cover"
+                loading="eager"
               />
             ) : (
               <div className="w-full h-full flex items-center justify-center bg-muted">
                 <span className="text-muted-foreground">No image available</span>
               </div>
             )}
-          </div>
+          </figure>
 
-          <div className="space-y-6">
-            <div>
+          <section className="space-y-6">
+            <header>
               <h1 className="text-4xl font-bold mb-4">{product.title}</h1>
               <p className="text-3xl font-bold text-primary">
-                {selectedVariant?.price.currencyCode} ${parseFloat(selectedVariant?.price.amount || '0').toFixed(2)}
+                {currencyCode} ${price.toFixed(2)}
               </p>
-            </div>
+            </header>
 
             {product.description && (
               <div>
@@ -169,9 +241,9 @@ const ProductDetail = () => {
               <ShoppingCart className="mr-2 h-5 w-5" />
               Add to Cart
             </Button>
-          </div>
-        </div>
-      </div>
+          </section>
+        </article>
+      </main>
     </div>
   );
 };
