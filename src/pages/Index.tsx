@@ -154,7 +154,7 @@ const Index = () => {
           <Zap className="h-5 w-5 text-primary" />
           <span className="text-lg font-bold text-foreground tracking-wider">#YouKnowWeDoMagic</span>
           <span className="hidden sm:inline text-primary">|</span>
-          <span className="text-muted-foreground font-medium">Magic & Music by DJ MC Myster?ous</span>
+          <span className="text-muted-foreground font-medium">Magic & Music by MC Myster?ous</span>
           <Zap className="h-5 w-5 text-primary" />
         </div>
       </section>
