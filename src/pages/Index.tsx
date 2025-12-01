@@ -125,7 +125,7 @@ const Index = () => {
             <span className="text-sm font-bold tracking-wide">New Collection</span>
           </div>
           
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 text-foreground drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">Crypt?c Store​<span className="text-primary drop-shadow-[0_0_30px_hsla(50,100%,50%,0.6)]">2</span>​
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 text-foreground drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">Crypt?c Store​​<span className="text-primary drop-shadow-[0_0_30px_hsla(50,100%,50%,0.6)]">2</span>​
           </h1>
           
           <p className="text-xl md:text-2xl text-foreground/90 mb-8 max-w-2xl font-medium drop-shadow-md">An Online Boutique by Mysterious Enterprise LLC  </p>
