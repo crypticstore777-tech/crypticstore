@@ -128,7 +128,7 @@ const Index = () => {
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 text-foreground drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">Cryptic Store<span className="text-primary drop-shadow-[0_0_30px_hsla(50,100%,50%,0.6)]">2</span>WEAR
           </h1>
           
-          <p className="text-xl md:text-2xl text-foreground/90 mb-8 max-w-2xl font-medium drop-shadow-md">An Online Bouuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu</p>
+          <p className="text-xl md:text-2xl text-foreground/90 mb-8 max-w-2xl font-medium drop-shadow-md">An Online boutique  </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg" className="text-lg px-8 py-6 font-bold shadow-[0_0_30px_hsla(50,100%,50%,0.4)] hover:shadow-[0_0_40px_hsla(50,100%,50%,0.6)] transition-all">
