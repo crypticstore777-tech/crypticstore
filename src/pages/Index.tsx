@@ -8,90 +8,82 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import dare2wearHero from "@/assets/dare2wear-collection-hero.jpg";
-
 const Index = () => {
-  const { data: products, isLoading } = useQuery({
+  const {
+    data: products,
+    isLoading
+  } = useQuery({
     queryKey: ['products'],
-    queryFn: () => getProducts(20),
+    queryFn: () => getProducts(20)
   });
-
   const structuredData = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://crypticstore.com/#website",
-        "url": "https://crypticstore.com",
-        "name": "Cryptic Store",
-        "description": "America's #1 black and yellow streetwear destination by DJ MC Myster?ous",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://crypticstore.com/search?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://crypticstore.com/#organization",
-        "name": "Cryptic Store",
-        "url": "https://crypticstore.com",
-        "logo": "https://crypticstore.com/favicon.jpg",
-        "description": "America's trending streetwear destination featuring Dare2Wear and Imitable Lives collections by DJ MC Myster?ous. #YouKnowWeDoMaggic",
-        "founder": {
-          "@type": "Person",
-          "name": "DJ MC Myster?ous"
-        },
-        "sameAs": []
-      },
-      {
-        "@type": "Store",
-        "@id": "https://crypticstore.com/#store",
-        "name": "Cryptic Store",
-        "url": "https://crypticstore.com",
-        "priceRange": "$$",
-        "paymentAccepted": "Credit Card, PayPal, Shop Pay",
-        "currenciesAccepted": "USD",
-        "openingHours": "Mo-Su 00:00-24:00",
-        "brand": {
-          "@type": "Brand",
-          "name": "Dare2Wear"
-        }
-      },
-      {
-        "@type": "CollectionPage",
-        "@id": "https://crypticstore.com/#homepage",
-        "url": "https://crypticstore.com",
-        "name": "Cryptic Store - Dare2Wear Collection - Black & Yellow Streetwear",
-        "description": "Shop Dare2Wear Collection - Bold black and yellow streetwear for those who refuse to blend in",
-        "isPartOf": { "@id": "https://crypticstore.com/#website" },
-        "about": {
-          "@type": "Thing",
-          "name": "Dare2Wear Streetwear Collection"
-        }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://crypticstore.com/#breadcrumb",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://crypticstore.com"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Dare2Wear Collection",
-            "item": "https://crypticstore.com/collections/dare2wear"
-          }
-        ]
+    "@graph": [{
+      "@type": "WebSite",
+      "@id": "https://crypticstore.com/#website",
+      "url": "https://crypticstore.com",
+      "name": "Cryptic Store",
+      "description": "America's #1 black and yellow streetwear destination by DJ MC Myster?ous",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://crypticstore.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
       }
-    ]
+    }, {
+      "@type": "Organization",
+      "@id": "https://crypticstore.com/#organization",
+      "name": "Cryptic Store",
+      "url": "https://crypticstore.com",
+      "logo": "https://crypticstore.com/favicon.jpg",
+      "description": "America's trending streetwear destination featuring Dare2Wear and Imitable Lives collections by DJ MC Myster?ous. #YouKnowWeDoMaggic",
+      "founder": {
+        "@type": "Person",
+        "name": "DJ MC Myster?ous"
+      },
+      "sameAs": []
+    }, {
+      "@type": "Store",
+      "@id": "https://crypticstore.com/#store",
+      "name": "Cryptic Store",
+      "url": "https://crypticstore.com",
+      "priceRange": "$$",
+      "paymentAccepted": "Credit Card, PayPal, Shop Pay",
+      "currenciesAccepted": "USD",
+      "openingHours": "Mo-Su 00:00-24:00",
+      "brand": {
+        "@type": "Brand",
+        "name": "Dare2Wear"
+      }
+    }, {
+      "@type": "CollectionPage",
+      "@id": "https://crypticstore.com/#homepage",
+      "url": "https://crypticstore.com",
+      "name": "Cryptic Store - Dare2Wear Collection - Black & Yellow Streetwear",
+      "description": "Shop Dare2Wear Collection - Bold black and yellow streetwear for those who refuse to blend in",
+      "isPartOf": {
+        "@id": "https://crypticstore.com/#website"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Dare2Wear Streetwear Collection"
+      }
+    }, {
+      "@type": "BreadcrumbList",
+      "@id": "https://crypticstore.com/#breadcrumb",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://crypticstore.com"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Dare2Wear Collection",
+        "item": "https://crypticstore.com/collections/dare2wear"
+      }]
+    }]
   };
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Helmet>
         <title>Cryptic Store | America's #1 Dare2Wear Streetwear - Black & Yellow Urban Fashion</title>
         <meta name="description" content="Shop Dare2Wear Collection at Cryptic Store. America's trending black & yellow streetwear by DJ MC Myster?ous. Bold graphic tees, statement apparel. Free shipping $75+. #YouKnowWeDoMaggic" />
@@ -121,12 +113,9 @@ const Index = () => {
       
       {/* Dare2Wear Hero Section */}
       <section className="relative h-[70vh] min-h-[500px] overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${dare2wearHero})` }}
-          role="img"
-          aria-label="Dare2Wear Collection - Bold black and yellow streetwear with leather and gold accents"
-        >
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: `url(${dare2wearHero})`
+      }} role="img" aria-label="Dare2Wear Collection - Bold black and yellow streetwear with leather and gold accents">
           <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/50 to-background" />
         </div>
         
@@ -165,7 +154,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-[linear-gradient(90deg,transparent_0%,hsla(50,100%,50%,0.05)_50%,transparent_100%)]" />
         <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
           <Zap className="h-5 w-5 text-primary" />
-          <span className="text-lg font-bold text-foreground tracking-wider">#YouKnowWeDoMaggic</span>
+          <span className="text-lg font-bold text-foreground tracking-wider">#YouKnowWeDoMagic</span>
           <span className="hidden sm:inline text-primary">|</span>
           <span className="text-muted-foreground font-medium">Magic & Music by DJ MC Myster?ous</span>
           <Zap className="h-5 w-5 text-primary" />
@@ -184,24 +173,15 @@ const Index = () => {
           </p>
         </div>
 
-        {isLoading ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {[...Array(8)].map((_, i) => (
-              <div key={i} className="space-y-4">
+        {isLoading ? <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {[...Array(8)].map((_, i) => <div key={i} className="space-y-4">
                 <Skeleton className="aspect-square w-full" />
                 <Skeleton className="h-4 w-3/4" />
                 <Skeleton className="h-4 w-1/2" />
-              </div>
-            ))}
-          </div>
-        ) : products && products.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {products.map((product) => (
-              <ProductCard key={product.node.id} product={product} />
-            ))}
-          </div>
-        ) : (
-          <div className="text-center py-20">
+              </div>)}
+          </div> : products && products.length > 0 ? <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {products.map(product => <ProductCard key={product.node.id} product={product} />)}
+          </div> : <div className="text-center py-20">
             <div className="max-w-md mx-auto">
               <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-muted flex items-center justify-center">
                 <Sparkles className="h-10 w-10 text-muted-foreground" />
@@ -211,8 +191,7 @@ const Index = () => {
                 We're getting ready to launch our amazing collection. Check back soon!
               </p>
             </div>
-          </div>
-        )}
+          </div>}
       </section>
       
       <footer className="border-t-2 border-primary/40 py-10 px-4 mt-20 bg-gradient-to-b from-background to-primary/5">
@@ -220,11 +199,9 @@ const Index = () => {
           <div className="w-16 h-1 bg-primary mx-auto mb-6 rounded-full shadow-[0_0_10px_hsla(50,100%,50%,0.5)]" />
           <p className="font-bold text-foreground mb-2">&copy; 2025 Cryptic Store</p>
           <p className="text-muted-foreground font-medium">Magic & Music by DJ MC Myster?ous</p>
-          <p className="text-primary font-bold mt-2 tracking-wider">#YouKnowWeDoMaggic</p>
+          <p className="text-primary font-bold mt-2 tracking-wider">#YouKnowWeDoMagic</p>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
