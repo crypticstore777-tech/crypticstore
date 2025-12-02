@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useCartStore } from "@/stores/cartStore";
 import { toast } from "sonner";
 import { Link } from "react-router-dom";
-import { ShoppingCart } from "lucide-react";
+import { ShoppingCart, Package } from "lucide-react";
 
 interface ProductCardProps {
   product: ShopifyProduct;
@@ -42,10 +42,17 @@ export const ProductCard = ({ product }: ProductCardProps) => {
     });
   };
 
+  const handleAmazonClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const searchQuery = encodeURIComponent(`Cryptic Store ${node.title}`);
+    window.open(`https://www.amazon.com/s?k=${searchQuery}`, '_blank');
+  };
+
   return (
     <Link to={`/product/${node.handle}`}>
       <Card className="overflow-hidden hover:shadow-lg transition-all duration-300 h-full group">
-        <div className="aspect-square overflow-hidden bg-secondary/20">
+        <div className="aspect-square overflow-hidden bg-secondary/20 relative">
           {firstImage ? (
             <img
               src={firstImage.url}
@@ -57,6 +64,16 @@ export const ProductCard = ({ product }: ProductCardProps) => {
               <span className="text-muted-foreground">No image</span>
             </div>
           )}
+          
+          {/* Amazon Badge */}
+          <button
+            onClick={handleAmazonClick}
+            className="absolute top-2 right-2 flex items-center gap-1.5 px-2 py-1 rounded-md bg-[#FF9900] text-black text-xs font-bold hover:bg-[#FFB84D] transition-colors shadow-md"
+            title="Find on Amazon"
+          >
+            <Package className="h-3 w-3" />
+            <span>Also on Amazon</span>
+          </button>
         </div>
         
         <CardContent className="p-4">

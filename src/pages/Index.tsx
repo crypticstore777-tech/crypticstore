@@ -35,7 +35,7 @@ const Index = () => {
       "name": "Cryptic Store",
       "url": "https://crypticstore.com",
       "logo": "https://crypticstore.com/favicon.jpg",
-      "description": "America's trending streetwear destination featuring Dare2Wear and Imitable Lives collections by DJ MC Myster?ous. #YouKnowWeDoMaggic",
+      "description": "America's trending streetwear destination featuring Dare2Wear and Imitable Lives collections by DJ MC Myster?ous. #Youknowwedomagic",
       "founder": {
         "@type": "Person",
         "name": "DJ MC Myster?ous"
@@ -86,14 +86,14 @@ const Index = () => {
   return <div className="min-h-screen bg-background">
       <Helmet>
         <title>Cryptic Store | America's #1 Dare2Wear Streetwear - Black & Yellow Urban Fashion</title>
-        <meta name="description" content="Shop Dare2Wear Collection at Cryptic Store. America's trending black & yellow streetwear by DJ MC Myster?ous. Bold graphic tees, statement apparel. Free shipping $75+. #YouKnowWeDoMaggic" />
-        <meta name="keywords" content="Dare2Wear, streetwear, urban fashion, black yellow streetwear, Cryptic Store, DJ MC Mysterious, graphic tees, statement apparel, trending streetwear 2025, bestselling urban fashion, YouKnowWeDoMaggic, Imitable Lives, magic music apparel, hip hop fashion" />
+        <meta name="description" content="Shop Dare2Wear Collection at Cryptic Store. America's trending black & yellow streetwear by DJ MC Myster?ous. Bold graphic tees, statement apparel. Free shipping $75+. #Youknowwedomagic" />
+        <meta name="keywords" content="Dare2Wear, streetwear, urban fashion, black yellow streetwear, Cryptic Store, DJ MC Mysterious, graphic tees, statement apparel, trending streetwear 2025, bestselling urban fashion, Youknowwedomagic, Imitable Lives, magic music apparel, hip hop fashion" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href="https://crypticstore.com" />
         
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Cryptic Store | America's #1 Black & Yellow Streetwear" />
-        <meta property="og:description" content="Shop Dare2Wear Collection. Bold black & yellow streetwear by DJ MC Myster?ous. Free shipping $75+. #YouKnowWeDoMaggic" />
+        <meta property="og:description" content="Shop Dare2Wear Collection. Bold black & yellow streetwear by DJ MC Myster?ous. Free shipping $75+. #Youknowwedomagic" />
         <meta property="og:image" content="https://crypticstore.com/dare2wear-collection-hero.jpg" />
         <meta property="og:url" content="https://crypticstore.com" />
         <meta property="og:site_name" content="Cryptic Store" />
@@ -101,7 +101,7 @@ const Index = () => {
         
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Cryptic Store | Dare2Wear - Black & Yellow Streetwear" />
-        <meta name="twitter:description" content="Bold streetwear for those who refuse to blend in. Shop now. #YouKnowWeDoMaggic" />
+        <meta name="twitter:description" content="Bold streetwear for those who refuse to blend in. Shop now. #Youknowwedomagic" />
         <meta name="twitter:image" content="https://crypticstore.com/dare2wear-collection-hero.jpg" />
         
         <script type="application/ld+json">
@@ -151,10 +151,39 @@ const Index = () => {
         <div className="absolute inset-0 bg-[linear-gradient(90deg,transparent_0%,hsla(50,100%,50%,0.05)_50%,transparent_100%)]" />
         <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
           <Zap className="h-5 w-5 text-primary" />
-          <span className="text-lg font-bold text-foreground tracking-wider">#YouKnowWeDoMagic</span>
+          <span className="text-lg font-bold text-foreground tracking-wider">#Youknowwedomagic</span>
           <span className="hidden sm:inline text-primary">|</span>
           <span className="text-muted-foreground font-medium">Magic & Music by MC Myster?ous</span>
           <Zap className="h-5 w-5 text-primary" />
+        </div>
+      </section>
+
+      {/* Amazon Store Section */}
+      <section className="py-12 bg-gradient-to-b from-background to-[#FF9900]/5">
+        <div className="container mx-auto px-4 text-center">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-black mb-4 text-foreground">
+              Shop on Amazon
+            </h2>
+            <p className="text-muted-foreground mb-6">
+              Find our products on the world's largest marketplace
+            </p>
+            <Button
+              asChild
+              size="lg"
+              className="bg-[#FF9900] hover:bg-[#FFB84D] text-black font-bold px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all"
+            >
+              <a href="https://www.amazon.com/s?k=Cryptic+Store+Dare2Wear" target="_blank" rel="noopener noreferrer">
+                Visit Our Amazon Store
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
+            </Button>
+            <div className="flex flex-wrap justify-center gap-6 mt-6 text-sm text-muted-foreground">
+              <span className="flex items-center gap-1">✓ Fast Prime Shipping</span>
+              <span className="flex items-center gap-1">✓ Easy Returns</span>
+              <span className="flex items-center gap-1">✓ Trusted Platform</span>
+            </div>
+          </div>
         </div>
       </section>
 

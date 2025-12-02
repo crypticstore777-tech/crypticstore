@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import ProductDetail from "./pages/ProductDetail";
 import Dare2Wear from "./pages/Dare2Wear";
+import DJServices from "./pages/DJServices";
 import YouKnowWeDoMagic from "./pages/YouKnowWeDoMagic";
 import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
@@ -21,6 +22,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/collections/dare2wear" element={<Dare2Wear />} />
+          <Route path="/dj-services" element={<DJServices />} />
           <Route path="/youknowwedomagic" element={<YouKnowWeDoMagic />} />
           <Route path="/product/:handle" element={<ProductDetail />} />
           <Route path="/auth" element={<Auth />} />
