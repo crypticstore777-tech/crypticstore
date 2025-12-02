@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Music, Mic2, Sparkles, Eye, Coins, Stars, Flame } from "lucide-react";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 const YouKnowWeDoMagic = () => {
   const entertainmentServices = [
@@ -161,8 +162,8 @@ const YouKnowWeDoMagic = () => {
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Whether you need professional entertainment or spiritual guidance, Myster?ous delivers extraordinary experiences
             </p>
-            <Button size="lg" className="text-lg">
-              Contact Us Today
+            <Button size="lg" className="text-lg" asChild>
+              <Link to="/contact">Contact Us Today</Link>
             </Button>
           </div>
         </section>
