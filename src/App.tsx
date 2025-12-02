@@ -8,6 +8,8 @@ import ProductDetail from "./pages/ProductDetail";
 import Dare2Wear from "./pages/Dare2Wear";
 import DJServices from "./pages/DJServices";
 import YouKnowWeDoMagic from "./pages/YouKnowWeDoMagic";
+import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
 import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
 
@@ -24,6 +26,8 @@ const App = () => (
           <Route path="/collections/dare2wear" element={<Dare2Wear />} />
           <Route path="/dj-services" element={<DJServices />} />
           <Route path="/youknowwedomagic" element={<YouKnowWeDoMagic />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/product/:handle" element={<ProductDetail />} />
           <Route path="/auth" element={<Auth />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
