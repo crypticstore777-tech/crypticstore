@@ -1,4 +1,5 @@
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Music, Mic2, Sparkles, Eye, Coins, Stars, Flame } from "lucide-react";
@@ -167,6 +168,8 @@ const YouKnowWeDoMagic = () => {
             </Button>
           </div>
         </section>
+
+        <Footer />
       </div>
     </>
   );

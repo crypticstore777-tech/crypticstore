@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { getProducts } from "@/lib/shopify";
 import { ProductCard } from "@/components/ProductCard";
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Helmet } from "react-helmet";
 import dare2wearHero from "@/assets/dare2wear-collection-hero.jpg";
@@ -146,11 +147,7 @@ const Dare2Wear = () => {
         )}
       </main>
       
-      <footer className="border-t border-primary/20 py-8 px-4 mt-20 bg-gradient-to-b from-background to-primary/5">
-        <div className="container mx-auto text-center text-muted-foreground">
-          <p className="font-medium">&copy; 2025 Cryptic Store. Dare2Wear Collection. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
