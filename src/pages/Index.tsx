@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { getProducts } from "@/lib/shopify";
 import { ProductCard } from "@/components/ProductCard";
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import { Sparkles, ArrowRight, Zap } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
@@ -235,14 +236,7 @@ const Index = () => {
         )}
       </section>
       
-      <footer className="border-t-2 border-primary/40 py-10 px-4 mt-20 bg-gradient-to-b from-background to-primary/5">
-        <div className="container mx-auto text-center">
-          <div className="w-16 h-1 bg-primary mx-auto mb-6 rounded-full shadow-[0_0_10px_hsla(50,100%,50%,0.5)]" />
-          <p className="font-bold text-foreground mb-2">&copy; 2025 Cryptic Store</p>
-          <p className="text-muted-foreground font-medium">Online Boutique by Mysterious Enterprise</p>
-          <p className="text-primary font-bold mt-2 tracking-wider">#Youknowwedomagic</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

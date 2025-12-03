@@ -1,4 +1,5 @@
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Helmet } from "react-helmet";
@@ -144,15 +145,7 @@ const DJServices = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t-2 border-primary/40 py-10 px-4 mt-20 bg-gradient-to-b from-background to-primary/5">
-        <div className="container mx-auto text-center">
-          <div className="w-16 h-1 bg-primary mx-auto mb-6 rounded-full shadow-[0_0_10px_hsla(50,100%,50%,0.5)]" />
-          <p className="font-bold text-foreground mb-2">&copy; 2025 Cryptic Store</p>
-          <p className="text-muted-foreground font-medium">Magic & Music by DJ MC Myster?ous</p>
-          <p className="text-primary font-bold mt-2 tracking-wider">#Youknowwedomagic</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

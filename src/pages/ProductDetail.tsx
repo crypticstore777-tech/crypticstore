@@ -2,6 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { getProductByHandle } from "@/lib/shopify";
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useCartStore } from "@/stores/cartStore";
@@ -244,6 +245,7 @@ const ProductDetail = () => {
           </section>
         </article>
       </main>
+      <Footer />
     </div>
   );
 };
