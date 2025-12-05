@@ -13,9 +13,9 @@ export const Navigation = () => {
 
   const navLinks = [
     { to: "/", label: "Home", exact: true },
+    { to: "/collections/imitable-lives", label: "Imitable Lives", exact: false },
     { to: "/collections/dare2wear", label: "Dare2Wear", exact: false },
     { to: "/dj-services", label: "DJ Services", exact: false },
-    { to: "/blog", label: "Blog", exact: false },
     { to: "/youknowwedomagic", label: "Services", exact: false },
     { to: "/contact", label: "Contact", exact: false },
   ];

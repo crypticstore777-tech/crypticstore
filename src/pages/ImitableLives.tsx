@@ -1,0 +1,227 @@
+import { useQuery } from "@tanstack/react-query";
+import { getProducts } from "@/lib/shopify";
+import { ProductCard } from "@/components/ProductCard";
+import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
+import { Skeleton } from "@/components/ui/skeleton";
+import { Helmet } from "react-helmet";
+import { Crown, Sparkles } from "lucide-react";
+
+const ImitableLives = () => {
+  const { data: allProducts, isLoading } = useQuery({
+    queryKey: ['products'],
+    queryFn: () => getProducts(50),
+  });
+
+  // Filter products for Imitable Lives collection
+  const imitableLivesProducts = allProducts?.filter(product => {
+    const title = product.node.title.toLowerCase();
+    const tags = product.node.handle.toLowerCase();
+    return title.includes('imitable') || 
+           title.includes('lives') || 
+           title.includes('pyramid') ||
+           title.includes('cleopatra') ||
+           title.includes('marc anthony') ||
+           title.includes('egyptian') ||
+           title.includes('speed of light') ||
+           tags.includes('imitable-lives');
+  });
+
+  // Structured data for collection page - SEO optimized
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://crypticstore.com/collections/imitable-lives#collection",
+        name: "Imitable Lives Collection - Ancient Luxury Meets Modern Streetwear",
+        description: "Shop the Imitable Lives Collection at Cryptic Store. Inspired by Marc Anthony and Cleopatra - ancient Egyptian luxury meets modern urban streetwear. Premium graphic tees featuring pyramids, cosmic imagery, and historical symbolism.",
+        url: "https://crypticstore.com/collections/imitable-lives",
+        mainEntity: {
+          "@type": "ItemList",
+          numberOfItems: imitableLivesProducts?.length || 0,
+          itemListElement: imitableLivesProducts?.slice(0, 10).map((product, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            item: {
+              "@type": "Product",
+              name: product.node.title,
+              url: `https://crypticstore.com/product/${product.node.handle}`,
+              image: product.node.images.edges[0]?.node.url,
+              brand: {
+                "@type": "Brand",
+                name: "Cryptic Store"
+              },
+              offers: {
+                "@type": "Offer",
+                price: product.node.priceRange.minVariantPrice.amount,
+                priceCurrency: product.node.priceRange.minVariantPrice.currencyCode,
+                availability: "https://schema.org/InStock"
+              }
+            }
+          })) || []
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://crypticstore.com/collections/imitable-lives#breadcrumb",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://crypticstore.com"
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Collections",
+            item: "https://crypticstore.com/collections"
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "Imitable Lives",
+            item: "https://crypticstore.com/collections/imitable-lives"
+          }
+        ]
+      }
+    ]
+  };
+
+  return (
+    <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Imitable Lives Collection - Egyptian Inspired Luxury Streetwear | Cryptic Store USA</title>
+        <meta name="description" content="Shop Imitable Lives Collection - Egyptian pyramid graphic tees, ancient luxury meets modern streetwear. Inspired by Marc Anthony & Cleopatra. Premium black tees with cosmic designs. Free shipping $75+ USA. #Youknowwedomagic" />
+        <meta name="keywords" content="Imitable Lives Collection, Egyptian streetwear, pyramid graphic tee, speed of light tee, ancient luxury fashion, Marc Anthony Cleopatra inspired, cosmic streetwear, black graphic tees USA, trending streetwear 2025, premium urban fashion, Cryptic Store, DJ MC Mysterious, Youknowwedomagic, bestselling graphic tees America" />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <link rel="canonical" href="https://crypticstore.com/collections/imitable-lives" />
+        
+        {/* Open Graph - Social Sharing */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Imitable Lives Collection - Egyptian Luxury Streetwear | Cryptic Store" />
+        <meta property="og:description" content="Ancient luxury meets modern streetwear. Egyptian pyramid graphic tees inspired by Marc Anthony & Cleopatra. Premium black tees with cosmic designs. Free shipping $75+." />
+        <meta property="og:url" content="https://crypticstore.com/collections/imitable-lives" />
+        <meta property="og:image" content="https://crypticstore.com/speed-of-light-pyramid-tee.jpg" />
+        <meta property="og:site_name" content="Cryptic Store" />
+        <meta property="og:locale" content="en_US" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Imitable Lives Collection - Egyptian Streetwear | Cryptic Store" />
+        <meta name="twitter:description" content="Ancient luxury meets modern streetwear. Egyptian pyramid tees inspired by royalty. #Youknowwedomagic" />
+        <meta name="twitter:image" content="https://crypticstore.com/speed-of-light-pyramid-tee.jpg" />
+        
+        {/* Additional SEO */}
+        <meta name="author" content="Cryptic Store by Mysterious Enterprise" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.placename" content="United States" />
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
+
+      <Navigation />
+      
+      {/* Hero Section */}
+      <section className="relative h-[70vh] min-h-[600px] overflow-hidden bg-gradient-to-br from-background via-primary/5 to-background">
+        <div className="absolute inset-0">
+          {/* Decorative pyramid pattern */}
+          <div className="absolute inset-0 opacity-10">
+            <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <polygon points="50,10 90,90 10,90" fill="currentColor" className="text-primary" />
+            </svg>
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/70 to-background" />
+        </div>
+        
+        <div className="relative container mx-auto px-4 h-full flex flex-col items-center justify-center text-center">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 text-primary mb-6 border border-primary/40 backdrop-blur-sm shadow-[0_0_20px_hsla(50,100%,50%,0.3)]">
+            <Crown className="h-4 w-4" />
+            <span className="text-sm font-bold tracking-wider uppercase">Premium Collection</span>
+          </div>
+          
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 text-foreground tracking-tight">
+            IMITABLE <span className="text-primary">LIVES</span>
+          </h1>
+          
+          <p className="text-lg md:text-xl text-foreground/80 mb-2 font-light tracking-widest uppercase">
+            Ancient Luxury • Modern Streetwear
+          </p>
+          
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto font-medium">
+            Inspired by Marc Anthony & Cleopatra. Where Egyptian mysticism meets cosmic science. 
+            Premium graphic tees for those who live like royalty.
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
+            <span className="flex items-center gap-2 px-3 py-1 rounded-full bg-muted/50">
+              <Sparkles className="h-4 w-4 text-primary" />
+              Egyptian Designs
+            </span>
+            <span className="flex items-center gap-2 px-3 py-1 rounded-full bg-muted/50">
+              <Sparkles className="h-4 w-4 text-primary" />
+              Premium Cotton
+            </span>
+            <span className="flex items-center gap-2 px-3 py-1 rounded-full bg-muted/50">
+              <Sparkles className="h-4 w-4 text-primary" />
+              USA Shipping
+            </span>
+          </div>
+        </div>
+      </section>
+
+      {/* Products Section */}
+      <main className="container mx-auto px-4 py-16">
+        <header className="mb-12 text-center">
+          <h2 className="text-3xl font-bold mb-4">Shop the Collection</h2>
+          <div className="w-24 h-1 bg-primary mx-auto mb-4 rounded-full shadow-[0_0_10px_hsla(50,100%,50%,0.5)]" />
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Cosmic imagery meets ancient symbolism. Premium streetwear inspired by 
+            the legendary lives of Marc Anthony and Cleopatra. #Youknowwedomagic
+          </p>
+        </header>
+
+        {isLoading ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {[...Array(8)].map((_, i) => (
+              <div key={i} className="space-y-4">
+                <Skeleton className="aspect-square w-full" />
+                <Skeleton className="h-4 w-3/4" />
+                <Skeleton className="h-4 w-1/2" />
+              </div>
+            ))}
+          </div>
+        ) : imitableLivesProducts && imitableLivesProducts.length > 0 ? (
+          <section aria-label="Imitable Lives Products">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {imitableLivesProducts.map((product) => (
+                <ProductCard key={product.node.id} product={product} />
+              ))}
+            </div>
+          </section>
+        ) : (
+          <div className="text-center py-20">
+            <div className="max-w-md mx-auto">
+              <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
+                <Crown className="h-10 w-10 text-primary" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Collection Coming Soon</h3>
+              <p className="text-muted-foreground mb-6">
+                We're curating the finest pieces inspired by ancient royalty. 
+                The Imitable Lives Collection launches soon!
+              </p>
+            </div>
+          </div>
+        )}
+      </main>
+      
+      <Footer />
+    </div>
+  );
+};
+
+export default ImitableLives;
