@@ -11,6 +11,7 @@ export interface ShopifyProduct {
     title: string;
     description: string;
     handle: string;
+    tags: string[];
     priceRange: {
       minVariantPrice: {
         amount: string;
@@ -83,14 +84,15 @@ export async function storefrontApiRequest(query: string, variables: any = {}) {
 }
 
 const STOREFRONT_QUERY = `
-  query GetProducts($first: Int!) {
-    products(first: $first) {
+  query GetProducts($first: Int!, $query: String) {
+    products(first: $first, query: $query) {
       edges {
         node {
           id
           title
           description
           handle
+          tags
           priceRange {
             minVariantPrice {
               amount
@@ -132,9 +134,14 @@ const STOREFRONT_QUERY = `
   }
 `;
 
-export async function getProducts(first: number = 20): Promise<ShopifyProduct[]> {
-  const data = await storefrontApiRequest(STOREFRONT_QUERY, { first });
+export async function getProducts(first: number = 20, query?: string): Promise<ShopifyProduct[]> {
+  const data = await storefrontApiRequest(STOREFRONT_QUERY, { first, query });
   return data?.data?.products?.edges || [];
+}
+
+// Get products by collection tag
+export async function getProductsByCollection(collection: string, first: number = 20): Promise<ShopifyProduct[]> {
+  return getProducts(first, `tag:${collection}`);
 }
 
 const PRODUCT_BY_HANDLE_QUERY = `
