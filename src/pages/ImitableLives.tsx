@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { getProducts } from "@/lib/shopify";
+import { getProductsByCollection } from "@/lib/shopify";
 import { ProductCard } from "@/components/ProductCard";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
@@ -8,23 +8,10 @@ import { Helmet } from "react-helmet";
 import { Crown, Sparkles } from "lucide-react";
 
 const ImitableLives = () => {
-  const { data: allProducts, isLoading } = useQuery({
-    queryKey: ['products'],
-    queryFn: () => getProducts(50),
-  });
-
-  // Filter products for Imitable Lives collection
-  const imitableLivesProducts = allProducts?.filter(product => {
-    const title = product.node.title.toLowerCase();
-    const tags = product.node.handle.toLowerCase();
-    return title.includes('imitable') || 
-           title.includes('lives') || 
-           title.includes('pyramid') ||
-           title.includes('cleopatra') ||
-           title.includes('marc anthony') ||
-           title.includes('egyptian') ||
-           title.includes('speed of light') ||
-           tags.includes('imitable-lives');
+  // Fetch products tagged with imitable-lives directly from Shopify
+  const { data: imitableLivesProducts, isLoading } = useQuery({
+    queryKey: ['products', 'imitable-lives'],
+    queryFn: () => getProductsByCollection('imitable-lives', 50),
   });
 
   // Structured data for collection page - SEO optimized
