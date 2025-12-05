@@ -87,7 +87,7 @@ const Index = () => {
       <Helmet>
         <title>Cryptic Store | Online Boutique by Mysterious Enterprise - Black & Gold Urban Fashion</title>
         <meta name="description" content="Shop Cryptic Store - An online boutique by Mysterious Enterprise featuring Dare2Wear, Imitable Lives, and exclusive streetwear collections. Bold black & gold fashion. Free shipping $75+. #Youknowwedomagic" />
-        <meta name="keywords" content="Cryptic Store, online boutique, Mysterious Enterprise, streetwear, urban fashion, black gold streetwear, DJ MC Mysterious, graphic tees, Dare2Wear, Imitable Lives, trending streetwear 2025, Youknowwedomagic, magic music apparel" />
+        <meta name="keywords" content="Cryptic Store, online boutique USA, Mysterious Enterprise, streetwear 2025, urban fashion America, black gold streetwear, DJ MC Mysterious, graphic tees, Dare2Wear collection, Imitable Lives collection, trending streetwear, bestselling graphic tees, Egyptian pyramid tee, speed of light shirt, Youknowwedomagic, magic music apparel, premium streetwear brands, hip hop fashion, club culture clothing" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href="https://crypticstore.com" />
         
@@ -138,14 +138,15 @@ const Index = () => {
           
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg" className="text-lg px-8 py-6 font-bold shadow-[0_0_30px_hsla(50,100%,50%,0.4)] hover:shadow-[0_0_40px_hsla(50,100%,50%,0.6)] transition-all">
-              <Link to="/collections/dare2wear">
-                Shop Our Collections
+              <Link to="/collections/imitable-lives">
+                Imitable Lives
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 font-bold bg-background/50 backdrop-blur-sm border-primary/30 hover:bg-primary/10 hover:border-primary/50 transition-all">
-              <Link to="/#products">
-                Shop All Products
+              <Link to="/collections/dare2wear">
+                Dare2Wear
+                <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
           </div>

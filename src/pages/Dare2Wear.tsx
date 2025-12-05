@@ -54,14 +54,14 @@ const Dare2Wear = () => {
       <Helmet>
         <title>Dare2Wear Collection - Bold Streetwear & Statement Fashion | Cryptic Store</title>
         <meta name="description" content="Shop the Dare2Wear Collection at Cryptic Store. Bold streetwear, provocative statement pieces, and urban fashion by DJ MC Myster?ous. Free shipping over $75. Dare to be different." />
-        <meta name="keywords" content="Dare2Wear, streetwear, bold fashion, statement clothing, urban apparel, graphic tees, Cryptic Store, DJ MC Mysterious, trending streetwear, bestselling fashion" />
-        <link rel="canonical" href="https://cryptic-store.lovable.app/collections/dare2wear" />
+        <meta name="keywords" content="Dare2Wear collection, streetwear USA, bold fashion 2025, statement clothing, urban apparel America, graphic tees bestsellers, Cryptic Store, DJ MC Mysterious, trending streetwear, bestselling fashion, politely toxic, black yellow streetwear, hip hop clothing, club culture fashion, provocative fashion, Youknowwedomagic" />
+        <link rel="canonical" href="https://crypticstore.com/collections/dare2wear" />
         
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Dare2Wear Collection - Bold Streetwear | Cryptic Store" />
-        <meta property="og:description" content="Shop the Dare2Wear Collection. Bold streetwear and provocative statement pieces for those who dare to be different. Free shipping over $75." />
-        <meta property="og:url" content="https://cryptic-store.lovable.app/collections/dare2wear" />
+        <meta property="og:title" content="Dare2Wear Collection - Bold Streetwear USA | Cryptic Store" />
+        <meta property="og:description" content="Shop the Dare2Wear Collection. Bold streetwear and provocative statement pieces for those who dare to be different. Free shipping over $75 USA. #Youknowwedomagic" />
+        <meta property="og:url" content="https://crypticstore.com/collections/dare2wear" />
         <meta property="og:image" content="https://cryptic-store.lovable.app/dare2wear-og.jpg" />
         
         {/* Twitter Card */}

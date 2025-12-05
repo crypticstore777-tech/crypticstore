@@ -78,7 +78,7 @@ const ProductDetail = () => {
     },
     offers: {
       "@type": "Offer",
-      url: `https://cryptic-store.lovable.app/product/${handle}`,
+      url: `https://crypticstore.com/product/${handle}`,
       priceCurrency: currencyCode,
       price: price.toFixed(2),
       availability: selectedVariant?.availableForSale 
@@ -111,22 +111,22 @@ const ProductDetail = () => {
 
   // Generate SEO-friendly meta description
   const metaDescription = product.description 
-    ? `${product.description.slice(0, 140)}... Shop now at Cryptic Store.`
-    : `Shop ${product.title} at Cryptic Store. Premium streetwear by DJ MC Myster?ous. Free shipping over $75.`;
+    ? `${product.description.slice(0, 140)}... Shop now at Cryptic Store. Premium streetwear USA. #Youknowwedomagic`
+    : `Shop ${product.title} at Cryptic Store. Premium streetwear by DJ MC Myster?ous. Free shipping over $75 USA. #Youknowwedomagic`;
 
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>{product.title} | Cryptic Store - Streetwear & Urban Fashion</title>
+        <title>{product.title} | Cryptic Store - Premium Streetwear USA</title>
         <meta name="description" content={metaDescription} />
-        <meta name="keywords" content={`${product.title}, streetwear, urban fashion, Cryptic Store, Dare2Wear, graphic tee, DJ MC Mysterious`} />
-        <link rel="canonical" href={`https://cryptic-store.lovable.app/product/${handle}`} />
+        <meta name="keywords" content={`${product.title}, streetwear USA, urban fashion 2025, Cryptic Store, Dare2Wear, Imitable Lives, graphic tee America, DJ MC Mysterious, trending fashion, bestselling streetwear, Youknowwedomagic, premium apparel`} />
+        <link rel="canonical" href={`https://crypticstore.com/product/${handle}`} />
         
         {/* Open Graph */}
         <meta property="og:type" content="product" />
         <meta property="og:title" content={`${product.title} | Cryptic Store`} />
         <meta property="og:description" content={metaDescription} />
-        <meta property="og:url" content={`https://cryptic-store.lovable.app/product/${handle}`} />
+        <meta property="og:url" content={`https://crypticstore.com/product/${handle}`} />
         {firstImage && <meta property="og:image" content={firstImage.url} />}
         <meta property="product:price:amount" content={price.toFixed(2)} />
         <meta property="product:price:currency" content={currencyCode} />
