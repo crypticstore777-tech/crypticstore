@@ -14,6 +14,42 @@ export type Database = {
   }
   public: {
     Tables: {
+      platform_connections: {
+        Row: {
+          api_credentials: Json | null
+          created_at: string
+          id: string
+          is_connected: boolean
+          last_sync_at: string | null
+          platform: string
+          sync_enabled: boolean
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          api_credentials?: Json | null
+          created_at?: string
+          id?: string
+          is_connected?: boolean
+          last_sync_at?: string | null
+          platform: string
+          sync_enabled?: boolean
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          api_credentials?: Json | null
+          created_at?: string
+          id?: string
+          is_connected?: boolean
+          last_sync_at?: string | null
+          platform?: string
+          sync_enabled?: boolean
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           created_at: string
@@ -32,6 +68,159 @@ export type Database = {
           email?: string | null
           full_name?: string | null
           id?: string
+        }
+        Relationships: []
+      }
+      sync_logs: {
+        Row: {
+          completed_at: string | null
+          created_at: string
+          error_message: string | null
+          id: string
+          items_synced: number | null
+          platform: string
+          started_at: string
+          status: string
+          sync_type: string
+          user_id: string
+        }
+        Insert: {
+          completed_at?: string | null
+          created_at?: string
+          error_message?: string | null
+          id?: string
+          items_synced?: number | null
+          platform: string
+          started_at?: string
+          status: string
+          sync_type: string
+          user_id: string
+        }
+        Update: {
+          completed_at?: string | null
+          created_at?: string
+          error_message?: string | null
+          id?: string
+          items_synced?: number | null
+          platform?: string
+          started_at?: string
+          status?: string
+          sync_type?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      unified_orders: {
+        Row: {
+          created_at: string
+          currency: string | null
+          customer_email: string | null
+          customer_name: string | null
+          fulfillment_status: string | null
+          id: string
+          line_items: Json | null
+          order_date: string
+          order_number: string | null
+          platform: string
+          platform_order_id: string
+          shipping_address: Json | null
+          status: string
+          total_amount: number
+          tracking_number: string | null
+          tracking_url: string | null
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          currency?: string | null
+          customer_email?: string | null
+          customer_name?: string | null
+          fulfillment_status?: string | null
+          id?: string
+          line_items?: Json | null
+          order_date: string
+          order_number?: string | null
+          platform: string
+          platform_order_id: string
+          shipping_address?: Json | null
+          status?: string
+          total_amount: number
+          tracking_number?: string | null
+          tracking_url?: string | null
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          currency?: string | null
+          customer_email?: string | null
+          customer_name?: string | null
+          fulfillment_status?: string | null
+          id?: string
+          line_items?: Json | null
+          order_date?: string
+          order_number?: string | null
+          platform?: string
+          platform_order_id?: string
+          shipping_address?: Json | null
+          status?: string
+          total_amount?: number
+          tracking_number?: string | null
+          tracking_url?: string | null
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      unified_products: {
+        Row: {
+          created_at: string
+          etsy_listing_id: string | null
+          id: string
+          image_url: string | null
+          inventory_quantity: number | null
+          last_synced_at: string | null
+          price: number | null
+          shopify_product_id: string | null
+          sku: string | null
+          sync_enabled: boolean | null
+          tiktok_product_id: string | null
+          title: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          etsy_listing_id?: string | null
+          id?: string
+          image_url?: string | null
+          inventory_quantity?: number | null
+          last_synced_at?: string | null
+          price?: number | null
+          shopify_product_id?: string | null
+          sku?: string | null
+          sync_enabled?: boolean | null
+          tiktok_product_id?: string | null
+          title: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          etsy_listing_id?: string | null
+          id?: string
+          image_url?: string | null
+          inventory_quantity?: number | null
+          last_synced_at?: string | null
+          price?: number | null
+          shopify_product_id?: string | null
+          sku?: string | null
+          sync_enabled?: boolean | null
+          tiktok_product_id?: string | null
+          title?: string
+          updated_at?: string
+          user_id?: string
         }
         Relationships: []
       }
