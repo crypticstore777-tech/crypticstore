@@ -81,7 +81,7 @@ const Music = () => {
                 <iframe
                   width="100%"
                   height="100%"
-                  src="https://www.youtube.com/embed?listType=user_uploads&list=mcmysterous999&theme=dark"
+                  src="https://www.youtube.com/embed/Wegjdo4mbpE?theme=dark"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
