@@ -57,7 +57,7 @@ const Music = () => {
                   title="SoundCloud Player"
                 />
               </div>
-              <p className="text-sm text-muted-foreground">Replace the embed URL above with your actual SoundCloud profile or playlist URL.</p>
+              
             </TabsContent>
 
             <TabsContent value="mixcloud" className="space-y-6">
@@ -66,13 +66,13 @@ const Music = () => {
                 <iframe
                   width="100%"
                   height="400"
-                  src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&mini=0&light=0&feed=%2Fmcmysterous%2F"
+                  src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&mini=0&light=0&feed=%2Fmcmysterious%2F"
                   frameBorder="0"
                   allow="autoplay"
                   title="Mixcloud Player"
                 />
               </div>
-              <p className="text-sm text-muted-foreground">Replace the embed URL above with your actual Mixcloud profile URL.</p>
+              
             </TabsContent>
 
             <TabsContent value="youtube" className="space-y-6">
@@ -81,14 +81,14 @@ const Music = () => {
                 <iframe
                   width="100%"
                   height="100%"
-                  src="https://www.youtube.com/embed/videoseries?list=PLxxxxxxxxxxxxxxxx&theme=dark"
+                  src="https://www.youtube.com/embed?listType=user_uploads&list=mcmysterous999&theme=dark"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   title="YouTube Player"
                 />
               </div>
-              <p className="text-sm text-muted-foreground">Replace the embed URL above with your actual YouTube channel or playlist URL.</p>
+              
             </TabsContent>
           </Tabs>
         </section>
