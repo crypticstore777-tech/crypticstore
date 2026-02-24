@@ -26,7 +26,7 @@ const Index = () => {
       "@id": "https://crypticstore.com/#website",
       "url": "https://crypticstore.com",
       "name": "Cryptic Store",
-      "description": "Online boutique by Mysterious Enterprise featuring exclusive streetwear collections by DJ MC Myster?ous",
+      "description": "Dream Dare Drip. Online boutique by Mysterious Enterprise featuring exclusive streetwear collections by DJ MC Myster?ous",
       "potentialAction": {
         "@type": "SearchAction",
         "target": "https://crypticstore.com/search?q={search_term_string}",
@@ -86,14 +86,14 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Cryptic Store | Online Boutique by Mysterious Enterprise - Black & Gold Urban Fashion</title>
-        <meta name="description" content="Shop Cryptic Store - An online boutique by Mysterious Enterprise featuring Dare2Wear, Imitable Lives, and exclusive streetwear collections. Bold black & gold fashion. Free shipping $75+. #Youknowwedomagic" />
+        <meta name="description" content="Shop Cryptic Store - Dream Dare Drip. Online boutique by Mysterious Enterprise featuring Dare2Wear, Imitable Lives, and exclusive streetwear collections. Bold black & gold fashion. Free shipping $75+. #Youknowwedomagic" />
         <meta name="keywords" content="Cryptic Store, online boutique USA, Mysterious Enterprise, streetwear 2025, urban fashion America, black gold streetwear, DJ MC Mysterious, graphic tees, Dare2Wear collection, Imitable Lives collection, trending streetwear, bestselling graphic tees, Egyptian pyramid tee, speed of light shirt, Youknowwedomagic, magic music apparel, premium streetwear brands, hip hop fashion, club culture clothing" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href="https://crypticstore.com" />
         
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Cryptic Store | Online Boutique by Mysterious Enterprise" />
-        <meta property="og:description" content="Shop exclusive streetwear collections. Bold black & gold fashion by DJ MC Myster?ous. Free shipping $75+. #Youknowwedomagic" />
+        <meta property="og:description" content="Dream Dare Drip. Shop exclusive streetwear collections. Bold black & gold fashion by DJ MC Myster?ous. Free shipping $75+. #Youknowwedomagic" />
         <meta property="og:image" content="https://crypticstore.com/dare2wear-collection-hero.jpg" />
         <meta property="og:url" content="https://crypticstore.com" />
         <meta property="og:site_name" content="Cryptic Store" />
@@ -101,7 +101,7 @@ const Index = () => {
         
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Cryptic Store | Online Boutique by Mysterious Enterprise" />
-        <meta name="twitter:description" content="Exclusive streetwear collections. Bold fashion for those who refuse to blend in. #Youknowwedomagic" />
+        <meta name="twitter:description" content="Dream Dare Drip. Exclusive streetwear collections. Bold fashion for those who refuse to blend in. #Youknowwedomagic" />
         <meta name="twitter:image" content="https://crypticstore.com/dare2wear-collection-hero.jpg" />
         
         <script type="application/ld+json">
@@ -132,8 +132,8 @@ const Index = () => {
             Crypt?c Store
           </h1>
           
-          <p className="text-xl md:text-2xl text-foreground/90 mb-8 max-w-2xl font-medium drop-shadow-md">
-            Online Boutique by Mysterious Enterprise
+          <p className="text-2xl md:text-3xl text-primary font-black tracking-widest mb-8 drop-shadow-[0_0_20px_hsla(50,100%,50%,0.4)]">
+            Dream Dare Drip
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">

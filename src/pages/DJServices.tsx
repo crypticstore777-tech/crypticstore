@@ -44,8 +44,8 @@ const DJServices = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>DJ Services by MC Myster?ous | Premium Mobile DJ & Entertainment | Cryptic Store</title>
-        <meta name="description" content="Book MC Myster?ous for your next event. Premium mobile DJ services for weddings, corporate events, parties & more. Professional sound systems & lighting. Book now at MysteriousEnterprise.com" />
-        <meta name="keywords" content="DJ services, mobile DJ, wedding DJ, corporate DJ, MC Mysterious, party DJ, event entertainment, professional DJ, sound systems, lighting packages" />
+        <meta name="description" content="Book MC Myster?ous for your next event. Dream Dare Drip. Premium mobile DJ services for weddings, corporate events, parties & more. Professional sound systems & lighting. Book now at MysteriousEnterprise.com" />
+        <meta name="keywords" content="DJ services, mobile DJ, wedding DJ, corporate DJ, MC Mysterious, party DJ, event entertainment, professional DJ, sound systems, lighting packages, Dream Dare Drip" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://crypticstore.com/dj-services" />
         

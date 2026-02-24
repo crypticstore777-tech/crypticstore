@@ -7,8 +7,9 @@ const Privacy = () => {
     <div className="min-h-screen bg-background flex flex-col">
       <Helmet>
         <title>Privacy Policy | Cryptic Store - Mysterious Enterprise</title>
-        <meta name="description" content="Privacy Policy for Cryptic Store by Mysterious Enterprise. Learn how we collect, use, and protect your personal information." />
+        <meta name="description" content="Privacy Policy for Cryptic Store by Mysterious Enterprise. Learn how we collect, use, and protect your personal information. Dream Dare Drip." />
         <meta name="robots" content="noindex, follow" />
+        <link rel="canonical" href="https://crypticstore.lovable.app/privacy" />
       </Helmet>
 
       <Navigation />

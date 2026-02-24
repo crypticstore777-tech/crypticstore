@@ -80,7 +80,7 @@ const ImitableLives = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Imitable Lives Collection - Egyptian Inspired Luxury Streetwear | Cryptic Store USA</title>
-        <meta name="description" content="Shop Imitable Lives Collection - Egyptian pyramid graphic tees, ancient luxury meets modern streetwear. Inspired by Marc Anthony & Cleopatra. Premium black tees with cosmic designs. Free shipping $75+ USA. #Youknowwedomagic" />
+        <meta name="description" content="Dream Dare Drip. Shop Imitable Lives Collection - Egyptian pyramid graphic tees, ancient luxury meets modern streetwear. Inspired by Marc Anthony & Cleopatra. Premium black tees with cosmic designs. Free shipping $75+ USA. #Youknowwedomagic" />
         <meta name="keywords" content="Imitable Lives Collection, Egyptian streetwear, pyramid graphic tee, speed of light tee, ancient luxury fashion, Marc Anthony Cleopatra inspired, cosmic streetwear, black graphic tees USA, trending streetwear 2025, premium urban fashion, Cryptic Store, DJ MC Mysterious, Youknowwedomagic, bestselling graphic tees America" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href="https://crypticstore.com/collections/imitable-lives" />

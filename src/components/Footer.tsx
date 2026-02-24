@@ -12,10 +12,11 @@ export const Footer = () => {
               <img src={logo} alt="Cryptic Store Logo" className="h-10 w-10 object-contain" />
               <span className="text-xl font-bold">Cryptic Store</span>
             </Link>
-            <p className="text-muted-foreground text-sm">
+            <p className="text-primary text-sm font-bold tracking-widest">Dream Dare Drip</p>
+            <p className="text-muted-foreground text-sm mt-1">
               Online Boutique by Mysterious Enterprise
             </p>
-            <p className="text-primary text-sm mt-2 font-medium">#Youknowwedomagic</p>
+            <p className="text-muted-foreground text-xs mt-1">#Youknowwedomagic</p>
           </div>
 
           {/* Shop */}

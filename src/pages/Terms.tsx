@@ -7,8 +7,9 @@ const Terms = () => {
     <div className="min-h-screen bg-background flex flex-col">
       <Helmet>
         <title>Terms & Conditions | Cryptic Store - Mysterious Enterprise</title>
-        <meta name="description" content="Terms and Conditions for Cryptic Store by Mysterious Enterprise. Read our terms of service before making a purchase." />
+        <meta name="description" content="Terms and Conditions for Cryptic Store by Mysterious Enterprise. Read our terms of service before making a purchase. Dream Dare Drip." />
         <meta name="robots" content="noindex, follow" />
+        <link rel="canonical" href="https://crypticstore.lovable.app/terms" />
       </Helmet>
 
       <Navigation />
