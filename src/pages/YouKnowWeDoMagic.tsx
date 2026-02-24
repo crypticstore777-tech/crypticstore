@@ -58,9 +58,21 @@ const YouKnowWeDoMagic = () => {
   return (
     <>
       <Helmet>
-        <title>#YouKnowWeDoMagic - Premium DJ, Audio Engineering & Spiritual Services | Myster?ous</title>
-        <meta name="description" content="Myster?ous offers premium mobile DJ services, professional audio engineering, artist promotion, tarot readings, scrying, astrology insights, and spiritual development services." />
-        <meta name="keywords" content="mobile DJ, audio engineering, tarot readings, scrying, astrology, spiritual services, event promotion, music production" />
+        <title>#YouKnowWeDoMagic - Dream Dare Drip | Premium DJ, Audio & Spiritual Services | Cryptic Store</title>
+        <meta name="description" content="Dream Dare Drip. Myster?ous offers premium mobile DJ services, professional audio engineering, artist promotion, tarot readings, scrying, astrology insights, and spiritual development services. #Youknowwedomagic" />
+        <meta name="keywords" content="mobile DJ, audio engineering, tarot readings, scrying, astrology, spiritual services, event promotion, music production, Dream Dare Drip, Youknowwedomagic" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://crypticstore.lovable.app/youknowwedomagic" />
+        
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="#YouKnowWeDoMagic - Dream Dare Drip | Cryptic Store" />
+        <meta property="og:description" content="Dream Dare Drip. Premium DJ, audio engineering & spiritual services by Myster?ous. #Youknowwedomagic" />
+        <meta property="og:url" content="https://crypticstore.lovable.app/youknowwedomagic" />
+        <meta property="og:site_name" content="Cryptic Store" />
+        
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="#YouKnowWeDoMagic - Dream Dare Drip" />
+        <meta name="twitter:description" content="Premium DJ, audio engineering & spiritual services. Dream Dare Drip. #Youknowwedomagic" />
       </Helmet>
 
       <div className="min-h-screen bg-background">
