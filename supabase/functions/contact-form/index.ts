@@ -1,5 +1,15 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+import { Resend } from "npm:resend@4.0.0";
 
+const NOTIFICATION_EMAIL = "DJ@mysteriousenterprise.com";
+
+const SUBJECT_LABELS: Record<string, string> = {
+  general: "General Inquiry",
+  order: "Order Support",
+  dj: "DJ Services Booking",
+  spiritual: "Spiritual Consultation",
+  collaboration: "Collaboration / Partnership",
+};
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers":
@@ -87,6 +97,37 @@ Deno.serve(async (req) => {
         status: 500,
         headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
+    }
+
+    // Send email notification via Resend
+    try {
+      const resend = new Resend(Deno.env.get("RESEND_API_KEY")!);
+      const { name, email, subject, message } = result.data;
+
+      await resend.emails.send({
+        from: `Cryptic Store <onboarding@resend.dev>`,
+        to: [NOTIFICATION_EMAIL],
+        replyTo: email,
+        subject: `New Contact: ${SUBJECT_LABELS[subject] || subject} from ${name}`,
+        html: `
+          <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; background: #ffffff; padding: 32px;">
+            <h1 style="color: #1a1a1a; font-size: 24px; margin-bottom: 24px;">New Contact Form Submission</h1>
+            <table style="width: 100%; border-collapse: collapse;">
+              <tr><td style="padding: 8px 0; color: #666; width: 100px;">Name:</td><td style="padding: 8px 0; color: #1a1a1a; font-weight: bold;">${name}</td></tr>
+              <tr><td style="padding: 8px 0; color: #666;">Email:</td><td style="padding: 8px 0;"><a href="mailto:${email}" style="color: #2563eb;">${email}</a></td></tr>
+              <tr><td style="padding: 8px 0; color: #666;">Subject:</td><td style="padding: 8px 0; color: #1a1a1a;">${SUBJECT_LABELS[subject] || subject}</td></tr>
+            </table>
+            <div style="margin-top: 24px; padding: 16px; background: #f5f5f5; border-radius: 8px;">
+              <p style="color: #666; margin: 0 0 8px 0; font-size: 13px;">Message:</p>
+              <p style="color: #1a1a1a; margin: 0; white-space: pre-wrap;">${message}</p>
+            </div>
+            <p style="color: #999; font-size: 12px; margin-top: 24px;">Sent from Cryptic Store contact form</p>
+          </div>
+        `,
+      });
+    } catch (emailErr) {
+      // Log but don't fail the request — the message is already saved
+      console.error("Email notification error:", emailErr);
     }
 
     return new Response(JSON.stringify({ success: true }), {
