@@ -18,6 +18,7 @@ export const Navigation = () => {
     { to: "/dj-services", label: "DJ Services", exact: false },
     { to: "/youknowwedomagic", label: "Services", exact: false },
     { to: "/music", label: "Music", exact: false },
+    { to: "/blog", label: "Blog", exact: false },
     { to: "/contact", label: "Contact", exact: false },
   ];
 
