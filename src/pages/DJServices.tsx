@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Helmet } from "react-helmet";
 import { Music, Mic2, PartyPopper, Volume2, Lightbulb, Calendar, ExternalLink } from "lucide-react";
+import djHeroImage from "@/assets/dj-services-hero.jpeg";
 
 const DJServices = () => {
   const structuredData = {
@@ -71,33 +72,46 @@ const DJServices = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/5 to-background" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsla(50,100%,50%,0.1)_0%,transparent_70%)]" />
         
-        <div className="relative container mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 text-primary mb-6 border border-primary/40">
-            <Music className="h-4 w-4" />
-            <span className="text-sm font-bold tracking-wide">Entertainment Services</span>
+        <div className="relative container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
+          <div className="flex-1 text-center lg:text-left">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 text-primary mb-6 border border-primary/40">
+              <Music className="h-4 w-4" />
+              <span className="text-sm font-bold tracking-wide">Entertainment Services</span>
+            </div>
+            
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-6 text-foreground">
+              DJ Services
+              <span className="block text-primary drop-shadow-[0_0_30px_hsla(50,100%,50%,0.6)]">
+                by MC Myster?ous
+              </span>
+            </h1>
+            
+            <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl">
+              Premium mobile DJ & entertainment services for unforgettable events
+            </p>
+            
+            <Button 
+              asChild 
+              size="lg" 
+              className="text-lg px-10 py-7 font-bold shadow-[0_0_30px_hsla(50,100%,50%,0.4)] hover:shadow-[0_0_40px_hsla(50,100%,50%,0.6)] transition-all"
+            >
+              <a href="https://MysteriousEnterprise.com" target="_blank" rel="noopener noreferrer">
+                Book Now at MysteriousEnterprise.com
+                <ExternalLink className="ml-2 h-5 w-5" />
+              </a>
+            </Button>
           </div>
-          
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-6 text-foreground">
-            DJ Services
-            <span className="block text-primary drop-shadow-[0_0_30px_hsla(50,100%,50%,0.6)]">
-              by MC Myster?ous
-            </span>
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Premium mobile DJ & entertainment services for unforgettable events
-          </p>
-          
-          <Button 
-            asChild 
-            size="lg" 
-            className="text-lg px-10 py-7 font-bold shadow-[0_0_30px_hsla(50,100%,50%,0.4)] hover:shadow-[0_0_40px_hsla(50,100%,50%,0.6)] transition-all"
-          >
-            <a href="https://MysteriousEnterprise.com" target="_blank" rel="noopener noreferrer">
-              Book Now at MysteriousEnterprise.com
-              <ExternalLink className="ml-2 h-5 w-5" />
-            </a>
-          </Button>
+
+          <div className="flex-1 flex justify-center">
+            <div className="relative w-72 md:w-96 rounded-2xl overflow-hidden shadow-[0_0_40px_hsla(50,100%,50%,0.3)] border-2 border-primary/30">
+              <img 
+                src={djHeroImage} 
+                alt="MC Myster?ous - Professional DJ and entertainment services" 
+                className="w-full h-auto object-cover"
+                loading="eager"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
