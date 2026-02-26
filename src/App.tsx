@@ -11,6 +11,7 @@ import DJServices from "./pages/DJServices";
 import YouKnowWeDoMagic from "./pages/YouKnowWeDoMagic";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
+import BlogCrossroads from "./pages/BlogCrossroads";
 import BlogMarieLaveau from "./pages/BlogMarieLaveau";
 import BlogEmpathsIndigo from "./pages/BlogEmpathsIndigo";
 import Auth from "./pages/Auth";
@@ -36,6 +37,7 @@ const App = () => (
           <Route path="/youknowwedomagic" element={<YouKnowWeDoMagic />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/crossroads-magic-music" element={<BlogCrossroads />} />
           <Route path="/blog/marie-laveau" element={<BlogMarieLaveau />} />
           <Route path="/blog/empaths-indigo-children" element={<BlogEmpathsIndigo />} />
           <Route path="/product/:handle" element={<ProductDetail />} />
