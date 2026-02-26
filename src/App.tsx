@@ -12,6 +12,7 @@ import YouKnowWeDoMagic from "./pages/YouKnowWeDoMagic";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import BlogMarieLaveau from "./pages/BlogMarieLaveau";
+import BlogEmpathsIndigo from "./pages/BlogEmpathsIndigo";
 import Auth from "./pages/Auth";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
@@ -36,6 +37,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/marie-laveau" element={<BlogMarieLaveau />} />
+          <Route path="/blog/empaths-indigo-children" element={<BlogEmpathsIndigo />} />
           <Route path="/product/:handle" element={<ProductDetail />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/privacy" element={<Privacy />} />
