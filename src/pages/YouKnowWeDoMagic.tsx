@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Music, Mic2, Sparkles, Eye, Coins, Stars, Flame } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import heroImage from "@/assets/youknowwedomagic-hero.jpg";
 
 const YouKnowWeDoMagic = () => {
   const entertainmentServices = [
@@ -79,22 +80,35 @@ const YouKnowWeDoMagic = () => {
         <Navigation />
         
         {/* Hero Section */}
-        <section className="relative py-20 px-4 overflow-hidden">
+        <section className="relative py-20 md:py-32 px-4 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-secondary/20" />
-          <div className="container mx-auto relative z-10 text-center">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
-              #YouKnowWeDoMagic
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Myster?ous Services: Where Sound Meets Spirit
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg">
-                Book Entertainment Services
-              </Button>
-              <Button size="lg" variant="outline" className="text-lg">
-                Schedule Spiritual Consultation
-              </Button>
+          <div className="container mx-auto relative z-10 flex flex-col lg:flex-row items-center gap-12">
+            <div className="flex-1 text-center lg:text-left">
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
+                #YouKnowWeDoMagic
+              </h1>
+              <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl">
+                Myster?ous Services: Where Sound Meets Spirit
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Button size="lg" className="text-lg">
+                  Book Entertainment Services
+                </Button>
+                <Button size="lg" variant="outline" className="text-lg">
+                  Schedule Spiritual Consultation
+                </Button>
+              </div>
+            </div>
+
+            <div className="flex-1 flex justify-center">
+              <div className="relative w-72 md:w-96 rounded-2xl overflow-hidden shadow-[0_0_40px_hsla(50,100%,50%,0.3)] border-2 border-primary/30">
+                <img 
+                  src={heroImage} 
+                  alt="Myster?ous - Premium entertainment and spiritual services" 
+                  className="w-full h-auto object-cover"
+                  loading="eager"
+                />
+              </div>
             </div>
           </div>
         </section>
