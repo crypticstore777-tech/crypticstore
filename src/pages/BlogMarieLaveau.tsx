@@ -5,6 +5,7 @@ import { Separator } from "@/components/ui/separator";
 import { Sparkles, Flame, Star, Crown, Heart, BookOpen } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import heroImage from "@/assets/youknowwedomagic-hero.jpg";
 
 const BlogMarieLaveau = () => {
   const structuredData = {
@@ -51,20 +52,32 @@ const BlogMarieLaveau = () => {
         <Navigation />
         
         {/* Blog Hero */}
-        <section className="relative py-16 px-4 overflow-hidden">
+        <section className="relative py-16 md:py-24 px-4 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-background to-primary/10" />
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,hsla(280,60%,40%,0.15)_0%,transparent_60%)]" />
-          <div className="container mx-auto relative z-10 text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/20 text-purple-400 mb-6 border border-purple-500/40">
-              <Crown className="h-4 w-4" />
-              <span className="text-sm font-bold">The Cryptic Chronicles</span>
+          <div className="container mx-auto relative z-10 flex flex-col lg:flex-row items-center gap-12">
+            <div className="flex-1 text-center lg:text-left">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/20 text-purple-400 mb-6 border border-purple-500/40">
+                <Crown className="h-4 w-4" />
+                <span className="text-sm font-bold">The Cryptic Chronicles</span>
+              </div>
+              <h1 className="text-4xl md:text-6xl font-black mb-4 text-foreground">
+                Marie Laveau
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
+                The Voodoo Queen of New Orleans
+              </p>
             </div>
-            <h1 className="text-4xl md:text-6xl font-black mb-4 text-foreground">
-              Marie Laveau
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              The Voodoo Queen of New Orleans
-            </p>
+            <div className="flex-1 flex justify-center">
+              <div className="relative w-72 md:w-96 rounded-2xl overflow-hidden shadow-[0_0_40px_hsla(280,60%,40%,0.4)] border-2 border-purple-500/30">
+                <img
+                  src={heroImage}
+                  alt="Myster?ous — exploring the spiritual legacy of Marie Laveau, the Voodoo Queen of New Orleans"
+                  className="w-full h-auto object-cover"
+                  loading="eager"
+                />
+              </div>
+            </div>
           </div>
         </section>
 

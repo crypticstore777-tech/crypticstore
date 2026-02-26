@@ -1,8 +1,11 @@
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Music, Sparkles, Flame, Star } from "lucide-react";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
+import djHeroImage from "@/assets/dj-services-hero.jpeg";
 
 const Blog = () => {
   const structuredData = {
@@ -49,19 +52,31 @@ const Blog = () => {
         <Navigation />
         
         {/* Blog Hero */}
-        <section className="relative py-16 px-4 overflow-hidden">
+        <section className="relative py-16 md:py-24 px-4 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/15 via-background to-purple-900/10" />
-          <div className="container mx-auto relative z-10 text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 text-primary mb-6 border border-primary/40">
-              <Sparkles className="h-4 w-4" />
-              <span className="text-sm font-bold">The Cryptic Chronicles</span>
+          <div className="container mx-auto relative z-10 flex flex-col lg:flex-row items-center gap-12">
+            <div className="flex-1 text-center lg:text-left">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 text-primary mb-6 border border-primary/40">
+                <Sparkles className="h-4 w-4" />
+                <span className="text-sm font-bold">The Cryptic Chronicles</span>
+              </div>
+              <h1 className="text-4xl md:text-6xl font-black mb-4 text-foreground">
+                Stories of Magic, Music & Mystery
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
+                Where Sound Meets Spirit
+              </p>
             </div>
-            <h1 className="text-4xl md:text-6xl font-black mb-4 text-foreground">
-              Stories of Magic, Music & Mystery
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              Where Sound Meets Spirit
-            </p>
+            <div className="flex-1 flex justify-center">
+              <div className="relative w-72 md:w-96 rounded-2xl overflow-hidden shadow-[0_0_40px_hsla(50,100%,50%,0.3)] border-2 border-primary/30">
+                <img
+                  src={djHeroImage}
+                  alt="MC Myster?ous — where magic meets music at the crossroads"
+                  className="w-full h-auto object-cover"
+                  loading="eager"
+                />
+              </div>
+            </div>
           </div>
         </section>
 
@@ -185,6 +200,31 @@ const Blog = () => {
           </div>
         </section>
 
+        {/* More Articles */}
+        <section className="py-12 px-4">
+          <div className="container mx-auto max-w-4xl">
+            <h2 className="text-3xl font-black mb-8 text-center text-foreground">More from The Cryptic Chronicles</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <Link to="/blog/marie-laveau" className="group">
+                <Card className="h-full hover:shadow-lg hover:border-primary/30 transition-all">
+                  <CardHeader>
+                    <CardTitle className="group-hover:text-primary transition-colors">Marie Laveau: The Voodoo Queen of New Orleans</CardTitle>
+                    <CardDescription>The true history of New Orleans' most powerful spiritual figure — healer, herbalist, and community leader.</CardDescription>
+                  </CardHeader>
+                </Card>
+              </Link>
+              <Link to="/blog/empaths-indigo-children" className="group">
+                <Card className="h-full hover:shadow-lg hover:border-indigo-500/30 transition-all">
+                  <CardHeader>
+                    <CardTitle className="group-hover:text-primary transition-colors">Empaths & Indigo Children</CardTitle>
+                    <CardDescription>The souls who feel everything — exploring the world of empaths, indigo auras, and spiritual sensitivity.</CardDescription>
+                  </CardHeader>
+                </Card>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Brand CTA */}
         <section className="py-12 px-4 bg-gradient-to-r from-background via-primary/10 to-background border-t border-primary/20">
           <div className="container mx-auto text-center">
@@ -197,12 +237,7 @@ const Blog = () => {
           </div>
         </section>
 
-        {/* Footer */}
-        <footer className="border-t border-primary/20 py-8 px-4">
-          <div className="container mx-auto text-center">
-            <p className="text-muted-foreground">© 2025 Cryptic Store • Online Boutique by Mysterious Enterprise</p>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </>
   );
