@@ -8,7 +8,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import dare2wearHero from "@/assets/dare2wear-collection-hero.jpg";
+import crypticStoreHero from "@/assets/cryptic-store-hero.jpg";
 
 const Index = () => {
   const {
@@ -115,7 +115,7 @@ const Index = () => {
       <section className="relative h-[70vh] min-h-[500px] overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
-          style={{ backgroundImage: `url(${dare2wearHero})` }} 
+          style={{ backgroundImage: `url(${crypticStoreHero})` }} 
           role="img" 
           aria-label="Cryptic Store - Black and gold streetwear boutique by Mysterious Enterprise"
         >
