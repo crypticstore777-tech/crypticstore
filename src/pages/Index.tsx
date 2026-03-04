@@ -178,7 +178,7 @@ const Index = () => {
             <Button
               asChild
               size="lg"
-              className="bg-[#FF9900] hover:bg-[#FFB84D] text-black font-bold px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all"
             >
               <a href="https://www.amazon.com/s?k=Cryptic+Store+Dare2Wear" target="_blank" rel="noopener noreferrer">
                 Visit Our Amazon Store
