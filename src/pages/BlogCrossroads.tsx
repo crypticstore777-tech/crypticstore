@@ -70,11 +70,11 @@ const BlogCrossroads = () => {
             <div className="flex-1 flex justify-center">
               <div className="relative w-72 md:w-96 rounded-2xl overflow-hidden shadow-[0_0_40px_hsla(50,100%,50%,0.3)] border-2 border-primary/30">
                 <img
-                  src={djHeroImage}
+
                   alt="MC Myster?ous — where magic meets music at the crossroads"
                   className="w-full h-auto object-cover"
-                  loading="eager"
-                />
+                  loading="eager" src="/lovable-uploads/0ac34d77-8522-4f61-a7d6-4a54a4ba3bcc.jpg" />
+                
               </div>
             </div>
           </div>
@@ -221,8 +221,8 @@ const BlogCrossroads = () => {
 
         <Footer />
       </div>
-    </>
-  );
+    </>);
+
 };
 
 export default BlogCrossroads;
