@@ -1,20 +1,12 @@
 
 
-## Add HelloSkip AI Agent to Homepage
+## Generate New Cryptic Store Favicon
 
 ### What
-Add the HelloSkip AI agent script to the website so it loads on every page.
+Generate a new favicon featuring the full "Cryptic Store" logo text in bold yellow on a black background, replacing the current single-letter "C" favicon.
 
 ### How
-
-**Edit `index.html`**: Add the script tag before the closing `</body>` tag:
-
-```html
-<script src="https://helloskip.com/agent.js" data-agent-id="XvDADTROHZa0XDQAcfYy"></script>
-```
-
-This placement ensures it loads on all pages since `index.html` is the single entry point for the app.
-
-### Security Note
-This is a third-party script from helloskip.com. It will have full access to the page DOM. Confirm you trust this provider before proceeding.
+1. **Generate image** using the AI image generation model with a prompt for a square favicon/icon featuring "CRYPTIC STORE" or "CS" monogram in bold yellow (#FFCC00) on a pure black background, urban streetwear style
+2. **Save** the generated image to `public/favicon.jpg`, overwriting the existing file
+3. No code changes needed — `index.html` already references `/favicon.jpg`
 
