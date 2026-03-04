@@ -6,6 +6,7 @@ import { Sparkles, Flame, Star, Crown, Heart, BookOpen } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/youknowwedomagic-hero.jpg";
+import marieLaveauImage from "@/assets/marie-laveau-portrait.jpg";
 
 const BlogMarieLaveau = () => {
   const structuredData = {
@@ -108,6 +109,20 @@ const BlogMarieLaveau = () => {
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     But the real Marie Laveau was far more complex than the legends suggest. She was a devout Catholic, a shrewd businesswoman, a compassionate nurse during yellow fever epidemics, and a fierce advocate for the condemned. Her story is one of power wielded not through fear, but through intelligence, faith, and an unshakeable connection to her community.
                   </p>
+                </div>
+
+                <div className="my-10 flex justify-center">
+                  <div className="relative w-full max-w-md rounded-2xl overflow-hidden shadow-[0_0_40px_hsla(280,60%,40%,0.4)] border-2 border-purple-500/30">
+                    <img
+                      src={marieLaveauImage}
+                      alt="Portrait of Marie Laveau, the Voodoo Queen of New Orleans, in 19th century Creole attire with a white tignon head wrap"
+                      className="w-full h-auto object-cover"
+                      loading="lazy"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                      <p className="text-sm text-white/90 italic m-0 text-center">Marie Laveau — The Voodoo Queen of New Orleans</p>
+                    </div>
+                  </div>
                 </div>
 
                 <Separator className="my-10" />
