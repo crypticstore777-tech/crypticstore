@@ -1,12 +1,12 @@
 
 
-## Generate New Cryptic Store Favicon
+## Mystical/Occult Favicon for Cryptic Store
 
 ### What
-Generate a new favicon featuring the full "Cryptic Store" logo text in bold yellow on a black background, replacing the current single-letter "C" favicon.
+Replace the current "CS" monogram favicon with a mystical/occult symbol that fits the "Cryptic" brand — think alchemical, esoteric, or occult iconography in bold yellow on black.
 
 ### How
-1. **Generate image** using the AI image generation model with a prompt for a square favicon/icon featuring "CRYPTIC STORE" or "CS" monogram in bold yellow (#FFCC00) on a pure black background, urban streetwear style
+1. **Generate image** using `google/gemini-2.5-flash-image` with a prompt for a square favicon featuring a mystical occult symbol (e.g., an all-seeing eye, ouroboros, or alchemical sigil) in bold yellow (#FFCC00) on pure black background, clean lines suitable for small icon display
 2. **Save** the generated image to `public/favicon.jpg`, overwriting the existing file
 3. No code changes needed — `index.html` already references `/favicon.jpg`
 
