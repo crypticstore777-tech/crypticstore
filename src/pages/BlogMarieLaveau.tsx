@@ -71,12 +71,12 @@ const BlogMarieLaveau = () => {
             </div>
             <div className="flex-1 flex justify-center">
               <div className="relative w-72 md:w-96 rounded-2xl overflow-hidden shadow-[0_0_40px_hsla(280,60%,40%,0.4)] border-2 border-purple-500/30">
-                <img
-                  src={heroImage}
-                  alt="Myster?ous — exploring the spiritual legacy of Marie Laveau, the Voodoo Queen of New Orleans"
-                  className="w-full h-auto object-cover"
-                  loading="eager"
-                />
+                
+
+
+
+
+                
               </div>
             </div>
           </div>
@@ -117,8 +117,8 @@ const BlogMarieLaveau = () => {
                       src={marieLaveauImage}
                       alt="Portrait of Marie Laveau, the Voodoo Queen of New Orleans, in 19th century Creole attire with a white tignon head wrap"
                       className="w-full h-auto object-cover"
-                      loading="lazy"
-                    />
+                      loading="lazy" />
+                    
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                       <p className="text-sm text-white/90 italic m-0 text-center">Marie Laveau — The Voodoo Queen of New Orleans</p>
                     </div>
@@ -301,8 +301,8 @@ const BlogMarieLaveau = () => {
 
         <Footer />
       </div>
-    </>
-  );
+    </>);
+
 };
 
 export default BlogMarieLaveau;
