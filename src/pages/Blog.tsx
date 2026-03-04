@@ -10,37 +10,37 @@ import empathsImage from "@/assets/empaths-indigo-hero.jpg";
 import magicHeroImage from "@/assets/youknowwedomagic-hero.jpg";
 
 const blogPosts = [
-  {
-    title: "At the Crossroads: The Mysterious Connection Between Magic and Music",
-    description: "From Robert Johnson's legendary crossroads deal to ancient shamanic traditions — explore the mystical bond between sound and spirit.",
-    path: "/blog/crossroads-magic-music",
-    image: djHeroImage,
-    icon: Music,
-    date: "January 2025",
-    color: "primary",
-    glow: "hsla(50,100%,50%,0.3)",
-  },
-  {
-    title: "Marie Laveau: The Voodoo Queen of New Orleans",
-    description: "The true history of New Orleans' most powerful spiritual figure — healer, herbalist, and community leader who shaped American spirituality.",
-    path: "/blog/marie-laveau",
-    image: magicHeroImage,
-    icon: Crown,
-    date: "February 2026",
-    color: "purple-500",
-    glow: "hsla(280,60%,40%,0.35)",
-  },
-  {
-    title: "Empaths & Indigo Children: The Souls Who Feel Everything",
-    description: "Highly sensitive souls who perceive energy, emotions, and truths others miss. Explore the world of empaths, indigo auras, and spiritual sensitivity.",
-    path: "/blog/empaths-indigo-children",
-    image: empathsImage,
-    icon: Eye,
-    date: "February 2026",
-    color: "indigo-500",
-    glow: "hsla(240,70%,50%,0.35)",
-  },
-];
+{
+  title: "At the Crossroads: The Mysterious Connection Between Magic and Music",
+  description: "From Robert Johnson's legendary crossroads deal to ancient shamanic traditions — explore the mystical bond between sound and spirit.",
+  path: "/blog/crossroads-magic-music",
+  image: djHeroImage,
+  icon: Music,
+  date: "January 2025",
+  color: "primary",
+  glow: "hsla(50,100%,50%,0.3)"
+},
+{
+  title: "Marie Laveau: The Voodoo Queen of New Orleans",
+  description: "The true history of New Orleans' most powerful spiritual figure — healer, herbalist, and community leader who shaped American spirituality.",
+  path: "/blog/marie-laveau",
+  image: magicHeroImage,
+  icon: Crown,
+  date: "February 2026",
+  color: "purple-500",
+  glow: "hsla(280,60%,40%,0.35)"
+},
+{
+  title: "Empaths & Indigo Children: The Souls Who Feel Everything",
+  description: "Highly sensitive souls who perceive energy, emotions, and truths others miss. Explore the world of empaths, indigo auras, and spiritual sensitivity.",
+  path: "/blog/empaths-indigo-children",
+  image: empathsImage,
+  icon: Eye,
+  date: "February 2026",
+  color: "indigo-500",
+  glow: "hsla(240,70%,50%,0.35)"
+}];
+
 
 const Blog = () => {
   return (
@@ -100,9 +100,9 @@ const Blog = () => {
                               src={post.image}
                               alt={post.title}
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                              loading="lazy"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-r from-transparent to-background/60 md:block hidden" />
+                              loading="lazy" />
+                            
+                            
                           </div>
                         </div>
                         {/* Content */}
@@ -125,8 +125,8 @@ const Blog = () => {
                         </CardHeader>
                       </div>
                     </Card>
-                  </Link>
-                );
+                  </Link>);
+
               })}
             </div>
           </div>
@@ -146,8 +146,8 @@ const Blog = () => {
 
         <Footer />
       </div>
-    </>
-  );
+    </>);
+
 };
 
 export default Blog;
