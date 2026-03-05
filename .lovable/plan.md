@@ -1,12 +1,12 @@
 
 
-## Mystical/Occult Favicon for Cryptic Store
+## Update Navigation Logo to Match Favicon
 
 ### What
-Replace the current "CS" monogram favicon with a mystical/occult symbol that fits the "Cryptic" brand — think alchemical, esoteric, or occult iconography in bold yellow on black.
+Replace the current navigation logo (`src/assets/cryptic-store-logo.jpg` — the gold Cryptic Store emblem) with a new image matching the yellow all-seeing eye favicon design.
 
 ### How
-1. **Generate image** using `google/gemini-2.5-flash-image` with a prompt for a square favicon featuring a mystical occult symbol (e.g., an all-seeing eye, ouroboros, or alchemical sigil) in bold yellow (#FFCC00) on pure black background, clean lines suitable for small icon display
-2. **Save** the generated image to `public/favicon.jpg`, overwriting the existing file
-3. No code changes needed — `index.html` already references `/favicon.jpg`
+1. **Generate a new logo image** using AI image generation — a yellow (#FFCC00) all-seeing eye occult symbol on a black background, matching the favicon but optimized for the nav bar (rectangular/square, clean at 40x40px display size)
+2. **Overwrite** `src/assets/cryptic-store-logo.jpg` with the new image
+3. No code changes needed — `Navigation.tsx` already imports and displays this file at `h-10 w-10`
 
