@@ -119,7 +119,7 @@ const Index = () => {
           role="img" 
           aria-label="Cryptic Store - Black and gold streetwear boutique by Mysterious Enterprise"
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/10 to-background/70" />
+          
         </div>
         
         <div className="relative h-full container mx-auto px-4 flex flex-col justify-center items-center text-center">
