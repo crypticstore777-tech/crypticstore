@@ -47,7 +47,7 @@ const About = () => {
               <div className="absolute -inset-1 bg-gradient-to-br from-primary/40 to-primary/10 rounded-2xl blur-sm group-hover:blur-md transition-all duration-500" />
               <img
                 src={mcStudio}
-                alt="MC Myster?ous in the recording studio with arms crossed, wearing a graphic tee"
+                alt="MC Myster?ous wearing gold headphones with Cryptic Store logo and treasure chest"
                 className="relative w-full rounded-2xl border border-primary/20 shadow-2xl object-cover aspect-[3/4]"
                 loading="eager"
               />
