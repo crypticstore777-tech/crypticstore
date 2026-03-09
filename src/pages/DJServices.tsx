@@ -5,6 +5,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Helmet } from "react-helmet";
 import { Music, Mic2, PartyPopper, Volume2, Lightbulb, Calendar, ExternalLink } from "lucide-react";
 import djHeroImage from "@/assets/dj-services-hero.jpeg";
+import weddingDancing from "@/assets/dj-wedding-dancing.jpeg";
+import weddingParty from "@/assets/dj-wedding-party.jpeg";
 
 const DJServices = () => {
   const structuredData = {
@@ -134,6 +136,36 @@ const DJServices = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+      </section>
+
+      {/* Wedding Section */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-black mb-4 text-foreground">Wedding Entertainment</h2>
+          <div className="w-24 h-1 bg-primary mx-auto rounded-full shadow-[0_0_10px_hsla(50,100%,50%,0.5)]" />
+          <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
+            Making your special day unforgettable with the perfect music, energy, and vibes
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="rounded-2xl overflow-hidden border-2 border-primary/30 shadow-[0_0_20px_hsla(50,100%,50%,0.15)] hover:shadow-[0_0_30px_hsla(50,100%,50%,0.3)] transition-all duration-300 group">
+            <img
+              src={weddingDancing}
+              alt="Wedding guests dancing at outdoor reception with DJ MC Myster?ous"
+              className="w-full h-72 md:h-80 object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+          </div>
+          <div className="rounded-2xl overflow-hidden border-2 border-primary/30 shadow-[0_0_20px_hsla(50,100%,50%,0.15)] hover:shadow-[0_0_30px_hsla(50,100%,50%,0.3)] transition-all duration-300 group">
+            <img
+              src={weddingParty}
+              alt="Bridal party group photo at wedding event"
+              className="w-full h-72 md:h-80 object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+          </div>
         </div>
       </section>
 

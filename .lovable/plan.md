@@ -1,17 +1,12 @@
 
 
-## Add Wedding Photo Gallery to DJ Services Page
+## Update Navigation Logo to Match Favicon
 
 ### What
-Add a dedicated "Weddings" section to the DJ Services page featuring the two uploaded wedding photos — one showing guests dancing at an outdoor reception, the other a bridal party group photo.
+Replace the current navigation logo (`src/assets/cryptic-store-logo.jpg` — the gold Cryptic Store emblem) with a new image matching the yellow all-seeing eye favicon design.
 
 ### How
-1. **Copy both uploaded images** to `src/assets/`:
-   - `src/assets/dj-wedding-dancing.jpeg` (outdoor reception dance floor)
-   - `src/assets/dj-wedding-party.jpeg` (bridal party group shot)
-
-2. **Update `src/pages/DJServices.tsx`**:
-   - Import both new images
-   - Add a new "Weddings" section between the Services Grid and CTA sections
-   - Section includes a heading ("Wedding Entertainment"), brief description text, and a two-column image gallery with rounded corners, gold accent borders, and hover effects matching the page style
+1. **Generate a new logo image** using AI image generation — a yellow (#FFCC00) all-seeing eye occult symbol on a black background, matching the favicon but optimized for the nav bar (rectangular/square, clean at 40x40px display size)
+2. **Overwrite** `src/assets/cryptic-store-logo.jpg` with the new image
+3. No code changes needed — `Navigation.tsx` already imports and displays this file at `h-10 w-10`
 
