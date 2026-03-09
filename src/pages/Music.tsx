@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import musicHero from "@/assets/mc-mysterious-music-hero.jpg";
 
 const Music = () => {
   return (
