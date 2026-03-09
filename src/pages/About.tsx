@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
 import { Music, Shirt, Sparkles, Mic } from "lucide-react";
 import mcStudio from "@/assets/mc-mysterious-studio.jpeg";
+import moonlitPortrait2 from "@/assets/mc-mysterious-moonlit-2.jpeg";
 
 const About = () => {
   const structuredData = {
@@ -42,15 +43,26 @@ const About = () => {
       <section className="relative py-20 overflow-hidden bg-gradient-to-b from-primary/5 to-background">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-            {/* Image */}
-            <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-br from-primary/40 to-primary/10 rounded-2xl blur-sm group-hover:blur-md transition-all duration-500" />
-              <img
-                src={mcStudio}
-                alt="MC Myster?ous wearing gold headphones with Cryptic Store logo and treasure chest"
-                className="relative w-full rounded-2xl border border-primary/20 shadow-2xl object-cover aspect-[3/4]"
-                loading="eager"
-              />
+            {/* Images */}
+            <div className="space-y-4">
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-br from-primary/40 to-primary/10 rounded-2xl blur-sm group-hover:blur-md transition-all duration-500" />
+                <img
+                  src={mcStudio}
+                  alt="MC Myster?ous wearing gold headphones with Cryptic Store logo and treasure chest"
+                  className="relative w-full rounded-2xl border border-primary/20 shadow-2xl object-cover aspect-[3/4]"
+                  loading="eager"
+                />
+              </div>
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-br from-accent/30 to-accent/5 rounded-2xl blur-sm group-hover:blur-md transition-all duration-500" />
+                <img
+                  src={moonlitPortrait2}
+                  alt="MC Myster?ous moonlit portrait"
+                  className="relative w-full rounded-2xl border border-accent/20 shadow-xl object-cover aspect-[3/4]"
+                  loading="lazy"
+                />
+              </div>
             </div>
 
             {/* Text */}

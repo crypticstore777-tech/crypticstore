@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import crypticStoreHero from "@/assets/cryptic-store-hero.jpg";
+import founderImage from "@/assets/mc-mysterious-founder.jpeg";
 
 const Index = () => {
   const {
@@ -189,6 +190,37 @@ const Index = () => {
               <span className="flex items-center gap-1">✓ Fast Prime Shipping</span>
               <span className="flex items-center gap-1">✓ Easy Returns</span>
               <span className="flex items-center gap-1">✓ Trusted Platform</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Meet the Founder */}
+      <section className="py-16 bg-card/30">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-br from-primary/40 to-primary/10 rounded-2xl blur-sm group-hover:blur-md transition-all duration-500" />
+              <img
+                src={founderImage}
+                alt="MC Myster?ous - Founder of Cryptic Store wearing gold headphones"
+                className="relative w-full rounded-2xl border border-primary/20 shadow-2xl object-cover aspect-[3/4]"
+                loading="lazy"
+              />
+            </div>
+            <div className="space-y-6">
+              <h2 className="text-3xl md:text-4xl font-black text-foreground">
+                Meet the <span className="text-primary">Founder</span>
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                MC Myster?ous — Hip Hop DJ, producer, and the creative force behind Cryptic Store. Where music culture, bold fashion, and mysticism converge.
+              </p>
+              <Button asChild variant="outline" className="border-primary/30 hover:bg-primary/10">
+                <Link to="/about">
+                  Learn More
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
