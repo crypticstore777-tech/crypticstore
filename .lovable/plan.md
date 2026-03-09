@@ -1,12 +1,15 @@
 
 
-## Update Navigation Logo to Match Favicon
+## Add Uploaded Image to Music Page Hero
 
 ### What
-Replace the current navigation logo (`src/assets/cryptic-store-logo.jpg` — the gold Cryptic Store emblem) with a new image matching the yellow all-seeing eye favicon design.
+Add the uploaded image of MC Myster?ous (with gold headphones, Cryptic Store branding) as the hero background on the Music page, replacing the current gradient-only hero.
 
 ### How
-1. **Generate a new logo image** using AI image generation — a yellow (#FFCC00) all-seeing eye occult symbol on a black background, matching the favicon but optimized for the nav bar (rectangular/square, clean at 40x40px display size)
-2. **Overwrite** `src/assets/cryptic-store-logo.jpg` with the new image
-3. No code changes needed — `Navigation.tsx` already imports and displays this file at `h-10 w-10`
+1. **Copy the uploaded image** to `src/assets/mc-mysterious-music-hero.jpg`
+2. **Update `src/pages/Music.tsx`** hero section:
+   - Import the new image asset
+   - Use it as a background image on the hero section (similar to how `cryptic-store-hero.jpg` is used on the Index page)
+   - Add a dark gradient overlay to maintain text readability
+   - Increase hero height to showcase the image properly
 
