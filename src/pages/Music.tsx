@@ -15,16 +15,23 @@ const Music = () => {
       <Navigation />
       <main style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
         {/* Hero */}
-        <section className="relative py-20 overflow-hidden bg-gradient-to-br from-background via-background to-primary/10">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_hsla(50,100%,50%,0.08),transparent_60%)]" />
-          <div className="container mx-auto px-4 text-center relative z-10">
+        <section className="relative h-[60vh] min-h-[400px] overflow-hidden">
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${musicHero})` }}
+            role="img"
+            aria-label="MC Myster?ous with gold headphones - Sorcerer of Sound"
+          >
+            <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/20 to-background/80" />
+          </div>
+          <div className="relative h-full container mx-auto px-4 flex flex-col justify-end items-center text-center pb-12">
             <h1
-              className="text-4xl md:text-6xl font-black tracking-wider text-primary mb-4"
+              className="text-4xl md:text-6xl font-black tracking-wider text-primary mb-4 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]"
               style={{ fontFamily: "'Orbitron', sans-serif" }}
             >
               MC Myster?ous
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-foreground/90 max-w-2xl mx-auto drop-shadow-[0_1px_6px_rgba(0,0,0,0.8)]">
               Sorcerer of Sound — Mixes, originals & live sets across every platform.
             </p>
           </div>
