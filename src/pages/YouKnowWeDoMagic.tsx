@@ -6,6 +6,7 @@ import { Music, Mic2, Sparkles, Eye, Coins, Stars, Flame } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/youknowwedomagic-hero.jpg";
+import moonlitPortrait from "@/assets/mc-mysterious-moonlit-1.jpeg";
 
 const YouKnowWeDoMagic = () => {
   const entertainmentServices = [
@@ -100,11 +101,19 @@ const YouKnowWeDoMagic = () => {
               </div>
             </div>
 
-            <div className="flex-1 flex justify-center">
-              <div className="relative w-72 md:w-96 rounded-2xl overflow-hidden shadow-[0_0_40px_hsla(50,100%,50%,0.3)] border-2 border-primary/30">
+            <div className="flex-1 flex justify-center gap-4">
+              <div className="relative w-56 md:w-72 rounded-2xl overflow-hidden shadow-[0_0_40px_hsla(50,100%,50%,0.3)] border-2 border-primary/30">
                 <img 
                   src={heroImage} 
                   alt="Myster?ous - Premium entertainment and spiritual services" 
+                  className="w-full h-auto object-cover"
+                  loading="eager"
+                />
+              </div>
+              <div className="relative w-56 md:w-72 rounded-2xl overflow-hidden shadow-[0_0_30px_hsla(260,80%,50%,0.2)] border-2 border-accent/30 hidden sm:block mt-8">
+                <img 
+                  src={moonlitPortrait} 
+                  alt="MC Myster?ous moonlit portrait" 
                   className="w-full h-auto object-cover"
                   loading="eager"
                 />

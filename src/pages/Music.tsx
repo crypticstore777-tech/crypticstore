@@ -3,6 +3,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import musicHero from "@/assets/mc-mysterious-music-hero.jpg";
+import studioMixing from "@/assets/mc-mysterious-studio-mixing.jpeg";
 
 const Music = () => {
   return (
@@ -34,6 +35,29 @@ const Music = () => {
             <p className="text-lg md:text-xl text-foreground/90 max-w-2xl mx-auto drop-shadow-[0_1px_6px_rgba(0,0,0,0.8)]">
               Sorcerer of Sound — Mixes, originals & live sets across every platform.
             </p>
+          </div>
+        </section>
+
+        {/* Studio Shot */}
+        <section className="container mx-auto px-4 py-12">
+          <div className="grid md:grid-cols-2 gap-8 items-center max-w-5xl mx-auto">
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-br from-primary/30 to-primary/5 rounded-2xl blur-sm" />
+              <img
+                src={studioMixing}
+                alt="MC Myster?ous at the mixing board in the studio"
+                className="relative w-full rounded-2xl border border-border shadow-xl object-cover aspect-video"
+                loading="lazy"
+              />
+            </div>
+            <div className="space-y-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-primary" style={{ fontFamily: "'Orbitron', sans-serif" }}>
+                In the Studio
+              </h2>
+              <p className="text-muted-foreground leading-relaxed">
+                From the mixing board to the stage — crafting beats, blending tracks, and pushing the boundaries of sound.
+              </p>
+            </div>
           </div>
         </section>
 
