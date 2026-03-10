@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Helmet } from "react-helmet";
 import { Crown, Sparkles } from "lucide-react";
+import imitableClubHero from "@/assets/imitable-club-hero.jpg";
 
 const ImitableLives = () => {
   // Fetch products tagged with imitable-lives directly from Shopify
