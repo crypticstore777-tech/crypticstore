@@ -115,49 +115,53 @@ const ImitableLives = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative h-[70vh] min-h-[600px] overflow-hidden bg-gradient-to-br from-background via-primary/5 to-background">
-        <div className="absolute inset-0">
-          {/* Decorative pyramid pattern */}
-          <div className="absolute inset-0 opacity-10">
-            <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-              <polygon points="50,10 90,90 10,90" fill="currentColor" className="text-primary" />
-            </svg>
-          </div>
-          <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/70 to-background" />
-        </div>
-        
-        <div className="relative container mx-auto px-4 h-full flex flex-col items-center justify-center text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 text-primary mb-6 border border-primary/40 backdrop-blur-sm shadow-[0_0_20px_hsla(50,100%,50%,0.3)]">
-            <Crown className="h-4 w-4" />
-            <span className="text-sm font-bold tracking-wider uppercase">Premium Collection</span>
-          </div>
-          
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 text-foreground tracking-tight">
-            IMITABLE <span className="text-primary">LIVES</span>
-          </h1>
-          
-          <p className="text-lg md:text-xl text-foreground/80 mb-2 font-light tracking-widest uppercase">
-            Ancient Luxury • Modern Streetwear
-          </p>
-          
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto font-medium">
-            Inspired by Marc Anthony & Cleopatra. Where Egyptian mysticism meets cosmic science. 
-            Premium graphic tees for those who live like royalty.
-          </p>
+      <section className="relative py-16 md:py-24 overflow-hidden bg-background">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+            {/* Text Content */}
+            <div className="flex-1 text-center lg:text-left">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 text-primary mb-6 border border-primary/40 backdrop-blur-sm shadow-[0_0_20px_hsla(50,100%,50%,0.3)]">
+                <Crown className="h-4 w-4" />
+                <span className="text-sm font-bold tracking-wider uppercase">Premium Collection</span>
+              </div>
+              
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 text-foreground tracking-tight">
+                IMITABLE <span className="text-primary">LIVES</span>
+              </h1>
+              
+              <p className="text-lg md:text-xl text-foreground/80 mb-2 font-light tracking-widest uppercase">
+                Ancient Luxury • Modern Streetwear
+              </p>
+              
+              <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-xl font-medium">
+                Inspired by Marc Anthony & Cleopatra. Where Egyptian mysticism meets cosmic science. 
+                Premium graphic tees for those who live like royalty.
+              </p>
 
-          <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
-            <span className="flex items-center gap-2 px-3 py-1 rounded-full bg-muted/50">
-              <Sparkles className="h-4 w-4 text-primary" />
-              Egyptian Designs
-            </span>
-            <span className="flex items-center gap-2 px-3 py-1 rounded-full bg-muted/50">
-              <Sparkles className="h-4 w-4 text-primary" />
-              Premium Cotton
-            </span>
-            <span className="flex items-center gap-2 px-3 py-1 rounded-full bg-muted/50">
-              <Sparkles className="h-4 w-4 text-primary" />
-              USA Shipping
-            </span>
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4 text-sm text-muted-foreground">
+                <span className="flex items-center gap-2 px-3 py-1 rounded-full bg-muted/50">
+                  <Sparkles className="h-4 w-4 text-primary" />
+                  Egyptian Designs
+                </span>
+                <span className="flex items-center gap-2 px-3 py-1 rounded-full bg-muted/50">
+                  <Sparkles className="h-4 w-4 text-primary" />
+                  Premium Cotton
+                </span>
+                <span className="flex items-center gap-2 px-3 py-1 rounded-full bg-muted/50">
+                  <Sparkles className="h-4 w-4 text-primary" />
+                  USA Shipping
+                </span>
+              </div>
+            </div>
+
+            {/* Hero Image */}
+            <div className="flex-1 flex justify-center">
+              <img
+                src={imitableClubHero}
+                alt="Imitable Lives Collection - Ancient Egyptian luxury meets modern streetwear"
+                className="rounded-2xl w-full max-w-lg object-cover shadow-[0_0_40px_hsla(50,100%,50%,0.3)]"
+              />
+            </div>
           </div>
         </div>
       </section>
