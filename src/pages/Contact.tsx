@@ -52,7 +52,7 @@ const Contact = () => {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     "name": "Contact Cryptic Store",
-    "description": "Get in touch with Cryptic Store and Mysterious Enterprise for orders, DJ services, spiritual consultations, and more.",
+    "description": "Contact Sacramento's Cryptic Store boutique & Mysterious Enterprise. DJ services, apparel orders, spiritual consultations in Sacramento CA.",
     "url": "https://crypticstore.com/contact",
     "mainEntity": {
       "@type": "Organization",
