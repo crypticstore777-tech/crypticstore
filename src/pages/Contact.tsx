@@ -10,6 +10,7 @@ import { Mail, Phone, MapPin, ExternalLink, Send, Clock } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
+import logoDark from "@/assets/mc-mysterious-logo-dark.jpeg";
 const Contact = () => {
   const {
     toast
