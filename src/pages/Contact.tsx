@@ -52,7 +52,7 @@ const Contact = () => {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     "name": "Contact Cryptic Store",
-    "description": "Get in touch with Cryptic Store and Mysterious Enterprise for orders, DJ services, spiritual consultations, and more.",
+    "description": "Contact Sacramento's Cryptic Store boutique & Mysterious Enterprise. DJ services, apparel orders, spiritual consultations in Sacramento CA.",
     "url": "https://crypticstore.com/contact",
     "mainEntity": {
       "@type": "Organization",
@@ -67,15 +67,15 @@ const Contact = () => {
   };
   return <>
       <Helmet>
-        <title>Contact Us | Cryptic Store & Mysterious Enterprise - Get In Touch</title>
-        <meta name="description" content="Contact Cryptic Store and Mysterious Enterprise for orders, DJ bookings, spiritual consultations, and inquiries. We're here to help with all your needs." />
-        <meta name="keywords" content="contact Cryptic Store, Mysterious Enterprise contact, DJ booking, spiritual consultation, customer support, order help" />
+        <title>Contact Sacramento DJ & Boutique | Cryptic Store & Mysterious Enterprise</title>
+        <meta name="description" content="Contact Cryptic Store, Sacramento's boutique & entertainment company. Book Sacramento DJ services, shop apparel, spiritual consultations. Sacramento Kings events welcome." />
+        <meta name="keywords" content="contact Cryptic Store Sacramento, Sacramento DJ booking, Sacramento boutique contact, Mysterious Enterprise Sacramento, Sacramento entertainment booking, Sacramento artist contact" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://crypticstore.com/contact" />
         
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Contact Cryptic Store & Mysterious Enterprise" />
-        <meta property="og:description" content="Get in touch for orders, DJ services, spiritual consultations, and more." />
+        <meta property="og:title" content="Contact Sacramento DJ & Boutique | Cryptic Store" />
+        <meta property="og:description" content="Contact Sacramento's Cryptic Store for DJ bookings, apparel orders, spiritual consultations & more." />
         <meta property="og:url" content="https://crypticstore.com/contact" />
         
         <script type="application/ld+json">

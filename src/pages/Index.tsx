@@ -27,7 +27,7 @@ const Index = () => {
       "@id": "https://crypticstore.com/#website",
       "url": "https://crypticstore.com",
       "name": "Cryptic Store",
-      "description": "Dream Dare Drip. Online boutique by Mysterious Enterprise featuring exclusive streetwear collections by DJ MC Myster?ous",
+      "description": "Sacramento's premier online boutique featuring exclusive streetwear, DJ services, music & apparel by artist DJ MC Myster?ous. Sacramento Kings inspired black & gold fashion.",
       "potentialAction": {
         "@type": "SearchAction",
         "target": "https://crypticstore.com/search?q={search_term_string}",
@@ -39,7 +39,7 @@ const Index = () => {
       "name": "Cryptic Store",
       "url": "https://crypticstore.com",
       "logo": "https://crypticstore.com/favicon.jpg",
-      "description": "Online boutique by Mysterious Enterprise featuring Dare2Wear and Imitable Lives collections by DJ MC Myster?ous. #Youknowwedomagic",
+      "description": "Sacramento boutique & entertainment company. DJ services, music, urban apparel by artist MC Myster?ous. Sacramento Kings inspired streetwear. #Youknowwedomagic",
       "founder": {
         "@type": "Person",
         "name": "DJ MC Myster?ous"
@@ -62,14 +62,14 @@ const Index = () => {
       "@type": "CollectionPage",
       "@id": "https://crypticstore.com/#homepage",
       "url": "https://crypticstore.com",
-      "name": "Cryptic Store - Online Boutique by Mysterious Enterprise",
-      "description": "Shop Cryptic Store - Online boutique featuring exclusive streetwear collections by MC Myster?ous",
+      "name": "Cryptic Store - Sacramento Boutique | DJ, Music, Artists & Apparel",
+      "description": "Sacramento's premier online boutique. DJ services, music, urban apparel by artist MC Myster?ous. Sacramento Kings inspired streetwear.",
       "isPartOf": {
         "@id": "https://crypticstore.com/#website"
       },
       "about": {
         "@type": "Thing",
-        "name": "Cryptic Store Streetwear Boutique"
+        "name": "Cryptic Store - Sacramento Streetwear Boutique"
       }
     }, {
       "@type": "BreadcrumbList",
@@ -86,23 +86,23 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Cryptic Store | Online Boutique by Mysterious Enterprise - Black & Gold Urban Fashion</title>
-        <meta name="description" content="Shop Cryptic Store - Dream Dare Drip. Online boutique by Mysterious Enterprise featuring Dare2Wear, Imitable Lives, and exclusive streetwear collections. Bold black & gold fashion. Free shipping $75+. #Youknowwedomagic" />
-        <meta name="keywords" content="Cryptic Store, online boutique USA, Mysterious Enterprise, streetwear 2025, urban fashion America, black gold streetwear, DJ MC Mysterious, graphic tees, Dare2Wear collection, Imitable Lives collection, trending streetwear, bestselling graphic tees, Egyptian pyramid tee, speed of light shirt, Youknowwedomagic, magic music apparel, premium streetwear brands, hip hop fashion, club culture clothing" />
+        <title>Cryptic Store | Sacramento Boutique - DJ Services, Music, Artists & Urban Apparel</title>
+        <meta name="description" content="Sacramento's premier online boutique & DJ services. Shop Dare2Wear & Imitable Lives streetwear collections by artist DJ MC Myster?ous. Sacramento Kings inspired black & gold apparel. Music, entertainment & spiritual services. Free shipping $75+." />
+        <meta name="keywords" content="Sacramento boutique, Sacramento DJ, Sacramento artists, Sacramento music, Sacramento apparel, Sacramento Kings fashion, Cryptic Store, online boutique Sacramento CA, DJ services Sacramento, hip hop artist Sacramento, urban apparel Sacramento, streetwear Sacramento, DJ MC Mysterious, Dare2Wear collection, Imitable Lives collection, trending streetwear, bestselling graphic tees, black gold streetwear, Sacramento entertainment, Sacramento Kings inspired, Youknowwedomagic" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href="https://crypticstore.com" />
         
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Cryptic Store | Online Boutique by Mysterious Enterprise" />
-        <meta property="og:description" content="Dream Dare Drip. Shop exclusive streetwear collections. Bold black & gold fashion by DJ MC Myster?ous. Free shipping $75+. #Youknowwedomagic" />
+        <meta property="og:title" content="Cryptic Store | Sacramento Boutique - DJ, Music, Artists & Apparel" />
+        <meta property="og:description" content="Sacramento's hottest boutique. Shop streetwear by artist DJ MC Myster?ous. Sacramento Kings inspired black & gold apparel. DJ services & music. Free shipping $75+." />
         <meta property="og:image" content="https://crypticstore.com/dare2wear-collection-hero.jpg" />
         <meta property="og:url" content="https://crypticstore.com" />
         <meta property="og:site_name" content="Cryptic Store" />
         <meta property="og:locale" content="en_US" />
         
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Cryptic Store | Online Boutique by Mysterious Enterprise" />
-        <meta name="twitter:description" content="Dream Dare Drip. Exclusive streetwear collections. Bold fashion for those who refuse to blend in. #Youknowwedomagic" />
+        <meta name="twitter:title" content="Cryptic Store | Sacramento Boutique - DJ, Music & Apparel" />
+        <meta name="twitter:description" content="Sacramento's hottest boutique. Streetwear by artist DJ MC Myster?ous. Sacramento Kings inspired fashion. #Youknowwedomagic" />
         <meta name="twitter:image" content="https://crypticstore.com/dare2wear-collection-hero.jpg" />
         
         <script type="application/ld+json">

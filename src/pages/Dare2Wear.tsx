@@ -52,9 +52,9 @@ const Dare2Wear = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Dare2Wear Collection - Bold Streetwear & Statement Fashion | Cryptic Store</title>
-        <meta name="description" content="Shop the Dare2Wear Collection at Cryptic Store. Bold streetwear, provocative statement pieces, and urban fashion by DJ MC Myster?ous. Free shipping over $75. Dare to be different." />
-        <meta name="keywords" content="Dare2Wear collection, streetwear USA, bold fashion 2025, statement clothing, urban apparel America, graphic tees bestsellers, Cryptic Store, DJ MC Mysterious, trending streetwear, bestselling fashion, politely toxic, black yellow streetwear, hip hop clothing, club culture fashion, provocative fashion, Youknowwedomagic" />
+        <title>Dare2Wear Collection - Sacramento Streetwear & Bold Apparel | Cryptic Store Boutique</title>
+        <meta name="description" content="Shop the Dare2Wear Collection at Cryptic Store, Sacramento's boldest boutique. Streetwear, urban apparel & statement fashion by Sacramento artist DJ MC Myster?ous. Sacramento Kings black & gold vibes. Free shipping over $75." />
+        <meta name="keywords" content="Dare2Wear collection, Sacramento streetwear, Sacramento apparel, Sacramento boutique, Sacramento fashion, bold streetwear Sacramento, urban apparel Sacramento, graphic tees, Sacramento artist, DJ MC Mysterious, Sacramento Kings apparel, trending streetwear, bestselling fashion, politely toxic, hip hop clothing, Youknowwedomagic" />
         <link rel="canonical" href="https://crypticstore.com/collections/dare2wear" />
         
         {/* Open Graph */}
