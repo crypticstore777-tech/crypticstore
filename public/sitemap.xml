@@ -70,6 +70,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://crypticstore.lovable.app/blog/best-djs-sacramento</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://crypticstore.lovable.app/blog/sacramento-streetwear-boutiques</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://crypticstore.lovable.app/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

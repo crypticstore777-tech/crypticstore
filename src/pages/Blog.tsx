@@ -2,14 +2,36 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Sparkles, ArrowRight, Music, Crown, Eye } from "lucide-react";
+import { Sparkles, ArrowRight, Music, Crown, Eye, Disc3, Shirt } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import djHeroImage from "@/assets/dj-services-hero.jpeg";
 import empathsImage from "@/assets/empaths-indigo-hero.jpg";
 import magicHeroImage from "@/assets/youknowwedomagic-hero.jpg";
+import sacDjsImage from "@/assets/blog-sacramento-djs.jpg";
+import sacStreetwearImage from "@/assets/blog-sacramento-streetwear.jpg";
 
 const blogPosts = [
+{
+  title: "Best DJs in Sacramento: The Ultimate Guide",
+  description: "Discover the best DJs in Sacramento CA for weddings, parties, corporate events & Sacramento Kings watch parties. Your complete guide to Sacramento's DJ scene.",
+  path: "/blog/best-djs-sacramento",
+  image: sacDjsImage,
+  icon: Disc3,
+  date: "March 2026",
+  color: "primary",
+  glow: "hsla(50,100%,50%,0.3)"
+},
+{
+  title: "Sacramento Streetwear Boutiques: Best Urban Fashion in Sac",
+  description: "Explore Sacramento's best streetwear boutiques and urban apparel. Bold graphic tees, Sacramento Kings–inspired fashion, and local brands making waves.",
+  path: "/blog/sacramento-streetwear-boutiques",
+  image: sacStreetwearImage,
+  icon: Shirt,
+  date: "March 2026",
+  color: "primary",
+  glow: "hsla(50,100%,50%,0.3)"
+},
 {
   title: "At the Crossroads: The Mysterious Connection Between Magic and Music",
   description: "From Robert Johnson's legendary crossroads deal to ancient shamanic traditions — explore the mystical bond between sound and spirit.",
@@ -46,9 +68,9 @@ const Blog = () => {
   return (
     <>
       <Helmet>
-        <title>The Cryptic Chronicles | Cryptic Store Blog — Magic, Music & Mystery</title>
-        <meta name="description" content="The Cryptic Chronicles — blog posts exploring magic, music, spiritual history, empaths, indigo children, and the mysteries of the unseen world. By MC Myster?ous." />
-        <meta name="keywords" content="Cryptic Store blog, magic and music, Marie Laveau, empaths, indigo children, Robert Johnson, spiritual blog, MC Mysterious" />
+        <title>The Cryptic Chronicles | Sacramento Blog — DJs, Streetwear, Music & Magic</title>
+        <meta name="description" content="The Cryptic Chronicles — Sacramento blog covering best DJs in Sacramento, streetwear boutiques, music, magic & spiritual history by MC Myster?ous." />
+        <meta name="keywords" content="Sacramento blog, Sacramento DJ blog, Sacramento streetwear, Sacramento fashion, Cryptic Store blog, magic and music, Marie Laveau, empaths, MC Mysterious Sacramento" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://crypticstore.lovable.app/blog" />
 
