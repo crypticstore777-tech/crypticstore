@@ -13,6 +13,26 @@ import sacStreetwearImage from "@/assets/blog-sacramento-streetwear.jpg";
 
 const blogPosts = [
 {
+  title: "Best DJs in Sacramento: The Ultimate Guide",
+  description: "Discover the best DJs in Sacramento CA for weddings, parties, corporate events & Sacramento Kings watch parties. Your complete guide to Sacramento's DJ scene.",
+  path: "/blog/best-djs-sacramento",
+  image: sacDjsImage,
+  icon: Disc3,
+  date: "March 2026",
+  color: "primary",
+  glow: "hsla(50,100%,50%,0.3)"
+},
+{
+  title: "Sacramento Streetwear Boutiques: Best Urban Fashion in Sac",
+  description: "Explore Sacramento's best streetwear boutiques and urban apparel. Bold graphic tees, Sacramento Kings–inspired fashion, and local brands making waves.",
+  path: "/blog/sacramento-streetwear-boutiques",
+  image: sacStreetwearImage,
+  icon: Shirt,
+  date: "March 2026",
+  color: "primary",
+  glow: "hsla(50,100%,50%,0.3)"
+},
+{
   title: "At the Crossroads: The Mysterious Connection Between Magic and Music",
   description: "From Robert Johnson's legendary crossroads deal to ancient shamanic traditions — explore the mystical bond between sound and spirit.",
   path: "/blog/crossroads-magic-music",
