@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import { Music, Shirt, Sparkles, Mic } from "lucide-react";
 import mcStudio from "@/assets/mc-mysterious-studio.jpeg";
 import moonlitPortrait2 from "@/assets/mc-mysterious-moonlit-2.jpeg";
+import logoBadge from "@/assets/mc-mysterious-logo-badge.jpeg";
 
 const About = () => {
   const structuredData = {
