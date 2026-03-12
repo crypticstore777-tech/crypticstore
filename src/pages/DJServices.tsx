@@ -47,9 +47,9 @@ const DJServices = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>DJ Services by MC Myster?ous | Premium Mobile DJ & Entertainment | Cryptic Store</title>
-        <meta name="description" content="Book MC Myster?ous for your next event. Dream Dare Drip. Premium mobile DJ services for weddings, corporate events, parties & more. Professional sound systems & lighting. Book now at MysteriousEnterprise.com" />
-        <meta name="keywords" content="DJ services, mobile DJ, wedding DJ, corporate DJ, MC Mysterious, party DJ, event entertainment, professional DJ, sound systems, lighting packages, Dream Dare Drip" />
+        <title>Sacramento DJ Services | MC Myster?ous - Best Mobile DJ Sacramento CA | Cryptic Store</title>
+        <meta name="description" content="Best DJ in Sacramento CA. Book MC Myster?ous for weddings, corporate events, parties & more. Sacramento's top mobile DJ with professional sound systems & lighting. Sacramento Kings events welcome. Book now at MysteriousEnterprise.com" />
+        <meta name="keywords" content="Sacramento DJ, DJ Sacramento CA, best DJ Sacramento, Sacramento wedding DJ, Sacramento mobile DJ, Sacramento corporate DJ, Sacramento party DJ, MC Mysterious, Sacramento event entertainment, Sacramento Kings DJ, professional DJ Sacramento, DJ services Sacramento California, Dream Dare Drip" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://crypticstore.com/dj-services" />
         
