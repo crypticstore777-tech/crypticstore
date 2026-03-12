@@ -93,8 +93,8 @@ const Index = () => {
         <link rel="canonical" href="https://crypticstore.com" />
         
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Cryptic Store | Online Boutique by Mysterious Enterprise" />
-        <meta property="og:description" content="Dream Dare Drip. Shop exclusive streetwear collections. Bold black & gold fashion by DJ MC Myster?ous. Free shipping $75+. #Youknowwedomagic" />
+        <meta property="og:title" content="Cryptic Store | Sacramento Boutique - DJ, Music, Artists & Apparel" />
+        <meta property="og:description" content="Sacramento's hottest boutique. Shop streetwear by artist DJ MC Myster?ous. Sacramento Kings inspired black & gold apparel. DJ services & music. Free shipping $75+." />
         <meta property="og:image" content="https://crypticstore.com/dare2wear-collection-hero.jpg" />
         <meta property="og:url" content="https://crypticstore.com" />
         <meta property="og:site_name" content="Cryptic Store" />
