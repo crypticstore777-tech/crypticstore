@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import musicHero from "@/assets/mc-mysterious-music-hero.jpg";
 import studioMixing from "@/assets/mc-mysterious-studio-mixing.jpeg";
+import logoStone from "@/assets/mc-mysterious-logo-stone.jpeg";
 
 const Music = () => {
   return (
