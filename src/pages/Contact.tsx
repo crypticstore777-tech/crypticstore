@@ -67,9 +67,9 @@ const Contact = () => {
   };
   return <>
       <Helmet>
-        <title>Contact Us | Cryptic Store & Mysterious Enterprise - Get In Touch</title>
-        <meta name="description" content="Contact Cryptic Store and Mysterious Enterprise for orders, DJ bookings, spiritual consultations, and inquiries. We're here to help with all your needs." />
-        <meta name="keywords" content="contact Cryptic Store, Mysterious Enterprise contact, DJ booking, spiritual consultation, customer support, order help" />
+        <title>Contact Sacramento DJ & Boutique | Cryptic Store & Mysterious Enterprise</title>
+        <meta name="description" content="Contact Cryptic Store, Sacramento's boutique & entertainment company. Book Sacramento DJ services, shop apparel, spiritual consultations. Sacramento Kings events welcome." />
+        <meta name="keywords" content="contact Cryptic Store Sacramento, Sacramento DJ booking, Sacramento boutique contact, Mysterious Enterprise Sacramento, Sacramento entertainment booking, Sacramento artist contact" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://crypticstore.com/contact" />
         
