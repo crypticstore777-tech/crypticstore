@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import { Music, Shirt, Sparkles, Mic } from "lucide-react";
 import mcStudio from "@/assets/mc-mysterious-studio.jpeg";
 import moonlitPortrait2 from "@/assets/mc-mysterious-moonlit-2.jpeg";
+import logoBadge from "@/assets/mc-mysterious-logo-badge.jpeg";
 
 const About = () => {
   const structuredData = {
@@ -52,6 +53,14 @@ const About = () => {
                   alt="MC Myster?ous wearing gold headphones with Cryptic Store logo and treasure chest"
                   className="relative w-full rounded-2xl border border-primary/20 shadow-2xl object-cover aspect-[3/4]"
                   loading="eager"
+                />
+              </div>
+              <div className="flex justify-center py-2">
+                <img
+                  src={logoBadge}
+                  alt="MC Myster?ous brand badge logo"
+                  className="w-24 h-24 rounded-full border-2 border-primary/30 shadow-[0_0_20px_hsla(50,100%,50%,0.3)] object-cover"
+                  loading="lazy"
                 />
               </div>
               <div className="relative group">
