@@ -60,9 +60,9 @@ const YouKnowWeDoMagic = () => {
   return (
     <>
       <Helmet>
-        <title>#YouKnowWeDoMagic - Dream Dare Drip | Premium DJ, Audio & Spiritual Services | Cryptic Store</title>
-        <meta name="description" content="Dream Dare Drip. Myster?ous offers premium mobile DJ services, professional audio engineering, artist promotion, tarot readings, scrying, astrology insights, and spiritual development services. #Youknowwedomagic" />
-        <meta name="keywords" content="mobile DJ, audio engineering, tarot readings, scrying, astrology, spiritual services, event promotion, music production, Dream Dare Drip, Youknowwedomagic" />
+        <title>#YouKnowWeDoMagic - Sacramento DJ, Music & Spiritual Services | Cryptic Store</title>
+        <meta name="description" content="Sacramento's premier DJ, music & spiritual services. MC Myster?ous offers mobile DJ, audio engineering, artist promotion, tarot readings, scrying & astrology in Sacramento CA. #Youknowwedomagic" />
+        <meta name="keywords" content="Sacramento DJ services, Sacramento music services, Sacramento artist, Sacramento entertainment, Sacramento spiritual services, Sacramento tarot, Sacramento mobile DJ, audio engineering Sacramento, Sacramento Kings events, Dream Dare Drip, Youknowwedomagic" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://crypticstore.lovable.app/youknowwedomagic" />
         
