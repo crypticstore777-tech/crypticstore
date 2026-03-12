@@ -150,6 +150,9 @@ const About = () => {
         </div>
       </section>
 
+      {/* Instagram Reels */}
+      <InstagramReels />
+
       <Footer />
     </div>
   );
