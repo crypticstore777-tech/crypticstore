@@ -7,6 +7,7 @@ import { Music, Mic2, PartyPopper, Volume2, Lightbulb, Calendar, ExternalLink } 
 import djHeroImage from "@/assets/dj-services-hero.jpeg";
 import weddingDancing from "@/assets/dj-wedding-dancing.jpeg";
 import weddingParty from "@/assets/dj-wedding-party.jpeg";
+import logoGold from "@/assets/mc-mysterious-logo-gold.jpeg";
 
 const DJServices = () => {
   const structuredData = {
