@@ -14,7 +14,7 @@ const DJServices = () => {
     "@context": "https://schema.org",
     "@type": "EntertainmentBusiness",
     "name": "DJ Services by MC Myster?ous",
-    "description": "Premium mobile DJ and entertainment services for weddings, corporate events, parties, and special occasions.",
+    "description": "Sacramento's premier mobile DJ and entertainment services for weddings, corporate events, parties, and special occasions. Best DJ in Sacramento CA.",
     "url": "https://crypticstore.com/dj-services",
     "sameAs": ["https://MysteriousEnterprise.com"],
     "founder": {
