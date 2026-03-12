@@ -156,13 +156,13 @@ export const InstagramReels = () => {
 
         <div className="text-center mt-10">
           <a
-            href="https://www.instagram.com/mcmysterious1"
+            href="https://www.instagram.com/mc_ysterious"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary/10 text-primary border border-primary/30 hover:bg-primary/20 transition-colors font-semibold"
           >
             <Instagram className="h-5 w-5" />
-            Follow @mcmysterious1
+            Follow @mc_ysterious
           </a>
         </div>
       </div>
