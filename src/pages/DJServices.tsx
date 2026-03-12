@@ -54,8 +54,8 @@ const DJServices = () => {
         <link rel="canonical" href="https://crypticstore.com/dj-services" />
         
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="DJ Services by MC Myster?ous | Premium Mobile DJ" />
-        <meta property="og:description" content="Premium mobile DJ & entertainment services for unforgettable events. Book now at MysteriousEnterprise.com" />
+        <meta property="og:title" content="Sacramento DJ Services | MC Myster?ous - Best Mobile DJ" />
+        <meta property="og:description" content="Sacramento's best mobile DJ & entertainment services. Weddings, corporate events, parties. Book now at MysteriousEnterprise.com" />
         <meta property="og:url" content="https://crypticstore.com/dj-services" />
         <meta property="og:site_name" content="Cryptic Store" />
         
