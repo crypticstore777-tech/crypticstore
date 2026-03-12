@@ -2,12 +2,14 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Sparkles, ArrowRight, Music, Crown, Eye } from "lucide-react";
+import { Sparkles, ArrowRight, Music, Crown, Eye, Disc3, Shirt } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import djHeroImage from "@/assets/dj-services-hero.jpeg";
 import empathsImage from "@/assets/empaths-indigo-hero.jpg";
 import magicHeroImage from "@/assets/youknowwedomagic-hero.jpg";
+import sacDjsImage from "@/assets/blog-sacramento-djs.jpg";
+import sacStreetwearImage from "@/assets/blog-sacramento-streetwear.jpg";
 
 const blogPosts = [
 {
