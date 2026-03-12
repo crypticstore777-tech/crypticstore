@@ -20,6 +20,7 @@ import Terms from "./pages/Terms";
 import RefundPolicy from "./pages/RefundPolicy";
 import Music from "./pages/Music";
 import About from "./pages/About";
+import SyncHub from "./pages/SyncHub";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -48,6 +49,7 @@ const App = () => (
           <Route path="/refund-policy" element={<RefundPolicy />} />
           <Route path="/about" element={<About />} />
           <Route path="/music" element={<Music />} />
+          <Route path="/sync-hub" element={<SyncHub />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
