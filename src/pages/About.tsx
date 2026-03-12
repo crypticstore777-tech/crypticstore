@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { InstagramReels } from "@/components/InstagramReels";
 import { Helmet } from "react-helmet";
 import { Music, Shirt, Sparkles, Mic } from "lucide-react";
 import { MC_MYSTERIOUS_SOCIAL_PROFILES } from "@/lib/seo-constants";
@@ -148,6 +149,9 @@ const About = () => {
           </p>
         </div>
       </section>
+
+      {/* Instagram Reels */}
+      <InstagramReels />
 
       <Footer />
     </div>
