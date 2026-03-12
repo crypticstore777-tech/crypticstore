@@ -68,9 +68,9 @@ const Blog = () => {
   return (
     <>
       <Helmet>
-        <title>The Cryptic Chronicles | Cryptic Store Blog — Magic, Music & Mystery</title>
-        <meta name="description" content="The Cryptic Chronicles — blog posts exploring magic, music, spiritual history, empaths, indigo children, and the mysteries of the unseen world. By MC Myster?ous." />
-        <meta name="keywords" content="Cryptic Store blog, magic and music, Marie Laveau, empaths, indigo children, Robert Johnson, spiritual blog, MC Mysterious" />
+        <title>The Cryptic Chronicles | Sacramento Blog — DJs, Streetwear, Music & Magic</title>
+        <meta name="description" content="The Cryptic Chronicles — Sacramento blog covering best DJs in Sacramento, streetwear boutiques, music, magic & spiritual history by MC Myster?ous." />
+        <meta name="keywords" content="Sacramento blog, Sacramento DJ blog, Sacramento streetwear, Sacramento fashion, Cryptic Store blog, magic and music, Marie Laveau, empaths, MC Mysterious Sacramento" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://crypticstore.lovable.app/blog" />
 

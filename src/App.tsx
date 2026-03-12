@@ -45,6 +45,8 @@ const App = () => (
           <Route path="/blog/crossroads-magic-music" element={<BlogCrossroads />} />
           <Route path="/blog/marie-laveau" element={<BlogMarieLaveau />} />
           <Route path="/blog/empaths-indigo-children" element={<BlogEmpathsIndigo />} />
+          <Route path="/blog/best-djs-sacramento" element={<BlogSacramentoDJs />} />
+          <Route path="/blog/sacramento-streetwear-boutiques" element={<BlogSacStreetwear />} />
           <Route path="/product/:handle" element={<ProductDetail />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/privacy" element={<Privacy />} />
