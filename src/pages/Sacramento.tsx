@@ -9,6 +9,7 @@ import { Music, Shirt, Sparkles, Crown, MapPin, Disc3, Star, ArrowRight } from "
 import heroImg from "@/assets/sacramento-landing-hero.jpg";
 import founderImg from "@/assets/mc-mysterious-founder.jpeg";
 import logoGold from "@/assets/mc-mysterious-logo-gold.jpeg";
+import { MC_MYSTERIOUS_SOCIAL_PROFILES } from "@/lib/seo-constants";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -92,7 +93,7 @@ const Sacramento = () => {
       name: "MC Myster?ous",
       jobTitle: "DJ / Artist / Founder",
     },
-    sameAs: ["https://MysteriousEnterprise.com"],
+    sameAs: MC_MYSTERIOUS_SOCIAL_PROFILES,
     priceRange: "$$",
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",

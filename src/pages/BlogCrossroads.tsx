@@ -6,6 +6,7 @@ import { Music, Sparkles, Flame, Star } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import djHeroImage from "@/assets/dj-services-hero.jpeg";
+import { MC_MYSTERIOUS_SOCIAL_PROFILES } from "@/lib/seo-constants";
 
 const BlogCrossroads = () => {
   const structuredData = {
@@ -19,7 +20,8 @@ const BlogCrossroads = () => {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Cryptic Store"
+      "name": "Cryptic Store",
+      "sameAs": MC_MYSTERIOUS_SOCIAL_PROFILES
     },
     "datePublished": "2025-01-01",
     "keywords": "Robert Johnson, crossroads, blues legend, magic and music, mystical music, shamanic music, MC Mysterious"

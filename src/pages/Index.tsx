@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import crypticStoreHero from "@/assets/cryptic-store-hero.jpg";
 import founderImage from "@/assets/mc-mysterious-founder.jpeg";
+import { MC_MYSTERIOUS_SOCIAL_PROFILES } from "@/lib/seo-constants";
 
 const Index = () => {
   const {
@@ -44,7 +45,7 @@ const Index = () => {
         "@type": "Person",
         "name": "DJ MC Myster?ous"
       },
-      "sameAs": []
+      "sameAs": MC_MYSTERIOUS_SOCIAL_PROFILES
     }, {
       "@type": "Store",
       "@id": "https://crypticstore.com/#store",

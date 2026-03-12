@@ -6,6 +6,7 @@ import { Sparkles, Eye, Star, Heart, Shield, Zap, BookOpen } from "lucide-react"
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/empaths-indigo-hero.jpg";
+import { MC_MYSTERIOUS_SOCIAL_PROFILES } from "@/lib/seo-constants";
 
 const BlogEmpathsIndigo = () => {
   const structuredData = {
@@ -19,7 +20,8 @@ const BlogEmpathsIndigo = () => {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Cryptic Store"
+      "name": "Cryptic Store",
+      "sameAs": MC_MYSTERIOUS_SOCIAL_PROFILES
     },
     "datePublished": "2026-02-26",
     "keywords": "empaths, indigo children, indigo aura, empathic abilities, highly sensitive, spiritual gifts, energy reading, intuition, Nancy Ann Tappe, aura colors"
