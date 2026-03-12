@@ -19,7 +19,7 @@ const About = () => {
       founder: {
         "@type": "Person",
         name: "MC Myster?ous",
-        jobTitle: "Hip Hop DJ / Founder"
+        jobTitle: "Sacramento Hip Hop DJ / Artist / Boutique Owner"
       }
     }
   };

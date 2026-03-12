@@ -62,8 +62,8 @@ const Index = () => {
       "@type": "CollectionPage",
       "@id": "https://crypticstore.com/#homepage",
       "url": "https://crypticstore.com",
-      "name": "Cryptic Store - Online Boutique by Mysterious Enterprise",
-      "description": "Shop Cryptic Store - Online boutique featuring exclusive streetwear collections by MC Myster?ous",
+      "name": "Cryptic Store - Sacramento Boutique | DJ, Music, Artists & Apparel",
+      "description": "Sacramento's premier online boutique. DJ services, music, urban apparel by artist MC Myster?ous. Sacramento Kings inspired streetwear.",
       "isPartOf": {
         "@id": "https://crypticstore.com/#website"
       },
