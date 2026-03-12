@@ -21,6 +21,7 @@ import RefundPolicy from "./pages/RefundPolicy";
 import Music from "./pages/Music";
 import About from "./pages/About";
 import SyncHub from "./pages/SyncHub";
+import Sacramento from "./pages/Sacramento";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -50,6 +51,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/music" element={<Music />} />
           <Route path="/sync-hub" element={<SyncHub />} />
+          <Route path="/sacramento" element={<Sacramento />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
