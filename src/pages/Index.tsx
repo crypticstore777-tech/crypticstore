@@ -3,7 +3,7 @@ import { getProducts } from "@/lib/shopify";
 import { ProductCard } from "@/components/ProductCard";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import { Sparkles, ArrowRight, Zap } from "lucide-react";
+import { Sparkles, ArrowRight, Zap, Eye, Flame, Stars, Music } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -268,6 +268,85 @@ const Index = () => {
             </div>
           </div>
         )}
+      </section>
+
+      {/* Collections Section */}
+      <section className="py-16 bg-card/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-black mb-4 text-foreground">
+              Our <span className="text-primary">Collections</span>
+            </h2>
+            <div className="w-24 h-1 bg-primary mx-auto mb-4 rounded-full shadow-[0_0_10px_hsla(50,100%,50%,0.5)]" />
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Explore everything Cryptic Store has to offer
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* The Collective */}
+            <div className="group relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-background to-primary/5 p-8 hover:border-primary/40 transition-all duration-300 hover:shadow-[0_0_30px_hsla(50,100%,50%,0.15)]">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-500" />
+              <div className="relative z-10">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20">
+                    <Music className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-2xl font-black text-foreground">The Collective</h3>
+                </div>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Music, DJ services, audio engineering & artist promotion — the full entertainment experience by MC Myster?ous.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold border border-primary/20">DJ Services</span>
+                  <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold border border-primary/20">Music</span>
+                  <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold border border-primary/20">Production</span>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <Button asChild size="lg" className="font-bold">
+                    <Link to="/music">
+                      Music
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                  <Button asChild variant="outline" size="lg" className="border-primary/30 hover:bg-primary/10 font-bold">
+                    <Link to="/dj-services">
+                      DJ Services
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </div>
+              </div>
+            </div>
+
+            {/* #YouKnowWeDoMagic */}
+            <div className="group relative overflow-hidden rounded-2xl border border-accent/20 bg-gradient-to-br from-background to-accent/5 p-8 hover:border-accent/40 transition-all duration-300 hover:shadow-[0_0_30px_hsla(260,80%,50%,0.15)]">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-500" />
+              <div className="relative z-10">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center border border-accent/20">
+                    <Eye className="h-6 w-6 text-accent" />
+                  </div>
+                  <h3 className="text-2xl font-black text-foreground">#YouKnowWeDoMagic</h3>
+                </div>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Where sound meets spirit — spiritual accessories, potions, magewear & mystical services.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-bold border border-accent/20">Spiritual</span>
+                  <span className="px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-bold border border-accent/20">Potions</span>
+                  <span className="px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-bold border border-accent/20">Magewear</span>
+                </div>
+                <Button asChild size="lg" className="font-bold">
+                  <Link to="/youknowwedomagic">
+                    Explore the Magic
+                    <Sparkles className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       
       <Footer />
