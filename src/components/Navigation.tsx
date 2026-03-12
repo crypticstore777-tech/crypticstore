@@ -20,6 +20,7 @@ export const Navigation = () => {
     { to: "/music", label: "Music", exact: false },
     { to: "/blog", label: "Blog", exact: false },
     { to: "/about", label: "About", exact: false },
+    { to: "/sacramento", label: "Sacramento", exact: false },
     { to: "/contact", label: "Contact", exact: false },
   ];
 
