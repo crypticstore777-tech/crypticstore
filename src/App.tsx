@@ -14,6 +14,8 @@ import Blog from "./pages/Blog";
 import BlogCrossroads from "./pages/BlogCrossroads";
 import BlogMarieLaveau from "./pages/BlogMarieLaveau";
 import BlogEmpathsIndigo from "./pages/BlogEmpathsIndigo";
+import BlogSacramentoDJs from "./pages/BlogSacramentoDJs";
+import BlogSacStreetwear from "./pages/BlogSacStreetwear";
 import Auth from "./pages/Auth";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
