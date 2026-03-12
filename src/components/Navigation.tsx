@@ -19,6 +19,7 @@ export const Navigation = () => {
     { to: "/dj-services", label: "DJ Services", exact: false },
     { to: "/sync-hub", label: "Sync Hub", exact: false },
     { to: "/sacramento", label: "Sacramento", exact: false },
+    { to: "/youknowwedomagic", label: "#YouKnowWeDoMagic", exact: false },
     { to: "/blog", label: "Blog", exact: false },
     { to: "/about", label: "About", exact: false },
     { to: "/contact", label: "Contact", exact: false },
