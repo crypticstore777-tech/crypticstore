@@ -74,8 +74,8 @@ const Contact = () => {
         <link rel="canonical" href="https://crypticstore.com/contact" />
         
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Contact Cryptic Store & Mysterious Enterprise" />
-        <meta property="og:description" content="Get in touch for orders, DJ services, spiritual consultations, and more." />
+        <meta property="og:title" content="Contact Sacramento DJ & Boutique | Cryptic Store" />
+        <meta property="og:description" content="Contact Sacramento's Cryptic Store for DJ bookings, apparel orders, spiritual consultations & more." />
         <meta property="og:url" content="https://crypticstore.com/contact" />
         
         <script type="application/ld+json">

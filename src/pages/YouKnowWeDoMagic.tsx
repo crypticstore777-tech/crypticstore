@@ -67,8 +67,8 @@ const YouKnowWeDoMagic = () => {
         <link rel="canonical" href="https://crypticstore.lovable.app/youknowwedomagic" />
         
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="#YouKnowWeDoMagic - Dream Dare Drip | Cryptic Store" />
-        <meta property="og:description" content="Dream Dare Drip. Premium DJ, audio engineering & spiritual services by Myster?ous. #Youknowwedomagic" />
+        <meta property="og:title" content="#YouKnowWeDoMagic - Sacramento DJ, Music & Spiritual Services" />
+        <meta property="og:description" content="Sacramento's premier DJ, music & spiritual services by MC Myster?ous. #Youknowwedomagic" />
         <meta property="og:url" content="https://crypticstore.lovable.app/youknowwedomagic" />
         <meta property="og:site_name" content="Cryptic Store" />
         

@@ -18,7 +18,7 @@
   <url>
     <loc>https://crypticstore.lovable.app/dj-services</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://crypticstore.lovable.app/youknowwedomagic</loc>
@@ -28,6 +28,16 @@
   <url>
     <loc>https://crypticstore.lovable.app/music</loc>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://crypticstore.lovable.app/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://crypticstore.lovable.app/sync-hub</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
@@ -39,6 +49,21 @@
     <loc>https://crypticstore.lovable.app/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://crypticstore.lovable.app/blog/crossroads-magic-music</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://crypticstore.lovable.app/blog/marie-laveau</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://crypticstore.lovable.app/blog/empaths-indigo-children</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://crypticstore.lovable.app/privacy</loc>

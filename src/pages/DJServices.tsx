@@ -60,8 +60,8 @@ const DJServices = () => {
         <meta property="og:site_name" content="Cryptic Store" />
         
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="DJ Services by MC Myster?ous" />
-        <meta name="twitter:description" content="Premium mobile DJ & entertainment services. Book your event now!" />
+        <meta name="twitter:title" content="Sacramento DJ Services | MC Myster?ous" />
+        <meta name="twitter:description" content="Sacramento's best mobile DJ & entertainment services. Weddings, parties, corporate events. Book now!" />
         
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
