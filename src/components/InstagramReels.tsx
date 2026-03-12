@@ -1,5 +1,6 @@
-import { useEffect } from "react";
-import { Instagram } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { Instagram, ChevronLeft, ChevronRight } from "lucide-react";
+import { Button } from "./ui/button";
 
 interface ReelEmbed {
   url: string;
@@ -11,8 +12,37 @@ const REELS: ReelEmbed[] = [
 ];
 
 export const InstagramReels = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(false);
+
+  const updateScrollState = () => {
+    const el = scrollRef.current;
+    if (!el) return;
+    setCanScrollLeft(el.scrollLeft > 0);
+    setCanScrollRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 4);
+  };
+
+  const scroll = (direction: "left" | "right") => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const amount = 360;
+    el.scrollBy({ left: direction === "left" ? -amount : amount, behavior: "smooth" });
+  };
+
   useEffect(() => {
-    // Load Facebook SDK for facebook embeds
+    const el = scrollRef.current;
+    if (!el) return;
+    updateScrollState();
+    el.addEventListener("scroll", updateScrollState, { passive: true });
+    window.addEventListener("resize", updateScrollState);
+    return () => {
+      el.removeEventListener("scroll", updateScrollState);
+      window.removeEventListener("resize", updateScrollState);
+    };
+  }, []);
+
+  useEffect(() => {
     const hasFb = REELS.some((r) => r.platform === "facebook");
     if (hasFb) {
       const existing = document.getElementById("facebook-jssdk");
@@ -29,7 +59,6 @@ export const InstagramReels = () => {
       }
     }
 
-    // Load Instagram embed script
     const hasIg = REELS.some((r) => r.platform === "instagram");
     if (hasIg) {
       const existing = document.querySelector('script[src="https://www.instagram.com/embed.js"]');
@@ -42,6 +71,10 @@ export const InstagramReels = () => {
         (window as any).instgrm?.Embeds?.process();
       }
     }
+
+    // Recheck scroll after embeds load
+    const timer = setTimeout(updateScrollState, 2000);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -53,34 +86,68 @@ export const InstagramReels = () => {
         </div>
         <div className="w-24 h-1 bg-primary mx-auto mb-12 rounded-full shadow-[0_0_10px_hsla(50,100%,50%,0.5)]" />
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-          {REELS.map((reel) => (
-            <div key={reel.url} className="w-full max-w-[400px]">
-              {reel.platform === "facebook" ? (
-                <div
-                  className="fb-video"
-                  data-href={reel.url}
-                  data-width="400"
-                  data-show-text="false"
-                  data-allowfullscreen="true"
-                />
-              ) : (
-                <blockquote
-                  className="instagram-media"
-                  data-instgrm-permalink={reel.url}
-                  data-instgrm-version="14"
-                  style={{
-                    background: "transparent",
-                    border: 0,
-                    margin: "0 auto",
-                    maxWidth: "328px",
-                    minWidth: "280px",
-                    width: "100%",
-                  }}
-                />
-              )}
-            </div>
-          ))}
+        {/* Carousel */}
+        <div className="relative group">
+          {/* Left Arrow */}
+          {canScrollLeft && (
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => scroll("left")}
+              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-background/80 backdrop-blur border border-border shadow-lg rounded-full h-10 w-10 opacity-0 group-hover:opacity-100 transition-opacity"
+            >
+              <ChevronLeft className="h-5 w-5" />
+            </Button>
+          )}
+
+          {/* Right Arrow */}
+          {canScrollRight && (
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => scroll("right")}
+              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-background/80 backdrop-blur border border-border shadow-lg rounded-full h-10 w-10 opacity-0 group-hover:opacity-100 transition-opacity"
+            >
+              <ChevronRight className="h-5 w-5" />
+            </Button>
+          )}
+
+          <div
+            ref={scrollRef}
+            className="flex gap-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory pb-4 px-2"
+            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+          >
+            {REELS.map((reel) => (
+              <div
+                key={reel.url}
+                className="flex-shrink-0 w-[340px] snap-center"
+              >
+                {reel.platform === "facebook" ? (
+                  <div
+                    className="fb-video"
+                    data-href={reel.url}
+                    data-width="340"
+                    data-show-text="false"
+                    data-allowfullscreen="true"
+                  />
+                ) : (
+                  <blockquote
+                    className="instagram-media"
+                    data-instgrm-permalink={reel.url}
+                    data-instgrm-version="14"
+                    style={{
+                      background: "transparent",
+                      border: 0,
+                      margin: 0,
+                      maxWidth: "340px",
+                      minWidth: "280px",
+                      width: "100%",
+                    }}
+                  />
+                )}
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="text-center mt-10">
