@@ -32,8 +32,8 @@ const About = () => {
         <meta name="keywords" content="MC Mysterious Sacramento, Sacramento DJ, Sacramento artist, Sacramento boutique owner, Sacramento streetwear designer, Sacramento hip hop, Sacramento Kings, Cryptic Store founder, Sacramento music, Sacramento entertainment, Youknowwedomagic" />
         <link rel="canonical" href="https://crypticstore.com/about" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="About MC Myster?ous & Cryptic Store" />
-        <meta property="og:description" content="Meet MC Myster?ous — Hip Hop DJ, streetwear designer, and founder of Cryptic Store." />
+        <meta property="og:title" content="About MC Myster?ous | Sacramento DJ, Artist & Boutique Owner" />
+        <meta property="og:description" content="Meet MC Myster?ous — Sacramento's own Hip Hop DJ, artist, and founder of Cryptic Store boutique." />
         <meta property="og:url" content="https://crypticstore.com/about" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
