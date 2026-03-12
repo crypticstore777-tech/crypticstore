@@ -99,7 +99,7 @@ const Contact = () => {
             <img
               src={logoDark}
               alt="MC Myster?ous dark hexagon brand mark"
-              className="w-32 h-32 mx-auto rounded-full border-2 border-primary/30 shadow-[0_0_20px_hsla(50,100%,50%,0.3)] object-cover"
+              className="w-44 h-44 mx-auto rounded-full border-2 border-primary/30 shadow-[0_0_20px_hsla(50,100%,50%,0.3)] object-cover"
               loading="lazy"
             />
           </div>
