@@ -12,6 +12,7 @@ const REELS: ReelEmbed[] = [
   { url: "https://www.instagram.com/mc_mysterious/reel/DVsSlyfjlkC/", platform: "instagram" },
   { url: "https://www.instagram.com/mc_mysterious/reel/DVaFr40EedE/", platform: "instagram" },
   { url: "https://www.instagram.com/mc_mysterious/reel/DVVneISkoMz/", platform: "instagram" },
+  { url: "https://www.instagram.com/mc_mysterious/reel/DVP89QZkk45/", platform: "instagram" },
 ];
 
 export const InstagramReels = () => {
