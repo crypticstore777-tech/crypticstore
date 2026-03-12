@@ -91,12 +91,26 @@ const YouKnowWeDoMagic = () => {
               <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl">
                 Myster?ous Services: Where Sound Meets Spirit
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button size="lg" className="text-lg">
                   Book Entertainment Services
                 </Button>
                 <Button size="lg" variant="outline" className="text-lg">
                   Schedule Spiritual Consultation
+                </Button>
+              </div>
+              <div className="flex flex-wrap gap-3 mt-6 justify-center lg:justify-start">
+                <Button variant="secondary" size="lg" className="gap-2">
+                  <Sparkles className="w-5 h-5" />
+                  Spiritual Accessories
+                </Button>
+                <Button variant="secondary" size="lg" className="gap-2">
+                  <Flame className="w-5 h-5" />
+                  Potions Master
+                </Button>
+                <Button variant="secondary" size="lg" className="gap-2">
+                  <Stars className="w-5 h-5" />
+                  Magewear
                 </Button>
               </div>
             </div>
