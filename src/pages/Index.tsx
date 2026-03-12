@@ -69,7 +69,7 @@ const Index = () => {
       },
       "about": {
         "@type": "Thing",
-        "name": "Cryptic Store Streetwear Boutique"
+        "name": "Cryptic Store - Sacramento Streetwear Boutique"
       }
     }, {
       "@type": "BreadcrumbList",
