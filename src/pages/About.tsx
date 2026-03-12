@@ -11,7 +11,7 @@ const About = () => {
     "@context": "https://schema.org",
     "@type": "AboutPage",
     name: "About Cryptic Store & MC Myster?ous",
-    description: "Learn about Cryptic Store, the streetwear brand founded by Hip Hop DJ MC Myster?ous. Where music, fashion, and mysticism converge.",
+    description: "Sacramento boutique founded by Hip Hop DJ & artist MC Myster?ous. Where Sacramento music, fashion, and mysticism converge. Sacramento Kings culture.",
     url: "https://crypticstore.com/about",
     mainEntity: {
       "@type": "Organization",
