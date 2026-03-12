@@ -2,6 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
 import { Music, Shirt, Sparkles, Mic } from "lucide-react";
+import { MC_MYSTERIOUS_SOCIAL_PROFILES } from "@/lib/seo-constants";
 import mcStudio from "@/assets/mc-mysterious-studio.jpeg";
 import moonlitPortrait2 from "@/assets/mc-mysterious-moonlit-2.jpeg";
 import logoBadge from "@/assets/mc-mysterious-logo-badge.jpeg";
