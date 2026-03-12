@@ -52,14 +52,19 @@ const SyncHub = () => {
           aria-hidden="true"
         />
         <div className="absolute inset-0 bg-background/60" />
-        <div className="relative container mx-auto max-w-3xl">
+        <motion.div
+          className="relative container mx-auto max-w-3xl"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+        >
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground drop-shadow-lg">
             Sync Hub
           </h1>
           <p className="text-lg text-muted-foreground max-w-xl mx-auto drop-shadow">
             All of our services in one place — DJ, music, spiritual arts, and more. Find what you need and let's create something extraordinary.
           </p>
-        </div>
+        </motion.div>
       </section>
 
       {/* Service Cards */}
