@@ -7,9 +7,7 @@ interface ReelEmbed {
 }
 
 const REELS: ReelEmbed[] = [
-  { url: "https://www.instagram.com/reel/DKpVeJvSdaT/", caption: "" },
-  { url: "https://www.instagram.com/reel/DKm-P8gSNzO/", caption: "" },
-  { url: "https://www.instagram.com/reel/DKkRBk7yrIb/", caption: "" },
+  { url: "https://www.facebook.com/reel/898925383058637/" },
 ];
 
 export const InstagramReels = () => {
