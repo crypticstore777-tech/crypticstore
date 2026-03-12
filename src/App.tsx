@@ -49,6 +49,7 @@ const App = () => (
           <Route path="/refund-policy" element={<RefundPolicy />} />
           <Route path="/about" element={<About />} />
           <Route path="/music" element={<Music />} />
+          <Route path="/sync-hub" element={<SyncHub />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
