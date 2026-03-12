@@ -43,12 +43,19 @@ const SyncHub = () => {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative py-20 px-4 text-center bg-card border-b border-border">
-        <div className="container mx-auto max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+      <section className="relative py-28 px-4 text-center overflow-hidden border-b border-border">
+        <img
+          src={heroImg}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
+          aria-hidden="true"
+        />
+        <div className="absolute inset-0 bg-background/60" />
+        <div className="relative container mx-auto max-w-3xl">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground drop-shadow-lg">
             Sync Hub
           </h1>
-          <p className="text-lg text-muted-foreground max-w-xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-xl mx-auto drop-shadow">
             All of our services in one place — DJ, music, spiritual arts, and more. Find what you need and let's create something extraordinary.
           </p>
         </div>
