@@ -20,7 +20,8 @@ const BlogMarieLaveau = () => {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Cryptic Store"
+      "name": "Cryptic Store",
+      "sameAs": MC_MYSTERIOUS_SOCIAL_PROFILES
     },
     "datePublished": "2026-02-26",
     "keywords": "Marie Laveau, Voodoo Queen, New Orleans, Louisiana Voodoo, herbalist, healer, gris-gris, Saint Louis Cemetery, French Quarter, Christophe Glapion"

@@ -13,8 +13,8 @@ const BlogSacStreetwear = () => {
     "@type": "BlogPosting",
     headline: "Sacramento Streetwear Boutiques: The Best Urban Fashion in Sac",
     description: "Discover Sacramento's best streetwear boutiques and urban fashion shops. From bold graphic tees to Sacramento Kings–inspired apparel.",
-    author: { "@type": "Person", name: "MC Myster?ous" },
-    publisher: { "@type": "Organization", name: "Cryptic Store" },
+    author: { "@type": "Person", name: "MC Myster?ous", sameAs: MC_MYSTERIOUS_SOCIAL_PROFILES },
+    publisher: { "@type": "Organization", name: "Cryptic Store", sameAs: MC_MYSTERIOUS_SOCIAL_PROFILES },
     datePublished: "2026-03-12",
     keywords: "Sacramento streetwear, Sacramento boutiques, Sacramento fashion, Sacramento apparel, Sacramento Kings fashion, urban fashion Sacramento",
   };

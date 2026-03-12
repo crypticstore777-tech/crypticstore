@@ -19,7 +19,8 @@ const BlogEmpathsIndigo = () => {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Cryptic Store"
+      "name": "Cryptic Store",
+      "sameAs": MC_MYSTERIOUS_SOCIAL_PROFILES
     },
     "datePublished": "2026-02-26",
     "keywords": "empaths, indigo children, indigo aura, empathic abilities, highly sensitive, spiritual gifts, energy reading, intuition, Nancy Ann Tappe, aura colors"

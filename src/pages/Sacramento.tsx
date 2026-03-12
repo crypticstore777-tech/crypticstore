@@ -92,7 +92,7 @@ const Sacramento = () => {
       name: "MC Myster?ous",
       jobTitle: "DJ / Artist / Founder",
     },
-    sameAs: ["https://MysteriousEnterprise.com"],
+    sameAs: MC_MYSTERIOUS_SOCIAL_PROFILES,
     priceRange: "$$",
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",

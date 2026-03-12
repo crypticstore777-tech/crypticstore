@@ -19,7 +19,8 @@ const BlogCrossroads = () => {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Cryptic Store"
+      "name": "Cryptic Store",
+      "sameAs": MC_MYSTERIOUS_SOCIAL_PROFILES
     },
     "datePublished": "2025-01-01",
     "keywords": "Robert Johnson, crossroads, blues legend, magic and music, mystical music, shamanic music, MC Mysterious"

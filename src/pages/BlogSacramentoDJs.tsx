@@ -13,8 +13,8 @@ const BlogSacramentoDJs = () => {
     "@type": "BlogPosting",
     headline: "Best DJs in Sacramento: The Ultimate Guide to Sacramento's DJ Scene",
     description: "Discover the best DJs in Sacramento CA. From weddings and corporate events to clubs and private parties — Sacramento's top mobile DJs and entertainment.",
-    author: { "@type": "Person", name: "MC Myster?ous" },
-    publisher: { "@type": "Organization", name: "Cryptic Store" },
+    author: { "@type": "Person", name: "MC Myster?ous", sameAs: MC_MYSTERIOUS_SOCIAL_PROFILES },
+    publisher: { "@type": "Organization", name: "Cryptic Store", sameAs: MC_MYSTERIOUS_SOCIAL_PROFILES },
     datePublished: "2026-03-10",
     keywords: "best DJs Sacramento, Sacramento DJ, Sacramento wedding DJ, Sacramento mobile DJ, Sacramento party DJ, top DJs Sacramento CA, MC Mysterious",
   };
