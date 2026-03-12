@@ -114,27 +114,25 @@ const Index = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative h-[70vh] min-h-[500px] overflow-hidden">
+      <section className="relative h-screen min-h-[600px] overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-ken-burns" 
           style={{ backgroundImage: `url(${crypticStoreHero})` }} 
           role="img" 
           aria-label="Cryptic Store - Black and gold streetwear boutique by Mysterious Enterprise"
-        >
-          
-        </div>
+        />
         
         <div className="relative h-full container mx-auto px-4 flex flex-col justify-center items-center text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 text-primary mb-6 border border-primary/40 backdrop-blur-sm shadow-[0_0_20px_hsla(50,100%,50%,0.3)]">
-            <Sparkles className="h-4 w-4" />
-            <span className="text-sm font-bold tracking-wide">Welcome</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-transparent text-primary mb-6 border border-primary/60 shadow-[0_0_20px_hsla(50,100%,50%,0.3)]">
+            <Sparkles className="h-4 w-4 drop-shadow-[0_0_6px_rgba(0,0,0,0.8)]" />
+            <span className="text-sm font-bold tracking-wide drop-shadow-[0_1px_4px_rgba(0,0,0,0.9)]">Welcome</span>
           </div>
           
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 text-foreground drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 text-foreground" style={{ textShadow: '0 2px 4px rgba(0,0,0,1), 0 4px 20px rgba(0,0,0,0.8)' }}>
             Crypt?c Store
           </h1>
           
-          <p className="text-2xl md:text-3xl text-primary font-black tracking-widest mb-8 drop-shadow-[0_0_20px_hsla(50,100%,50%,0.4)]">
+          <p className="text-2xl md:text-3xl text-primary font-black tracking-widest mb-8" style={{ textShadow: '0 0 20px hsla(50,100%,50%,0.4), 0 2px 8px rgba(0,0,0,0.9)' }}>
             Dream Dare Drip
           </p>
           
@@ -145,7 +143,7 @@ const Index = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 font-bold bg-background/50 backdrop-blur-sm border-primary/30 hover:bg-primary/10 hover:border-primary/50 transition-all">
+            <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 font-bold border-primary/30 hover:bg-primary/10 hover:border-primary/50 transition-all">
               <Link to="/collections/dare2wear">
                 Dare2Wear
                 <ArrowRight className="ml-2 h-5 w-5" />
