@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Music, Disc3, Sparkles, Mail } from "lucide-react";
+import { motion } from "framer-motion";
 import heroImg from "@/assets/sync-hub-hero.jpg";
 
 const services = [
@@ -64,21 +65,33 @@ const SyncHub = () => {
       {/* Service Cards */}
       <section className="container mx-auto px-4 py-16 flex-1">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service) => (
-            <Card key={service.title} className="group hover:shadow-lg hover:border-primary/40 transition-all duration-300">
-              <CardHeader className="items-center text-center">
-                <div className="mb-3 rounded-full bg-primary/10 p-4 group-hover:bg-primary/20 transition-colors">
-                  <service.icon className="h-8 w-8 text-primary" />
-                </div>
-                <CardTitle className="text-xl">{service.title}</CardTitle>
-                <CardDescription className="mt-2">{service.description}</CardDescription>
-              </CardHeader>
-              <CardContent className="text-center">
-                <Button asChild>
-                  <Link to={service.to}>{service.cta}</Link>
-                </Button>
-              </CardContent>
-            </Card>
+          {services.map((service, i) => (
+            <motion.div
+              key={service.title}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5, delay: i * 0.12, ease: "easeOut" }}
+            >
+              <Card className="group h-full hover:shadow-lg hover:border-primary/40 transition-all duration-300">
+                <CardHeader className="items-center text-center">
+                  <motion.div
+                    className="mb-3 rounded-full bg-primary/10 p-4 group-hover:bg-primary/20 transition-colors"
+                    whileHover={{ scale: 1.1, rotate: 5 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                  >
+                    <service.icon className="h-8 w-8 text-primary" />
+                  </motion.div>
+                  <CardTitle className="text-xl">{service.title}</CardTitle>
+                  <CardDescription className="mt-2">{service.description}</CardDescription>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <Button asChild>
+                    <Link to={service.to}>{service.cta}</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            </motion.div>
           ))}
         </div>
       </section>
