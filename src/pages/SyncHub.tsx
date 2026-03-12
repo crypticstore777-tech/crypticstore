@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Music, Disc3, Sparkles, Mail } from "lucide-react";
+import { motion } from "framer-motion";
 import heroImg from "@/assets/sync-hub-hero.jpg";
 
 const services = [
