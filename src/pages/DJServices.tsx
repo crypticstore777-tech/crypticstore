@@ -21,7 +21,7 @@ const DJServices = () => {
       "@type": "Person",
       "name": "MC Myster?ous"
     },
-    "areaServed": "United States",
+    "areaServed": {"@type": "City", "name": "Sacramento", "containedInPlace": {"@type": "State", "name": "California"}},
     "priceRange": "$$",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
