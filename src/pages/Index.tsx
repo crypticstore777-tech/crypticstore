@@ -86,9 +86,9 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Cryptic Store | Online Boutique by Mysterious Enterprise - Black & Gold Urban Fashion</title>
-        <meta name="description" content="Shop Cryptic Store - Dream Dare Drip. Online boutique by Mysterious Enterprise featuring Dare2Wear, Imitable Lives, and exclusive streetwear collections. Bold black & gold fashion. Free shipping $75+. #Youknowwedomagic" />
-        <meta name="keywords" content="Cryptic Store, online boutique USA, Mysterious Enterprise, streetwear 2025, urban fashion America, black gold streetwear, DJ MC Mysterious, graphic tees, Dare2Wear collection, Imitable Lives collection, trending streetwear, bestselling graphic tees, Egyptian pyramid tee, speed of light shirt, Youknowwedomagic, magic music apparel, premium streetwear brands, hip hop fashion, club culture clothing" />
+        <title>Cryptic Store | Sacramento Boutique - DJ Services, Music, Artists & Urban Apparel</title>
+        <meta name="description" content="Sacramento's premier online boutique & DJ services. Shop Dare2Wear & Imitable Lives streetwear collections by artist DJ MC Myster?ous. Sacramento Kings inspired black & gold apparel. Music, entertainment & spiritual services. Free shipping $75+." />
+        <meta name="keywords" content="Sacramento boutique, Sacramento DJ, Sacramento artists, Sacramento music, Sacramento apparel, Sacramento Kings fashion, Cryptic Store, online boutique Sacramento CA, DJ services Sacramento, hip hop artist Sacramento, urban apparel Sacramento, streetwear Sacramento, DJ MC Mysterious, Dare2Wear collection, Imitable Lives collection, trending streetwear, bestselling graphic tees, black gold streetwear, Sacramento entertainment, Sacramento Kings inspired, Youknowwedomagic" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href="https://crypticstore.com" />
         
