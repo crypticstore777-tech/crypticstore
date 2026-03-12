@@ -27,7 +27,7 @@ const Index = () => {
       "@id": "https://crypticstore.com/#website",
       "url": "https://crypticstore.com",
       "name": "Cryptic Store",
-      "description": "Dream Dare Drip. Online boutique by Mysterious Enterprise featuring exclusive streetwear collections by DJ MC Myster?ous",
+      "description": "Sacramento's premier online boutique featuring exclusive streetwear, DJ services, music & apparel by artist DJ MC Myster?ous. Sacramento Kings inspired black & gold fashion.",
       "potentialAction": {
         "@type": "SearchAction",
         "target": "https://crypticstore.com/search?q={search_term_string}",
