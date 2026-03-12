@@ -8,6 +8,7 @@ import djHeroImage from "@/assets/dj-services-hero.jpeg";
 import weddingDancing from "@/assets/dj-wedding-dancing.jpeg";
 import weddingParty from "@/assets/dj-wedding-party.jpeg";
 import logoGold from "@/assets/mc-mysterious-logo-gold.jpeg";
+import { MC_MYSTERIOUS_SOCIAL_PROFILES } from "@/lib/seo-constants";
 
 const DJServices = () => {
   const structuredData = {

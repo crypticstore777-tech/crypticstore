@@ -6,6 +6,7 @@ import { Shirt, MapPin, Star, Crown, Sparkles, ArrowLeft } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import heroImg from "@/assets/blog-sacramento-streetwear.jpg";
+import { MC_MYSTERIOUS_SOCIAL_PROFILES } from "@/lib/seo-constants";
 
 const BlogSacStreetwear = () => {
   const structuredData = {

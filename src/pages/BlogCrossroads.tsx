@@ -6,6 +6,7 @@ import { Music, Sparkles, Flame, Star } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import djHeroImage from "@/assets/dj-services-hero.jpeg";
+import { MC_MYSTERIOUS_SOCIAL_PROFILES } from "@/lib/seo-constants";
 
 const BlogCrossroads = () => {
   const structuredData = {

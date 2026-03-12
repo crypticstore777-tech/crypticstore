@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/youknowwedomagic-hero.jpg";
 import marieLaveauImage from "@/assets/marie-laveau-portrait.jpg";
+import { MC_MYSTERIOUS_SOCIAL_PROFILES } from "@/lib/seo-constants";
 
 const BlogMarieLaveau = () => {
   const structuredData = {
