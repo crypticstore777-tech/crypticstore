@@ -39,7 +39,7 @@ const Index = () => {
       "name": "Cryptic Store",
       "url": "https://crypticstore.com",
       "logo": "https://crypticstore.com/favicon.jpg",
-      "description": "Online boutique by Mysterious Enterprise featuring Dare2Wear and Imitable Lives collections by DJ MC Myster?ous. #Youknowwedomagic",
+      "description": "Sacramento boutique & entertainment company. DJ services, music, urban apparel by artist MC Myster?ous. Sacramento Kings inspired streetwear. #Youknowwedomagic",
       "founder": {
         "@type": "Person",
         "name": "DJ MC Myster?ous"
