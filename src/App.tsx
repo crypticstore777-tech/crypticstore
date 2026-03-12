@@ -51,6 +51,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/music" element={<Music />} />
           <Route path="/sync-hub" element={<SyncHub />} />
+          <Route path="/sacramento" element={<Sacramento />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
