@@ -105,7 +105,7 @@ const DJServices = () => {
             </Button>
           </div>
 
-          <div className="flex-1 flex justify-center">
+          <div className="flex-1 flex flex-col items-center gap-6">
             <div className="relative w-72 md:w-96 rounded-2xl overflow-hidden shadow-[0_0_40px_hsla(50,100%,50%,0.3)] border-2 border-primary/30">
               <img 
                 src={djHeroImage} 
@@ -114,6 +114,12 @@ const DJServices = () => {
                 loading="eager"
               />
             </div>
+            <img
+              src={logoGold}
+              alt="MC Myster?ous gold hexagon brand badge"
+              className="w-20 h-20 rounded-full border-2 border-primary/30 shadow-[0_0_20px_hsla(50,100%,50%,0.3)] object-cover"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>

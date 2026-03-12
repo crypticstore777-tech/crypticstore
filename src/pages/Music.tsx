@@ -52,6 +52,12 @@ const Music = () => {
               />
             </div>
             <div className="space-y-4">
+              <img
+                src={logoStone}
+                alt="MC Myster?ous runic stone logo"
+                className="w-20 h-20 rounded-full border-2 border-primary/30 shadow-[0_0_20px_hsla(50,100%,50%,0.3)] object-cover"
+                loading="lazy"
+              />
               <h2 className="text-2xl md:text-3xl font-bold text-primary" style={{ fontFamily: "'Orbitron', sans-serif" }}>
                 In the Studio
               </h2>

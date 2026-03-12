@@ -93,9 +93,15 @@ const Contact = () => {
             <h1 className="text-4xl md:text-6xl font-black mb-4 text-foreground">
               Get In Touch
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6">
               Contact Cryptic Store & Mysterious Enterprise for orders, DJ bookings, spiritual consultations, or any questions
             </p>
+            <img
+              src={logoDark}
+              alt="MC Myster?ous dark hexagon brand mark"
+              className="w-20 h-20 mx-auto rounded-full border-2 border-primary/30 shadow-[0_0_20px_hsla(50,100%,50%,0.3)] object-cover"
+              loading="lazy"
+            />
           </div>
         </section>
 

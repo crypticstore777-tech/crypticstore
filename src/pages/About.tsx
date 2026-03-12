@@ -55,6 +55,14 @@ const About = () => {
                   loading="eager"
                 />
               </div>
+              <div className="flex justify-center py-2">
+                <img
+                  src={logoBadge}
+                  alt="MC Myster?ous brand badge logo"
+                  className="w-24 h-24 rounded-full border-2 border-primary/30 shadow-[0_0_20px_hsla(50,100%,50%,0.3)] object-cover"
+                  loading="lazy"
+                />
+              </div>
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-br from-accent/30 to-accent/5 rounded-2xl blur-sm group-hover:blur-md transition-all duration-500" />
                 <img
