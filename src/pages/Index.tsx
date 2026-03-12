@@ -3,7 +3,7 @@ import { getProducts } from "@/lib/shopify";
 import { ProductCard } from "@/components/ProductCard";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import { Sparkles, ArrowRight, Zap } from "lucide-react";
+import { Sparkles, ArrowRight, Zap, Eye, Flame, Stars, Music } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
