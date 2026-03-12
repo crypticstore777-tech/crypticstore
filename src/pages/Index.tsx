@@ -101,8 +101,8 @@ const Index = () => {
         <meta property="og:locale" content="en_US" />
         
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Cryptic Store | Online Boutique by Mysterious Enterprise" />
-        <meta name="twitter:description" content="Dream Dare Drip. Exclusive streetwear collections. Bold fashion for those who refuse to blend in. #Youknowwedomagic" />
+        <meta name="twitter:title" content="Cryptic Store | Sacramento Boutique - DJ, Music & Apparel" />
+        <meta name="twitter:description" content="Sacramento's hottest boutique. Streetwear by artist DJ MC Myster?ous. Sacramento Kings inspired fashion. #Youknowwedomagic" />
         <meta name="twitter:image" content="https://crypticstore.com/dare2wear-collection-hero.jpg" />
         
         <script type="application/ld+json">
