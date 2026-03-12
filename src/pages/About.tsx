@@ -27,9 +27,9 @@ const About = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>About MC Myster?ous & Cryptic Store | Streetwear, Music & Magic</title>
-        <meta name="description" content="Meet MC Myster?ous — Hip Hop DJ, streetwear designer, and founder of Cryptic Store. Where music culture, bold fashion, and mysticism converge. #Youknowwedomagic" />
-        <meta name="keywords" content="MC Mysterious, Cryptic Store founder, hip hop DJ, streetwear designer, urban fashion brand, music culture, Youknowwedomagic" />
+        <title>About MC Myster?ous | Sacramento DJ, Artist & Boutique Owner | Cryptic Store</title>
+        <meta name="description" content="Meet MC Myster?ous — Sacramento's own Hip Hop DJ, artist, streetwear designer & boutique owner. Founder of Cryptic Store. Sacramento Kings culture, music & bold fashion converge. #Youknowwedomagic" />
+        <meta name="keywords" content="MC Mysterious Sacramento, Sacramento DJ, Sacramento artist, Sacramento boutique owner, Sacramento streetwear designer, Sacramento hip hop, Sacramento Kings, Cryptic Store founder, Sacramento music, Sacramento entertainment, Youknowwedomagic" />
         <link rel="canonical" href="https://crypticstore.com/about" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="About MC Myster?ous & Cryptic Store" />
