@@ -3,27 +3,44 @@ import { Instagram } from "lucide-react";
 
 interface ReelEmbed {
   url: string;
-  caption?: string;
+  platform: "instagram" | "facebook";
 }
 
 const REELS: ReelEmbed[] = [
-  { url: "https://www.instagram.com/reel/DKpVeJvSdaT/", caption: "" },
-  { url: "https://www.instagram.com/reel/DKm-P8gSNzO/", caption: "" },
-  { url: "https://www.instagram.com/reel/DKkRBk7yrIb/", caption: "" },
+  { url: "https://www.facebook.com/reel/898925383058637/", platform: "facebook" },
 ];
 
 export const InstagramReels = () => {
   useEffect(() => {
+    // Load Facebook SDK for facebook embeds
+    const hasFb = REELS.some((r) => r.platform === "facebook");
+    if (hasFb) {
+      const existing = document.getElementById("facebook-jssdk");
+      if (!existing) {
+        const script = document.createElement("script");
+        script.id = "facebook-jssdk";
+        script.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0";
+        script.async = true;
+        script.defer = true;
+        script.crossOrigin = "anonymous";
+        document.body.appendChild(script);
+      } else {
+        (window as any).FB?.XFBML?.parse();
+      }
+    }
+
     // Load Instagram embed script
-    const existing = document.querySelector('script[src="https://www.instagram.com/embed.js"]');
-    if (!existing) {
-      const script = document.createElement("script");
-      script.src = "https://www.instagram.com/embed.js";
-      script.async = true;
-      document.body.appendChild(script);
-    } else {
-      // Re-process embeds if script already loaded
-      (window as any).instgrm?.Embeds?.process();
+    const hasIg = REELS.some((r) => r.platform === "instagram");
+    if (hasIg) {
+      const existing = document.querySelector('script[src="https://www.instagram.com/embed.js"]');
+      if (!existing) {
+        const script = document.createElement("script");
+        script.src = "https://www.instagram.com/embed.js";
+        script.async = true;
+        document.body.appendChild(script);
+      } else {
+        (window as any).instgrm?.Embeds?.process();
+      }
     }
   }, []);
 
@@ -38,20 +55,30 @@ export const InstagramReels = () => {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
           {REELS.map((reel) => (
-            <div key={reel.url} className="w-full max-w-[328px]">
-              <blockquote
-                className="instagram-media"
-                data-instgrm-permalink={reel.url}
-                data-instgrm-version="14"
-                style={{
-                  background: "transparent",
-                  border: 0,
-                  margin: "0 auto",
-                  maxWidth: "328px",
-                  minWidth: "280px",
-                  width: "100%",
-                }}
-              />
+            <div key={reel.url} className="w-full max-w-[400px]">
+              {reel.platform === "facebook" ? (
+                <div
+                  className="fb-video"
+                  data-href={reel.url}
+                  data-width="400"
+                  data-show-text="false"
+                  data-allowfullscreen="true"
+                />
+              ) : (
+                <blockquote
+                  className="instagram-media"
+                  data-instgrm-permalink={reel.url}
+                  data-instgrm-version="14"
+                  style={{
+                    background: "transparent",
+                    border: 0,
+                    margin: "0 auto",
+                    maxWidth: "328px",
+                    minWidth: "280px",
+                    width: "100%",
+                  }}
+                />
+              )}
             </div>
           ))}
         </div>
