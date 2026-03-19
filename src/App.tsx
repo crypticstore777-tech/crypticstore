@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -28,11 +29,35 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+const GlobalChatWidget = () => {
+  useEffect(() => {
+    const existingScript = document.querySelector(
+      'script[src="https://ionos.ai-voice-receptionist.com/chat-scripts-MqGN74WP/web-chat.js"]'
+    );
+
+    if (existingScript) return;
+
+    const script = document.createElement("script");
+    script.src = "https://ionos.ai-voice-receptionist.com/chat-scripts-MqGN74WP/web-chat.js";
+    script.setAttribute("name", "web-chat");
+    script.setAttribute("data-client-secret", "f7f68694-8fc1-4888-8d73-5ea471c6f676");
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      script.remove();
+    };
+  }, []);
+
+  return null;
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <GlobalChatWidget />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
