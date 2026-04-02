@@ -256,7 +256,19 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      get_my_platform_connections: {
+        Args: never
+        Returns: {
+          created_at: string
+          id: string
+          is_connected: boolean
+          last_sync_at: string
+          platform: string
+          sync_enabled: boolean
+          updated_at: string
+          user_id: string
+        }[]
+      }
     }
     Enums: {
       [_ in never]: never
