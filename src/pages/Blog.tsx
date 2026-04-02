@@ -14,6 +14,16 @@ import ariesImage from "@/assets/blog-aries-zodiac.jpg";
 
 const blogPosts = [
 {
+  title: "Aries: The Cosmic Ram — Deep Secrets & March vs April Differences",
+  description: "The ultimate Aries deep dive. Rare cosmic facts, ancient mythology, decan breakdowns, and the powerful differences between March Aries and April Aries.",
+  path: "/blog/aries-zodiac",
+  image: ariesImage,
+  icon: Flame,
+  date: "April 2026",
+  color: "primary",
+  glow: "hsla(0,80%,50%,0.3)"
+},
+{
   title: "Best DJs in Sacramento: The Ultimate Guide",
   description: "Discover the best DJs in Sacramento CA for weddings, parties, corporate events & Sacramento Kings watch parties. Your complete guide to Sacramento's DJ scene.",
   path: "/blog/best-djs-sacramento",
