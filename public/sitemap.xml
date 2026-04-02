@@ -9,6 +9,7 @@
     <loc>https://crypticstore.lovable.app/sacramento</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
   <url>
     <loc>https://crypticstore.lovable.app/collections/dare2wear</loc>
     <changefreq>weekly</changefreq>
@@ -78,6 +79,11 @@
     <loc>https://crypticstore.lovable.app/blog/sacramento-streetwear-boutiques</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://crypticstore.lovable.app/blog/aries-zodiac</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://crypticstore.lovable.app/privacy</loc>
