@@ -1,9 +1,9 @@
 import { toast } from "sonner";
 
 const SHOPIFY_API_VERSION = '2025-07';
-const SHOPIFY_STORE_PERMANENT_DOMAIN = import.meta.env.VITE_SHOPIFY_STORE_DOMAIN || 'brandnew-sparkle-shop-h0set.myshopify.com';
+const SHOPIFY_STORE_PERMANENT_DOMAIN = 'crypticstore-xdtl2.myshopify.com';
 const SHOPIFY_STOREFRONT_URL = `https://${SHOPIFY_STORE_PERMANENT_DOMAIN}/api/${SHOPIFY_API_VERSION}/graphql.json`;
-const SHOPIFY_STOREFRONT_TOKEN = import.meta.env.VITE_SHOPIFY_STOREFRONT_TOKEN || '';
+const SHOPIFY_STOREFRONT_TOKEN = '91b475d461595bc7e9e9ff84aadcdb18';
 
 export interface ShopifyProduct {
   node: {
