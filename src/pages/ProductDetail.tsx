@@ -91,19 +91,17 @@ const ProductDetail = () => {
     }
   };
 
-  const handleAddToCart = () => {
+  const handleAddToCart = async () => {
     if (!selectedVariant) return;
 
-    const cartItem = {
+    await addItem({
       product: { node: product },
       variantId: selectedVariant.id,
       variantTitle: selectedVariant.title,
       price: selectedVariant.price,
       quantity: 1,
       selectedOptions: selectedVariant.selectedOptions || []
-    };
-    
-    addItem(cartItem);
+    });
     toast.success("Added to cart", {
       description: `${product.title} has been added to your cart.`,
     });
