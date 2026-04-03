@@ -1,5 +1,5 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
-import { Resend } from "npm:resend@4.0.0";
+import { Resend } from "npm:resend@^4.0.0";
 
 const NOTIFICATION_EMAIL = "DJ@mysteriousenterprise.com";
 
