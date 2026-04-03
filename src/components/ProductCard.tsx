@@ -18,7 +18,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
   const firstImage = node.images.edges[0]?.node;
   const price = node.priceRange.minVariantPrice;
 
-  const handleAddToCart = (e: React.MouseEvent) => {
+  const handleAddToCart = async (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
     
@@ -27,16 +27,14 @@ export const ProductCard = ({ product }: ProductCardProps) => {
       return;
     }
 
-    const cartItem = {
+    await addItem({
       product,
       variantId: firstVariant.id,
       variantTitle: firstVariant.title,
       price: firstVariant.price,
       quantity: 1,
       selectedOptions: firstVariant.selectedOptions || []
-    };
-    
-    addItem(cartItem);
+    });
     toast.success("Added to cart", {
       description: `${node.title} has been added to your cart.`,
     });
