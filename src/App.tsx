@@ -54,7 +54,9 @@ const GlobalChatWidget = () => {
   return null;
 };
 
-const App = () => (
+const App = () => {
+  useCartSync();
+  return (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
