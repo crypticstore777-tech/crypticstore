@@ -1,28 +1,26 @@
 
 
-## Plan: Combine Two Images into New Homepage Hero
+## Plan: Fix Dare2Wear Collection & Add DJ Promo Link
 
-### What
-Use AI image editing to combine the CS logo/favicon with the meandcleo editorial photo into a single cinematic hero image for the homepage background. The CS branding will be subtly integrated into the streetwear editorial shot.
+### Problem
+1. **Dare2Wear page shows no products** -- The filter checks product titles for "dare"/"toxic"/"dare2wear", but the "Aries Boxer Briefs" product has "Dare2Wear" as a Shopify **tag**, not in its title. The filter never matches.
+2. **No link to DJ promo video landing page** (mcmysterious.lovable.app) anywhere on the site.
 
-### How
+### Changes
 
-1. **Generate combined image** using AI image generation (google/gemini-3-pro-image-preview)
-   - Use the meandcleo photo as the base editorial image
-   - Prompt the AI to composite the gold "CS" logo into the scene — as a subtle overlay, watermark-style element, or integrated into the dark background area
-   - Ensure the result is wide/landscape format suitable for a full-viewport hero background
-   - Output to `src/assets/cryptic-store-hero.jpg`
+**1. Fix Dare2Wear product filtering** (`src/pages/Dare2Wear.tsx`)
+- Switch from fetching all products and client-side title filtering to using the Shopify Storefront API `query` parameter: `tag:Dare2Wear`
+- This uses `getProducts(50, "tag:Dare2Wear")` which is already supported by the existing `getProducts` function
+- Remove the client-side `.filter()` call -- the API handles it server-side
+- This ensures any product tagged "Dare2Wear" in Shopify automatically appears
 
-2. **No code changes needed** — `Index.tsx` already imports `cryptic-store-hero.jpg` for the Ken Burns hero section
-
-### Technical Details
-- Use the AI gateway script (`lovable_ai.py`) with `--edit-image` to blend the CS logo into the editorial photo
-- Target a wide cinematic aspect ratio for hero usage
-- Maintain the dark, moody black-and-gold aesthetic
-- No watermarks allowed per brand constraints
+**2. Add DJ Promo Video link** (`src/components/Navigation.tsx`, `src/pages/DJServices.tsx`)
+- Add external link to `https://mcmysterious.lovable.app` on the DJ Services page as a prominent CTA button ("Watch DJ Promo Video")
+- Optionally add it to the Navigation as well under DJ Services or as a standalone link
 
 ### Files Changed
 | File | Change |
 |------|--------|
-| `src/assets/cryptic-store-hero.jpg` | Overwrite with combined image |
+| `src/pages/Dare2Wear.tsx` | Use `getProducts(50, "tag:Dare2Wear")` instead of fetching all + client-side filter |
+| `src/pages/DJServices.tsx` | Add external link/CTA to mcmysterious.lovable.app |
 
