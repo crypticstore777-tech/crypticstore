@@ -10,7 +10,7 @@ import dare2wearHero from "@/assets/dare2wear-collection-hero.jpg";
 const Dare2Wear = () => {
   const { data: dare2wearProducts, isLoading } = useQuery({
     queryKey: ['products', 'dare2wear'],
-    queryFn: () => getProducts(50, "tag:Dare2Wear"),
+    queryFn: () => getProducts(50),
   });
 
   // Structured data for collection page
