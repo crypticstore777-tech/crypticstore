@@ -151,32 +151,48 @@ const ProductDetail = () => {
     ? `${product.description.slice(0, 140)}... Shop now at Cryptic Store. Premium streetwear USA. #Youknowwedomagic`
     : `Shop ${product.title} at Cryptic Store. Premium streetwear by DJ MC Myster?ous. Free shipping over $75 USA. #Youknowwedomagic`;
 
+  const pageTitle = `${product.title} | Cryptic Store - Dare2Wear Streetwear Sacramento`;
+
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>{product.title} | Cryptic Store - Premium Streetwear USA</title>
+        <title>{pageTitle}</title>
         <meta name="description" content={metaDescription} />
-        <meta name="keywords" content={`${product.title}, streetwear USA, urban fashion 2025, Cryptic Store, Dare2Wear, Imitable Lives, graphic tee America, DJ MC Mysterious, trending fashion, bestselling streetwear, Youknowwedomagic, premium apparel`} />
-        <link rel="canonical" href={`https://crypticstore.com/product/${handle}`} />
+        <meta name="keywords" content={`${product.title}, Dare2Wear, streetwear USA, Sacramento streetwear, urban fashion 2025, Cryptic Store, graphic tee America, DJ MC Mysterious, trending fashion, bestselling streetwear, Youknowwedomagic, premium apparel, Sacramento boutique`} />
+        <link rel="canonical" href={`https://crypticstore.lovable.app/product/${handle}`} />
         
         {/* Open Graph */}
         <meta property="og:type" content="product" />
-        <meta property="og:title" content={`${product.title} | Cryptic Store`} />
+        <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={metaDescription} />
-        <meta property="og:url" content={`https://crypticstore.com/product/${handle}`} />
+        <meta property="og:url" content={`https://crypticstore.lovable.app/product/${handle}`} />
+        <meta property="og:site_name" content="Cryptic Store" />
         {firstImage && <meta property="og:image" content={firstImage.url} />}
+        {firstImage && <meta property="og:image:width" content="2000" />}
+        {firstImage && <meta property="og:image:height" content="2000" />}
         <meta property="product:price:amount" content={price.toFixed(2)} />
         <meta property="product:price:currency" content={currencyCode} />
+        <meta property="product:availability" content={selectedVariant?.availableForSale ? "in stock" : "out of stock"} />
+        <meta property="product:brand" content="Cryptic Store" />
+        <meta property="product:condition" content="new" />
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${product.title} | Cryptic Store`} />
+        <meta name="twitter:site" content="@MCMysterious" />
+        <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={metaDescription} />
         {firstImage && <meta name="twitter:image" content={firstImage.url} />}
+        <meta name="twitter:label1" content="Price" />
+        <meta name="twitter:data1" content={`$${price.toFixed(2)} ${currencyCode}`} />
+        <meta name="twitter:label2" content="Availability" />
+        <meta name="twitter:data2" content={selectedVariant?.availableForSale ? "In Stock" : "Out of Stock"} />
         
         {/* Structured Data */}
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbData)}
         </script>
       </Helmet>
 
