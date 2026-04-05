@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Helmet } from "react-helmet";
-import { Music, Mic2, PartyPopper, Volume2, Lightbulb, Calendar, ExternalLink } from "lucide-react";
+import { Music, Mic2, PartyPopper, Volume2, Lightbulb, Calendar, ExternalLink, Play } from "lucide-react";
 import djHeroImage from "@/assets/dj-services-hero.jpeg";
 import weddingDancing from "@/assets/dj-wedding-dancing.jpeg";
 import weddingParty from "@/assets/dj-wedding-party.jpeg";
@@ -94,16 +94,29 @@ const DJServices = () => {
               Premium mobile DJ & entertainment services for unforgettable events
             </p>
             
-            <Button 
-              asChild 
-              size="lg" 
-              className="text-lg px-10 py-7 font-bold shadow-[0_0_30px_hsla(50,100%,50%,0.4)] hover:shadow-[0_0_40px_hsla(50,100%,50%,0.6)] transition-all"
-            >
-              <a href="https://MysteriousEnterprise.com" target="_blank" rel="noopener noreferrer">
-                Book Now at MysteriousEnterprise.com
-                <ExternalLink className="ml-2 h-5 w-5" />
-              </a>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button 
+                asChild 
+                size="lg" 
+                className="text-lg px-10 py-7 font-bold shadow-[0_0_30px_hsla(50,100%,50%,0.4)] hover:shadow-[0_0_40px_hsla(50,100%,50%,0.6)] transition-all"
+              >
+                <a href="https://MysteriousEnterprise.com" target="_blank" rel="noopener noreferrer">
+                  Book Now at MysteriousEnterprise.com
+                  <ExternalLink className="ml-2 h-5 w-5" />
+                </a>
+              </Button>
+              <Button 
+                asChild 
+                size="lg" 
+                variant="outline"
+                className="text-lg px-10 py-7 font-bold border-primary/50 hover:bg-primary/10 transition-all"
+              >
+                <a href="https://mcmysterious.lovable.app" target="_blank" rel="noopener noreferrer">
+                  <Play className="mr-2 h-5 w-5" />
+                  Watch DJ Promo Video
+                </a>
+              </Button>
+            </div>
           </div>
 
           <div className="flex-1 flex flex-col items-center gap-6">

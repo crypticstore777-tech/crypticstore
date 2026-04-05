@@ -8,17 +8,9 @@ import { Helmet } from "react-helmet";
 import dare2wearHero from "@/assets/dare2wear-collection-hero.jpg";
 
 const Dare2Wear = () => {
-  const { data: allProducts, isLoading } = useQuery({
-    queryKey: ['products'],
-    queryFn: () => getProducts(50),
-  });
-
-  // Filter products that contain "Dare2Wear" or "Politely Toxic" in title
-  const dare2wearProducts = allProducts?.filter(product => {
-    const title = product.node.title.toLowerCase();
-    return title.includes('dare') || 
-           title.includes('toxic') || 
-           title.includes('dare2wear');
+  const { data: dare2wearProducts, isLoading } = useQuery({
+    queryKey: ['products', 'dare2wear'],
+    queryFn: () => getProducts(50, "tag:Dare2Wear"),
   });
 
   // Structured data for collection page
