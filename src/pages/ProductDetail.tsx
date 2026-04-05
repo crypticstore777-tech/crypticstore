@@ -65,30 +65,69 @@ const ProductDetail = () => {
   const price = parseFloat(selectedVariant?.price.amount || '0');
   const currencyCode = selectedVariant?.price.currencyCode || 'USD';
 
-  // Generate structured data for SEO
+  // Generate rich structured data for SEO
+  const allImages = product.images.edges.map((img: any) => img.node.url);
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Product",
     name: product.title,
     description: product.description,
-    image: firstImage?.url,
+    image: allImages,
+    sku: product.variants?.edges?.[0]?.node?.id?.split('/').pop() || '',
     brand: {
       "@type": "Brand",
       name: "Cryptic Store"
     },
+    category: "Apparel & Accessories > Clothing",
     offers: {
       "@type": "Offer",
-      url: `https://crypticstore.com/product/${handle}`,
+      url: `https://crypticstore.lovable.app/product/${handle}`,
       priceCurrency: currencyCode,
       price: price.toFixed(2),
       availability: selectedVariant?.availableForSale 
         ? "https://schema.org/InStock" 
         : "https://schema.org/OutOfStock",
+      itemCondition: "https://schema.org/NewCondition",
+      shippingDetails: {
+        "@type": "OfferShippingDetails",
+        shippingRate: {
+          "@type": "MonetaryAmount",
+          value: "0",
+          currency: "USD"
+        },
+        shippingDestination: {
+          "@type": "DefinedRegion",
+          addressCountry: "US"
+        },
+        deliveryTime: {
+          "@type": "ShippingDeliveryTime",
+          handlingTime: { "@type": "QuantitativeValue", minValue: 1, maxValue: 3, unitCode: "DAY" },
+          transitTime: { "@type": "QuantitativeValue", minValue: 3, maxValue: 7, unitCode: "DAY" }
+        }
+      },
       seller: {
         "@type": "Organization",
-        name: "Cryptic Store"
+        name: "Cryptic Store",
+        url: "https://crypticstore.lovable.app"
       }
-    }
+    },
+    aggregateRating: undefined,
+    additionalProperty: product.options?.map((opt: any) => ({
+      "@type": "PropertyValue",
+      name: opt.name,
+      value: opt.values.join(", ")
+    }))
+  };
+
+  // Breadcrumb structured data
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://crypticstore.lovable.app/" },
+      { "@type": "ListItem", position: 2, name: "Dare2Wear", item: "https://crypticstore.lovable.app/collections/dare2wear" },
+      { "@type": "ListItem", position: 3, name: product.title, item: `https://crypticstore.lovable.app/product/${handle}` }
+    ]
   };
 
   const handleAddToCart = async () => {
