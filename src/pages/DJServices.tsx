@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Helmet } from "react-helmet";
-import { Music, Mic2, PartyPopper, Volume2, Lightbulb, Calendar, ExternalLink } from "lucide-react";
+import { Music, Mic2, PartyPopper, Volume2, Lightbulb, Calendar, ExternalLink, Play } from "lucide-react";
 import djHeroImage from "@/assets/dj-services-hero.jpeg";
 import weddingDancing from "@/assets/dj-wedding-dancing.jpeg";
 import weddingParty from "@/assets/dj-wedding-party.jpeg";
