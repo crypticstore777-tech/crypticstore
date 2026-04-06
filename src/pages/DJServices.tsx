@@ -100,8 +100,8 @@ const DJServices = () => {
                 size="lg" 
                 className="text-lg px-10 py-7 font-bold shadow-[0_0_30px_hsla(50,100%,50%,0.4)] hover:shadow-[0_0_40px_hsla(50,100%,50%,0.6)] transition-all"
               >
-                <a href="https://MysteriousEnterprise.com" target="_blank" rel="noopener noreferrer">
-                  Book Now at MysteriousEnterprise.com
+                <a href="https://mysteriousdj.com" target="_blank" rel="noopener noreferrer">
+                  Book Now
                   <ExternalLink className="ml-2 h-5 w-5" />
                 </a>
               </Button>
@@ -204,8 +204,8 @@ const DJServices = () => {
             size="lg" 
             className="text-lg px-10 py-7 font-bold shadow-[0_0_30px_hsla(50,100%,50%,0.4)] hover:shadow-[0_0_40px_hsla(50,100%,50%,0.6)] transition-all"
           >
-            <a href="https://MysteriousEnterprise.com" target="_blank" rel="noopener noreferrer">
-              Visit MysteriousEnterprise.com
+            <a href="https://mysteriousdj.com" target="_blank" rel="noopener noreferrer">
+              Visit MysteriousDJ.com
               <ExternalLink className="ml-2 h-5 w-5" />
             </a>
           </Button>
