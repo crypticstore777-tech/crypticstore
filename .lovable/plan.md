@@ -1,24 +1,30 @@
 
 
-## Plan: Cryptic Shadow Journal Cover Design
+## Plan: Shadow Journal Front & Back Covers — Mystical Ancient Redesign
 
 ### What We're Building
-A bold, marketable journal cover image for the "Cryptic Shadow Journal" using the Cryptic Store brand palette (black, white, bold bright yellow). The design will be generated as a high-resolution PNG file.
+Two high-resolution cover images with an upgraded mystical/ancient aesthetic:
+1. **Front cover** — "Shadow Journal" as the title text, mystical ancient styling
+2. **Back cover** — "Cryptic Store" branding, matching aesthetic
 
-### Design Approach
-- **Style**: Dark, mysterious aesthetic with geometric shadow patterns and cryptic symbols (question marks echoing the MC Myster?ous branding)
-- **Color Palette**: Deep black base, crisp white accents, bold bright yellow (#FFD700) as the hero color
-- **Typography**: "Cryptic Shadow Journal" rendered with striking, design-forward fonts — mixing thin elegant type with bold display lettering
-- **Visual Elements**: Abstract shadow forms, geometric patterns, subtle "?" motifs woven into the composition, glow effects in yellow against dark backgrounds
-- **Composition**: Portrait orientation (6x9 ratio, standard journal size), museum-quality finish
+### Design Direction
+Evolve the current "Obsidian Cipher" aesthetic into something more **ancient and mystical** while keeping the black/white/yellow palette:
+- Ancient symbols, alchemical circles, sacred geometry (pentagrams, metatron's cube outlines)
+- Weathered/textured black background suggesting aged parchment or stone
+- Gold (#FFD700) used as ancient gilding — thin ornamental borders, mystical sigils
+- Serif or uncial-inspired typography for an ancient manuscript feel
+- Subtle "?" woven into mystical symbol patterns
+- Front: "SHADOW JOURNAL" as the hero text with ornamental framing
+- Back: "CRYPTIC STORE" centered with brand sigil and minimal mystical ornamentation
 
 ### Process
-1. Create a design philosophy document capturing the aesthetic direction
-2. Generate the cover using the canvas-design skill with custom fonts
-3. QA the output for text clarity, color balance, and print-readiness
-4. Deliver as a downloadable PNG to `/mnt/documents/`
+1. Update design philosophy to reflect mystical/ancient direction
+2. Generate front cover (`shadow-journal-front-v2.png`) at 1800x2700
+3. Generate back cover (`shadow-journal-back.png`) at 1800x2700
+4. QA both images for text clarity, overlap, and visual quality
 
 ### Output
-- `cryptic-shadow-journal-cover.png` — High-resolution journal cover image
-- Design philosophy reference document
+- `shadow-journal-front-v2.png`
+- `shadow-journal-back.png`
+- Updated design philosophy document
 
