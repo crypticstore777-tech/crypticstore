@@ -41,7 +41,9 @@ export const INCERUNMEN_PRODUCTS: Record<string, PartnerProduct> = {
     colors: ["Black", "White", "Gray"],
     sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
     images: [
-      "https://www.incerunmen.com/cdn/shop/files/21353804-75f3-4c94-aa48-567f81b8aa5b.jpg?v=1721992161&width=800",
+      "https://www.incerunmen.com/cdn/shop/products/rB9kfWBv9_-AOFawAANuPOispWM535.jpg?v=1617953419&width=800",
+      "https://www.incerunmen.com/cdn/shop/products/rB9kfV_HM1-AVCx3AAZgfILwqWQ695.jpg?v=1617953429&width=800",
+      "https://www.incerunmen.com/cdn/shop/products/rB9kfV_HM2CAHqc6AAY1R_BU9xc552.jpg?v=1617953438&width=800",
     ],
     affiliateUrl:
       "https://www.incerunmen.com/products/mens-stand-up-collar-long-sleeved-robes-skug63065?ref=qxkdxevy&utm_source=goaffpro&utm_medium=kocaff",
