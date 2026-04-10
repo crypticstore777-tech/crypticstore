@@ -5,7 +5,12 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Helmet } from "react-helmet";
-import { Crown, Sparkles } from "lucide-react";
+import { Crown, Sparkles, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { INCERUNMEN_PRODUCTS } from "@/lib/partner-products";
 import imitableClubHero from "@/assets/imitable-club-hero.jpg";
 
 const ImitableLives = () => {
@@ -209,6 +214,38 @@ const ImitableLives = () => {
             </div>
           </div>
         )}
+
+        {/* Partner Products Section */}
+        <section className="mt-16">
+          <header className="mb-8 text-center">
+            <h2 className="text-2xl font-bold mb-2">Partner Picks</h2>
+            <p className="text-muted-foreground text-sm">Curated pieces that complement the Imitable Lives aesthetic</p>
+          </header>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            {(() => {
+              const robe = INCERUNMEN_PRODUCTS["incerunmen-stand-collar-robe"];
+              return (
+                <Link to="/partner/incerunmen-stand-collar-robe">
+                  <Card className="overflow-hidden hover:shadow-lg transition-all duration-300 h-full group">
+                    <div className="aspect-square overflow-hidden bg-secondary/20 relative">
+                      <img src={robe.images[0]} alt={robe.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                      <Badge className="absolute top-2 left-2 bg-primary text-primary-foreground text-xs">Partner</Badge>
+                    </div>
+                    <CardContent className="p-4">
+                      <h3 className="font-semibold text-lg mb-2 line-clamp-2">{robe.title}</h3>
+                      <div className="flex items-center justify-between gap-2 mt-4">
+                        <p className="text-2xl font-bold">${robe.price.toFixed(2)}</p>
+                        <Button size="sm" variant="outline" className="shrink-0">
+                          <ExternalLink className="h-4 w-4 mr-1" /> Shop
+                        </Button>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </Link>
+              );
+            })()}
+          </div>
+        </section>
       </main>
       
       <Footer />
