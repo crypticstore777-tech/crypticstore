@@ -27,6 +27,7 @@ import Music from "./pages/Music";
 import About from "./pages/About";
 import SyncHub from "./pages/SyncHub";
 import Sacramento from "./pages/Sacramento";
+import IncerunmenProduct from "./pages/IncerunmenProduct";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -86,6 +87,7 @@ const App = () => {
           <Route path="/music" element={<Music />} />
           <Route path="/sync-hub" element={<SyncHub />} />
           <Route path="/sacramento" element={<Sacramento />} />
+          <Route path="/partner/incerunmen-drape-tank" element={<IncerunmenProduct />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
