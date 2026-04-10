@@ -27,6 +27,7 @@ import Music from "./pages/Music";
 import About from "./pages/About";
 import SyncHub from "./pages/SyncHub";
 import Sacramento from "./pages/Sacramento";
+import IncerunmenProduct from "./pages/IncerunmenProduct";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
