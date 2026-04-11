@@ -51,4 +51,24 @@ export const INCERUNMEN_PRODUCTS: Record<string, PartnerProduct> = {
     promoCode: "NEW10",
     promoText: "10% off your first order",
   },
+  },
+  "incerunmen-draped-neck-tee": {
+    title: "Mens Solid Color Draped Neck Half Sleeve T-Shirt",
+    price: 28.64,
+    currency: "USD",
+    description:
+      "A sleek solid color draped neck half sleeve t-shirt for men. Features an elegant draped neckline and relaxed half-sleeve cut for a modern, fashion-forward look. Lightweight and comfortable for everyday wear or layered styling.",
+    colors: ["Black", "White", "Khaki"],
+    sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+    images: [
+      "https://www.incerunmen.com/cdn/shop/files/039c2742-f47c-492a-832f-1d16b0401a0f.jpg?v=1774947657&width=800",
+      "https://www.incerunmen.com/cdn/shop/files/7f2b4cc2-7ea2-4a49-a6f9-ef9bd59ffbeb.jpg?v=1774947668&width=800",
+      "https://www.incerunmen.com/cdn/shop/files/04b2fe97-7479-4757-b061-e828069ff5f2.jpg?v=1774947678&width=800",
+    ],
+    affiliateUrl:
+      "https://www.incerunmen.com/products/mens-solid-color-draped-neck-half-sleeve-t-shirt-skul57779?ref=qxkdxevy&utm_source=goaffpro&utm_medium=kocaff",
+    brand: "INCERUNMEN",
+    promoCode: "NEW10",
+    promoText: "10% off your first order",
+  },
 };
