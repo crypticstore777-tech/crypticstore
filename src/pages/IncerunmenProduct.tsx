@@ -33,9 +33,65 @@ const IncerunmenProduct = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>{product.title} | Cryptic Store</title>
-        <meta name="description" content={product.description} />
+        <title>{`${product.title} | Cryptic Store - Partner Streetwear`}</title>
+        <meta name="description" content={`${product.description} Shop at Cryptic Store. Use code ${product.promoCode || ''} for ${product.promoText || 'a discount'}. Free from ${product.brand}. #Youknowwedomagic`} />
+        <meta name="keywords" content={`${product.title}, ${product.brand}, streetwear, urban fashion, Cryptic Store, Sacramento boutique, mens fashion, partner product, Youknowwedomagic`} />
         <link rel="canonical" href={`https://crypticstore.lovable.app/partner/${slug}`} />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="product" />
+        <meta property="og:title" content={`${product.title} | Cryptic Store`} />
+        <meta property="og:description" content={product.description} />
+        <meta property="og:url" content={`https://crypticstore.lovable.app/partner/${slug}`} />
+        <meta property="og:site_name" content="Cryptic Store" />
+        <meta property="og:image" content={product.images[0]} />
+        <meta property="product:price:amount" content={product.price.toFixed(2)} />
+        <meta property="product:price:currency" content={product.currency} />
+        <meta property="product:availability" content="in stock" />
+        <meta property="product:brand" content={product.brand} />
+        <meta property="product:condition" content="new" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@MCMysterious" />
+        <meta name="twitter:title" content={`${product.title} | Cryptic Store`} />
+        <meta name="twitter:description" content={product.description} />
+        <meta name="twitter:image" content={product.images[0]} />
+        <meta name="twitter:label1" content="Price" />
+        <meta name="twitter:data1" content={`$${product.price.toFixed(2)} ${product.currency}`} />
+
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: product.title,
+            description: product.description,
+            image: product.images,
+            brand: { "@type": "Brand", name: product.brand },
+            category: "Apparel & Accessories > Clothing",
+            offers: {
+              "@type": "Offer",
+              url: `https://crypticstore.lovable.app/partner/${slug}`,
+              priceCurrency: product.currency,
+              price: product.price.toFixed(2),
+              availability: "https://schema.org/InStock",
+              itemCondition: "https://schema.org/NewCondition",
+              seller: { "@type": "Organization", name: "Cryptic Store", url: "https://crypticstore.lovable.app" }
+            }
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://crypticstore.lovable.app/" },
+              { "@type": "ListItem", position: 2, name: "Imitable Lives", item: "https://crypticstore.lovable.app/collections/imitable-lives" },
+              { "@type": "ListItem", position: 3, name: product.title, item: `https://crypticstore.lovable.app/partner/${slug}` }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <Navigation />
