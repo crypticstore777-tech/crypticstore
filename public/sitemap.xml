@@ -125,4 +125,19 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://crypticstore.lovable.app/partner/incerunmen-drape-tank</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://crypticstore.lovable.app/partner/incerunmen-stand-collar-robe</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://crypticstore.lovable.app/partner/incerunmen-draped-neck-tee</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
