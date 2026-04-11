@@ -51,7 +51,6 @@ export const INCERUNMEN_PRODUCTS: Record<string, PartnerProduct> = {
     promoCode: "NEW10",
     promoText: "10% off your first order",
   },
-  },
   "incerunmen-draped-neck-tee": {
     title: "Mens Solid Color Draped Neck Half Sleeve T-Shirt",
     price: 28.64,
