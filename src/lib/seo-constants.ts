@@ -11,7 +11,7 @@ export const MC_MYSTERIOUS_SOCIAL_PROFILES = [
 
 export const MC_MYSTERIOUS_PERSON_SCHEMA = {
   "@type": "Person" as const,
-  name: "MC Myster?ous",
+  name: "MC Mysterious",
   sameAs: MC_MYSTERIOUS_SOCIAL_PROFILES,
 };
 

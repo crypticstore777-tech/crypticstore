@@ -16,7 +16,7 @@ const BlogCrossroads = () => {
     "description": "Exploring the mystical relationship between magic and music throughout history, from Robert Johnson's legendary crossroads deal to ancient shamanic traditions.",
     "author": {
       "@type": "Person",
-      "name": "MC Myster?ous"
+      "name": "MC Mysterious"
     },
     "publisher": {
       "@type": "Organization",
@@ -31,14 +31,14 @@ const BlogCrossroads = () => {
     <>
       <Helmet>
         <title>At the Crossroads: Magic & Music History | Cryptic Store Blog</title>
-        <meta name="description" content="Explore the mystical connection between magic and music. From Robert Johnson's legendary crossroads deal to MC Myster?ous's own mysterious journey." />
+        <meta name="description" content="Explore the mystical connection between magic and music. From Robert Johnson's legendary crossroads deal to MC Mysterious's own mysterious journey." />
         <meta name="keywords" content="Robert Johnson crossroads, magic and music history, blues legend, mystical music, shamanic music, MC Mysterious, Cryptic Store blog" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://crypticstore.lovable.app/blog/crossroads-magic-music" />
         
         <meta property="og:type" content="article" />
         <meta property="og:title" content="At the Crossroads: Magic & Music History" />
-        <meta property="og:description" content="The mysterious connection between magic and music, from Robert Johnson to MC Myster?ous." />
+        <meta property="og:description" content="The mysterious connection between magic and music, from Robert Johnson to MC Mysterious." />
         <meta property="og:url" content="https://crypticstore.lovable.app/blog/crossroads-magic-music" />
         
         <meta name="twitter:card" content="summary_large_image" />
@@ -73,7 +73,7 @@ const BlogCrossroads = () => {
               <div className="relative w-72 md:w-96 rounded-2xl overflow-hidden shadow-[0_0_40px_hsla(50,100%,50%,0.3)] border-2 border-primary/30">
                 <img
 
-                  alt="MC Myster?ous — where magic meets music at the crossroads"
+                  alt="MC Mysterious — where magic meets music at the crossroads"
                   className="w-full h-auto object-cover"
                   loading="eager" src="/lovable-uploads/0ac34d77-8522-4f61-a7d6-4a54a4ba3bcc.jpg" />
                 
@@ -95,7 +95,7 @@ const BlogCrossroads = () => {
                   At the Crossroads: The Mysterious Connection Between Magic and Music
                 </CardTitle>
                 <CardDescription className="text-lg mt-4">
-                  By MC Myster?ous • January 2025
+                  By MC Mysterious • January 2025
                 </CardDescription>
               </CardHeader>
               
@@ -162,7 +162,7 @@ const BlogCrossroads = () => {
                     <h2 className="text-2xl md:text-3xl font-bold text-foreground m-0">My Own Crossroads Experience</h2>
                   </div>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    I never expected to find myself walking a path so eerily similar to Robert Johnson's. As MC Myster?ous, I've always known that my connection to music ran deeper than most—but it wasn't until I found myself at my own metaphorical crossroads that I truly understood.
+                    I never expected to find myself walking a path so eerily similar to Robert Johnson's. As MC Mysterious, I've always known that my connection to music ran deeper than most—but it wasn't until I found myself at my own metaphorical crossroads that I truly understood.
                   </p>
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     There came a moment in my journey where the choice was clear: pursue the ordinary path, or step into the unknown where sound and spirit intertwine. Like Johnson, I chose the crossroads. And like Johnson, something changed.
@@ -174,7 +174,7 @@ const BlogCrossroads = () => {
                     <p className="text-foreground font-medium italic m-0">
                       "Magic isn't about dark deals or supernatural transactions. It's about the transformation that happens when you fully surrender to your calling. When the music plays through you, not from you—that's when you know you've reached the crossroads."
                     </p>
-                    <span className="block mt-3 text-sm text-primary font-bold">— MC Myster?ous</span>
+                    <span className="block mt-3 text-sm text-primary font-bold">— MC Mysterious</span>
                   </div>
                 </div>
 
@@ -216,7 +216,7 @@ const BlogCrossroads = () => {
               #Youknowwedomagic
             </p>
             <p className="text-muted-foreground">
-              Magic & Music by MC Myster?ous
+              Magic & Music by MC Mysterious
             </p>
           </div>
         </section>

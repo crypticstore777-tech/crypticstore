@@ -14,7 +14,7 @@ const BlogSacramentoDJs = () => {
     "@type": "BlogPosting",
     headline: "Best DJs in Sacramento: The Ultimate Guide to Sacramento's DJ Scene",
     description: "Discover the best DJs in Sacramento CA. From weddings and corporate events to clubs and private parties — Sacramento's top mobile DJs and entertainment.",
-    author: { "@type": "Person", name: "MC Myster?ous", sameAs: MC_MYSTERIOUS_SOCIAL_PROFILES },
+    author: { "@type": "Person", name: "MC Mysterious", sameAs: MC_MYSTERIOUS_SOCIAL_PROFILES },
     publisher: { "@type": "Organization", name: "Cryptic Store", sameAs: MC_MYSTERIOUS_SOCIAL_PROFILES },
     datePublished: "2026-03-10",
     keywords: "best DJs Sacramento, Sacramento DJ, Sacramento wedding DJ, Sacramento mobile DJ, Sacramento party DJ, top DJs Sacramento CA, MC Mysterious",
@@ -24,7 +24,7 @@ const BlogSacramentoDJs = () => {
     <>
       <Helmet>
         <title>Best DJs in Sacramento CA — Top Mobile DJ Guide 2026 | Cryptic Store Blog</title>
-        <meta name="description" content="Looking for the best DJ in Sacramento? Our guide covers Sacramento's top DJs for weddings, parties, corporate events & Kings watch parties. Book MC Myster?ous today." />
+        <meta name="description" content="Looking for the best DJ in Sacramento? Our guide covers Sacramento's top DJs for weddings, parties, corporate events & Kings watch parties. Book MC Mysterious today." />
         <meta name="keywords" content="best DJs Sacramento, Sacramento DJ, Sacramento wedding DJ, top DJ Sacramento CA, mobile DJ Sacramento, Sacramento party DJ, Sacramento corporate DJ, Sacramento Kings DJ, MC Mysterious Sacramento, hire DJ Sacramento" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href="https://crypticstore.lovable.app/blog/best-djs-sacramento" />
@@ -126,19 +126,19 @@ const BlogSacramentoDJs = () => {
           <Separator className="my-10" />
 
           <h2 className="text-2xl md:text-3xl font-black text-foreground mb-4">
-            MC Myster?ous: Sacramento's Own
+            MC Mysterious: Sacramento's Own
           </h2>
           <p className="text-muted-foreground mb-4 leading-relaxed">
-            When it comes to Sacramento DJs who bring the full package — music, energy, professionalism, and that unmistakable Sactown swagger — <strong>MC Myster?ous</strong> stands out. As the founder of Cryptic Store and Mysterious Enterprise LLC, MC Myster?ous isn't just a DJ — he's a Sacramento artist, boutique owner, and cultural force.
+            When it comes to Sacramento DJs who bring the full package — music, energy, professionalism, and that unmistakable Sactown swagger — <strong>MC Mysterious</strong> stands out. As the founder of Cryptic Store and Mysterious Enterprise LLC, MC Mysterious isn't just a DJ — he's a Sacramento artist, boutique owner, and cultural force.
           </p>
           <p className="text-muted-foreground mb-8 leading-relaxed">
-            With premium sound systems, custom lighting, and MC skills honed across countless Sacramento events, MC Myster?ous delivers the kind of experience that turns a good event into an unforgettable one. From intimate Sacramento weddings to high-energy Kings celebrations, every set is tailored to the moment.
+            With premium sound systems, custom lighting, and MC skills honed across countless Sacramento events, MC Mysterious delivers the kind of experience that turns a good event into an unforgettable one. From intimate Sacramento weddings to high-energy Kings celebrations, every set is tailored to the moment.
           </p>
 
           {/* CTA */}
           <div className="p-8 rounded-2xl bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 text-center">
             <h3 className="text-2xl font-black text-foreground mb-2">Ready to Book Sacramento's Best DJ?</h3>
-            <p className="text-muted-foreground mb-6">Get in touch with MC Myster?ous for your next Sacramento event.</p>
+            <p className="text-muted-foreground mb-6">Get in touch with MC Mysterious for your next Sacramento event.</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button asChild size="lg" className="font-bold shadow-[0_0_20px_hsla(50,100%,50%,0.3)]">
                 <Link to="/dj-services">View DJ Services</Link>

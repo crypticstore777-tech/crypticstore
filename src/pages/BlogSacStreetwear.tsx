@@ -14,7 +14,7 @@ const BlogSacStreetwear = () => {
     "@type": "BlogPosting",
     headline: "Sacramento Streetwear Boutiques: The Best Urban Fashion in Sac",
     description: "Discover Sacramento's best streetwear boutiques and urban fashion shops. From bold graphic tees to Sacramento Kings–inspired apparel.",
-    author: { "@type": "Person", name: "MC Myster?ous", sameAs: MC_MYSTERIOUS_SOCIAL_PROFILES },
+    author: { "@type": "Person", name: "MC Mysterious", sameAs: MC_MYSTERIOUS_SOCIAL_PROFILES },
     publisher: { "@type": "Organization", name: "Cryptic Store", sameAs: MC_MYSTERIOUS_SOCIAL_PROFILES },
     datePublished: "2026-03-12",
     keywords: "Sacramento streetwear, Sacramento boutiques, Sacramento fashion, Sacramento apparel, Sacramento Kings fashion, urban fashion Sacramento",
@@ -24,7 +24,7 @@ const BlogSacStreetwear = () => {
     <>
       <Helmet>
         <title>Sacramento Streetwear Boutiques — Best Urban Fashion & Apparel 2026 | Cryptic Store Blog</title>
-        <meta name="description" content="Explore Sacramento's best streetwear boutiques and urban fashion. Discover bold graphic tees, Sacramento Kings–inspired apparel, and local brands like Cryptic Store by MC Myster?ous." />
+        <meta name="description" content="Explore Sacramento's best streetwear boutiques and urban fashion. Discover bold graphic tees, Sacramento Kings–inspired apparel, and local brands like Cryptic Store by MC Mysterious." />
         <meta name="keywords" content="Sacramento streetwear, Sacramento boutiques, Sacramento fashion, Sacramento apparel, urban fashion Sacramento, Sacramento clothing stores, Sacramento Kings apparel, Sacramento graphic tees, Cryptic Store Sacramento, best boutiques Sacramento CA" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href="https://crypticstore.lovable.app/blog/sacramento-streetwear-boutiques" />
@@ -118,7 +118,7 @@ const BlogSacStreetwear = () => {
             Cryptic Store: Sacramento's Bold Boutique
           </h2>
           <p className="text-muted-foreground mb-4 leading-relaxed">
-            At the intersection of music, mysticism, and fearless fashion sits <strong>Cryptic Store</strong> — Sacramento's own online boutique by <strong>MC Myster?ous</strong> and Mysterious Enterprise LLC. What started as a creative extension of Sacramento's DJ and hip hop scene has evolved into a full streetwear brand.
+            At the intersection of music, mysticism, and fearless fashion sits <strong>Cryptic Store</strong> — Sacramento's own online boutique by <strong>MC Mysterious</strong> and Mysterious Enterprise LLC. What started as a creative extension of Sacramento's DJ and hip hop scene has evolved into a full streetwear brand.
           </p>
           <p className="text-muted-foreground mb-4 leading-relaxed">
             Cryptic Store features two signature collections that embody Sacramento's bold spirit:
@@ -143,7 +143,7 @@ const BlogSacStreetwear = () => {
             Sacramento Streetwear Is Just Getting Started
           </h2>
           <p className="text-muted-foreground mb-8 leading-relaxed">
-            The Sacramento fashion scene is growing fast. Local boutiques are proving that you don't need to be in LA or New York to create world-class streetwear. With artists like MC Myster?ous bridging the gap between music, culture, and fashion, Sacramento is cementing its place as a streetwear city to watch.
+            The Sacramento fashion scene is growing fast. Local boutiques are proving that you don't need to be in LA or New York to create world-class streetwear. With artists like MC Mysterious bridging the gap between music, culture, and fashion, Sacramento is cementing its place as a streetwear city to watch.
           </p>
 
           {/* CTA */}

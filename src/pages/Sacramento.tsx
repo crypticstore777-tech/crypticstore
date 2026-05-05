@@ -25,7 +25,7 @@ const highlights = [
     icon: Disc3,
     title: "Sacramento's Top DJ",
     description:
-      "From weddings to Sacramento Kings watch parties, MC Myster?ous brings the energy. Professional sound, lighting & MC services across the Sacramento region.",
+      "From weddings to Sacramento Kings watch parties, MC Mysterious brings the energy. Professional sound, lighting & MC services across the Sacramento region.",
     link: "/dj-services",
     cta: "Book a Sacramento DJ",
   },
@@ -41,7 +41,7 @@ const highlights = [
     icon: Music,
     title: "Sacramento Music & Artist",
     description:
-      "Original mixes, hip-hop productions & live sets rooted in Sacramento's vibrant music scene. Stream MC Myster?ous on every platform.",
+      "Original mixes, hip-hop productions & live sets rooted in Sacramento's vibrant music scene. Stream MC Mysterious on every platform.",
     link: "/music",
     cta: "Listen Now",
   },
@@ -69,7 +69,7 @@ const Sacramento = () => {
     name: "Cryptic Store — Mysterious Enterprise LLC",
     alternateName: "Cryptic Store Sacramento",
     description:
-      "Sacramento's premier boutique, DJ service, and entertainment company. Streetwear, music, and spiritual services by artist DJ MC Myster?ous.",
+      "Sacramento's premier boutique, DJ service, and entertainment company. Streetwear, music, and spiritual services by artist DJ MC Mysterious.",
     url: "https://crypticstore.lovable.app/sacramento",
     image: "https://crypticstore.lovable.app/favicon.jpg",
     telephone: "",
@@ -90,7 +90,7 @@ const Sacramento = () => {
     },
     founder: {
       "@type": "Person",
-      name: "MC Myster?ous",
+      name: "MC Mysterious",
       jobTitle: "DJ / Artist / Founder",
     },
     sameAs: MC_MYSTERIOUS_SOCIAL_PROFILES,
@@ -146,11 +146,11 @@ const Sacramento = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>
-          Sacramento DJ, Boutique & Artist | Cryptic Store — MC Myster?ous
+          Sacramento DJ, Boutique & Artist | Cryptic Store — MC Mysterious
         </title>
         <meta
           name="description"
-          content="Sacramento's own Cryptic Store — boutique streetwear, DJ services, music & spiritual arts by artist MC Myster?ous. Sacramento Kings–inspired black & gold fashion. Book Sacramento's best DJ today."
+          content="Sacramento's own Cryptic Store — boutique streetwear, DJ services, music & spiritual arts by artist MC Mysterious. Sacramento Kings–inspired black & gold fashion. Book Sacramento's best DJ today."
         />
         <meta
           name="keywords"
@@ -174,7 +174,7 @@ const Sacramento = () => {
         />
         <meta
           property="og:description"
-          content="Sacramento's premier boutique & DJ services by MC Myster?ous. Sacramento Kings–inspired streetwear. Book now."
+          content="Sacramento's premier boutique & DJ services by MC Mysterious. Sacramento Kings–inspired streetwear. Book now."
         />
         <meta
           property="og:url"
@@ -270,7 +270,7 @@ const Sacramento = () => {
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full shadow-[0_0_10px_hsla(50,100%,50%,0.5)]" />
           <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
-            From the stage to the rack — MC Myster?ous brings Sacramento energy
+            From the stage to the rack — MC Mysterious brings Sacramento energy
             to every beat, stitch, and reading.
           </p>
         </motion.div>
@@ -363,13 +363,13 @@ const Sacramento = () => {
               <div className="absolute -inset-2 bg-gradient-to-br from-primary/30 to-primary/5 rounded-2xl blur-md group-hover:blur-lg transition-all duration-500" />
               <img
                 src={founderImg}
-                alt="MC Myster?ous — Sacramento DJ, artist, and founder of Cryptic Store"
+                alt="MC Mysterious — Sacramento DJ, artist, and founder of Cryptic Store"
                 className="relative w-full max-w-md rounded-2xl border-2 border-primary/20 shadow-2xl object-cover aspect-[3/4]"
                 loading="lazy"
               />
               <img
                 src={logoGold}
-                alt="MC Myster?ous gold brand badge"
+                alt="MC Mysterious gold brand badge"
                 className="relative w-16 h-16 rounded-full border-2 border-primary/30 shadow-[0_0_20px_hsla(50,100%,50%,0.3)] object-cover"
                 loading="lazy"
               />

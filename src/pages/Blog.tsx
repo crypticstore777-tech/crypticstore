@@ -80,19 +80,19 @@ const Blog = () => {
     <>
       <Helmet>
         <title>The Cryptic Chronicles | Sacramento Blog — DJs, Streetwear, Music & Magic</title>
-        <meta name="description" content="The Cryptic Chronicles — Sacramento blog covering best DJs in Sacramento, streetwear boutiques, music, magic & spiritual history by MC Myster?ous." />
+        <meta name="description" content="The Cryptic Chronicles — Sacramento blog covering best DJs in Sacramento, streetwear boutiques, music, magic & spiritual history by MC Mysterious." />
         <meta name="keywords" content="Sacramento blog, Sacramento DJ blog, Sacramento streetwear, Sacramento fashion, Cryptic Store blog, magic and music, Marie Laveau, empaths, MC Mysterious Sacramento" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://crypticstore.lovable.app/blog" />
 
         <meta property="og:type" content="website" />
         <meta property="og:title" content="The Cryptic Chronicles | Cryptic Store Blog" />
-        <meta property="og:description" content="Magic, Music & Mystery — blog posts by MC Myster?ous." />
+        <meta property="og:description" content="Magic, Music & Mystery — blog posts by MC Mysterious." />
         <meta property="og:url" content="https://crypticstore.lovable.app/blog" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="The Cryptic Chronicles | Cryptic Store Blog" />
-        <meta name="twitter:description" content="Explore magic, music, and mystery with MC Myster?ous." />
+        <meta name="twitter:description" content="Explore magic, music, and mystery with MC Mysterious." />
       </Helmet>
 
       <div className="min-h-screen bg-background">
@@ -111,7 +111,7 @@ const Blog = () => {
               The Cryptic Chronicles
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              Stories of Magic, Music & Mystery — by MC Myster?ous
+              Stories of Magic, Music & Mystery — by MC Mysterious
             </p>
           </div>
         </section>
@@ -172,7 +172,7 @@ const Blog = () => {
               #Youknowwedomagic
             </p>
             <p className="text-muted-foreground">
-              Magic & Spirit by MC Myster?ous
+              Magic & Spirit by MC Mysterious
             </p>
           </div>
         </section>

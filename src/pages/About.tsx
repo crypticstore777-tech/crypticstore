@@ -12,15 +12,15 @@ const About = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    name: "About Cryptic Store & MC Myster?ous",
-    description: "Sacramento boutique founded by Hip Hop DJ & artist MC Myster?ous. Where Sacramento music, fashion, and mysticism converge. Sacramento Kings culture.",
+    name: "About Cryptic Store & MC Mysterious",
+    description: "Sacramento boutique founded by Hip Hop DJ & artist MC Mysterious. Where Sacramento music, fashion, and mysticism converge. Sacramento Kings culture.",
     url: "https://crypticstore.com/about",
     mainEntity: {
       "@type": "Organization",
       name: "Cryptic Store",
       founder: {
         "@type": "Person",
-        name: "MC Myster?ous",
+        name: "MC Mysterious",
         jobTitle: "Sacramento Hip Hop DJ / Artist / Boutique Owner",
         sameAs: MC_MYSTERIOUS_SOCIAL_PROFILES,
       },
@@ -31,13 +31,13 @@ const About = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>About MC Myster?ous | Sacramento DJ, Artist & Boutique Owner | Cryptic Store</title>
-        <meta name="description" content="Meet MC Myster?ous — Sacramento's own Hip Hop DJ, artist, streetwear designer & boutique owner. Founder of Cryptic Store. Sacramento Kings culture, music & bold fashion converge. #Youknowwedomagic" />
+        <title>About MC Mysterious | Sacramento DJ, Artist & Boutique Owner | Cryptic Store</title>
+        <meta name="description" content="Meet MC Mysterious — Sacramento's own Hip Hop DJ, artist, streetwear designer & boutique owner. Founder of Cryptic Store. Sacramento Kings culture, music & bold fashion converge. #Youknowwedomagic" />
         <meta name="keywords" content="MC Mysterious Sacramento, Sacramento DJ, Sacramento artist, Sacramento boutique owner, Sacramento streetwear designer, Sacramento hip hop, Sacramento Kings, Cryptic Store founder, Sacramento music, Sacramento entertainment, Youknowwedomagic" />
         <link rel="canonical" href="https://crypticstore.com/about" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="About MC Myster?ous | Sacramento DJ, Artist & Boutique Owner" />
-        <meta property="og:description" content="Meet MC Myster?ous — Sacramento's own Hip Hop DJ, artist, and founder of Cryptic Store boutique." />
+        <meta property="og:title" content="About MC Mysterious | Sacramento DJ, Artist & Boutique Owner" />
+        <meta property="og:description" content="Meet MC Mysterious — Sacramento's own Hip Hop DJ, artist, and founder of Cryptic Store boutique." />
         <meta property="og:url" content="https://crypticstore.com/about" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
@@ -54,7 +54,7 @@ const About = () => {
                 <div className="absolute -inset-1 bg-gradient-to-br from-primary/40 to-primary/10 rounded-2xl blur-sm group-hover:blur-md transition-all duration-500" />
                 <img
                   src={mcStudio}
-                  alt="MC Myster?ous wearing gold headphones with Cryptic Store logo and treasure chest"
+                  alt="MC Mysterious wearing gold headphones with Cryptic Store logo and treasure chest"
                   className="relative w-full rounded-2xl border border-primary/20 shadow-2xl object-cover aspect-[3/4]"
                   loading="eager"
                 />
@@ -62,7 +62,7 @@ const About = () => {
               <div className="flex justify-center py-2">
                 <img
                   src={logoBadge}
-                  alt="MC Myster?ous brand badge logo"
+                  alt="MC Mysterious brand badge logo"
                   className="w-24 h-24 rounded-full border-2 border-primary/30 shadow-[0_0_20px_hsla(50,100%,50%,0.3)] object-cover"
                   loading="lazy"
                 />
@@ -71,7 +71,7 @@ const About = () => {
                 <div className="absolute -inset-1 bg-gradient-to-br from-accent/30 to-accent/5 rounded-2xl blur-sm group-hover:blur-md transition-all duration-500" />
                 <img
                   src={moonlitPortrait2}
-                  alt="MC Myster?ous moonlit portrait"
+                  alt="MC Mysterious moonlit portrait"
                   className="relative w-full rounded-2xl border border-accent/20 shadow-xl object-cover aspect-[3/4]"
                   loading="lazy"
                 />
@@ -90,7 +90,7 @@ const About = () => {
               </h1>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Hip Hop DJ, producer, and creative visionary — MC Myster?ous built Cryptic Store 
+                Hip Hop DJ, producer, and creative visionary — MC Mysterious built Cryptic Store 
                 at the intersection of music culture, streetwear fashion, and mysticism. Every design 
                 tells a story, every beat carries a message.
               </p>

@@ -61,14 +61,14 @@ const YouKnowWeDoMagic = () => {
     <>
       <Helmet>
         <title>#YouKnowWeDoMagic - Sacramento DJ, Music & Spiritual Services | Cryptic Store</title>
-        <meta name="description" content="Sacramento's premier DJ, music & spiritual services. MC Myster?ous offers mobile DJ, audio engineering, artist promotion, tarot readings, scrying & astrology in Sacramento CA. #Youknowwedomagic" />
+        <meta name="description" content="Sacramento's premier DJ, music & spiritual services. MC Mysterious offers mobile DJ, audio engineering, artist promotion, tarot readings, scrying & astrology in Sacramento CA. #Youknowwedomagic" />
         <meta name="keywords" content="Sacramento DJ services, Sacramento music services, Sacramento artist, Sacramento entertainment, Sacramento spiritual services, Sacramento tarot, Sacramento mobile DJ, audio engineering Sacramento, Sacramento Kings events, Dream Dare Drip, Youknowwedomagic" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://crypticstore.lovable.app/youknowwedomagic" />
         
         <meta property="og:type" content="website" />
         <meta property="og:title" content="#YouKnowWeDoMagic - Sacramento DJ, Music & Spiritual Services" />
-        <meta property="og:description" content="Sacramento's premier DJ, music & spiritual services by MC Myster?ous. #Youknowwedomagic" />
+        <meta property="og:description" content="Sacramento's premier DJ, music & spiritual services by MC Mysterious. #Youknowwedomagic" />
         <meta property="og:url" content="https://crypticstore.lovable.app/youknowwedomagic" />
         <meta property="og:site_name" content="Cryptic Store" />
         
@@ -89,7 +89,7 @@ const YouKnowWeDoMagic = () => {
                 #YouKnowWeDoMagic
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl">
-                Myster?ous Services: Where Sound Meets Spirit
+                Mysterious Services: Where Sound Meets Spirit
               </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button size="lg" className="text-lg">
@@ -119,7 +119,7 @@ const YouKnowWeDoMagic = () => {
               <div className="relative w-56 md:w-72 rounded-2xl overflow-hidden shadow-[0_0_40px_hsla(50,100%,50%,0.3)] border-2 border-primary/30">
                 <img 
                   src={heroImage} 
-                  alt="Myster?ous - Premium entertainment and spiritual services" 
+                  alt="Mysterious - Premium entertainment and spiritual services" 
                   className="w-full h-auto object-cover"
                   loading="eager"
                 />
@@ -127,7 +127,7 @@ const YouKnowWeDoMagic = () => {
               <div className="relative w-56 md:w-72 rounded-2xl overflow-hidden shadow-[0_0_30px_hsla(260,80%,50%,0.2)] border-2 border-accent/30 hidden sm:block mt-8">
                 <img 
                   src={moonlitPortrait} 
-                  alt="MC Myster?ous moonlit portrait" 
+                  alt="MC Mysterious moonlit portrait" 
                   className="w-full h-auto object-cover"
                   loading="eager"
                 />
@@ -210,7 +210,7 @@ const YouKnowWeDoMagic = () => {
           <div className="container mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Experience the Magic?</h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Whether you need professional entertainment or spiritual guidance, Myster?ous delivers extraordinary experiences
+              Whether you need professional entertainment or spiritual guidance, Mysterious delivers extraordinary experiences
             </p>
             <Button size="lg" className="text-lg" asChild>
               <Link to="/contact">Contact Us Today</Link>
