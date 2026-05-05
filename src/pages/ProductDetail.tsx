@@ -149,7 +149,7 @@ const ProductDetail = () => {
   // Generate SEO-friendly meta description
   const metaDescription = product.description 
     ? `${product.description.slice(0, 140)}... Shop now at Cryptic Store. Premium streetwear USA. #Youknowwedomagic`
-    : `Shop ${product.title} at Cryptic Store. Premium streetwear by DJ MC Myster?ous. Free shipping over $75 USA. #Youknowwedomagic`;
+    : `Shop ${product.title} at Cryptic Store. Premium streetwear by DJ MC Mysterious. Free shipping over $75 USA. #Youknowwedomagic`;
 
   const pageTitle = `${product.title} | Cryptic Store - Dare2Wear Streetwear Sacramento`;
 

@@ -14,7 +14,7 @@ const BlogAries = () => {
     "@type": "BlogPosting",
     headline: "Aries: The Cosmic Ram — Deep Secrets, Rare Facts & March vs April Aries Explained",
     description: "An in-depth exploration of the Aries zodiac sign. Discover rare cosmic facts, ancient mythology, and the powerful differences between March Aries and April Aries.",
-    author: { "@type": "Person", name: "MC Myster?ous", sameAs: MC_MYSTERIOUS_SOCIAL_PROFILES },
+    author: { "@type": "Person", name: "MC Mysterious", sameAs: MC_MYSTERIOUS_SOCIAL_PROFILES },
     publisher: { "@type": "Organization", name: "Cryptic Store", sameAs: MC_MYSTERIOUS_SOCIAL_PROFILES },
     datePublished: "2026-04-02",
     keywords: "Aries zodiac, March Aries vs April Aries, Aries facts, Aries personality, Aries astrology, zodiac deep dive, Aries rare facts, Aries cosmic traits",
@@ -24,7 +24,7 @@ const BlogAries = () => {
     <>
       <Helmet>
         <title>Aries Zodiac Deep Dive — March vs April Aries, Rare Facts & Cosmic Secrets | Cryptic Chronicles</title>
-        <meta name="description" content="The ultimate Aries zodiac guide. Rare facts, ancient mythology, March Aries vs April Aries cosmic differences, decan breakdowns & hidden traits by MC Myster?ous." />
+        <meta name="description" content="The ultimate Aries zodiac guide. Rare facts, ancient mythology, March Aries vs April Aries cosmic differences, decan breakdowns & hidden traits by MC Mysterious." />
         <meta name="keywords" content="Aries zodiac, March Aries, April Aries, Aries personality, Aries traits, Aries decan, Aries mythology, Aries rare facts, zodiac deep dive, MC Mysterious astrology" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href="https://crypticstore.lovable.app/blog/aries-zodiac" />
@@ -367,7 +367,7 @@ const BlogAries = () => {
           {/* CTA */}
           <div className="p-8 rounded-2xl bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 text-center">
             <h3 className="text-2xl font-black text-foreground mb-2">#Youknowwedomagic</h3>
-            <p className="text-muted-foreground mb-6">Explore more cosmic chronicles and mystical deep dives by MC Myster?ous.</p>
+            <p className="text-muted-foreground mb-6">Explore more cosmic chronicles and mystical deep dives by MC Mysterious.</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button asChild size="lg" className="font-bold shadow-[0_0_20px_hsla(50,100%,50%,0.3)]">
                 <Link to="/blog">Explore More Articles</Link>
