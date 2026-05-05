@@ -10,8 +10,8 @@ const Music = () => {
   return (
     <>
       <Helmet>
-        <title>Sacramento Music Artist | MC Myster?ous - Hip Hop DJ, Producer & Artist Sacramento CA</title>
-        <meta name="description" content="Sacramento music artist MC Myster?ous. Listen on SoundCloud, Mixcloud & YouTube. Sacramento's top Hip Hop DJ with original mixes, tracks & live sets. Sacramento Kings anthem vibes." />
+        <title>Sacramento Music Artist | MC Mysterious - Hip Hop DJ, Producer & Artist Sacramento CA</title>
+        <meta name="description" content="Sacramento music artist MC Mysterious. Listen on SoundCloud, Mixcloud & YouTube. Sacramento's top Hip Hop DJ with original mixes, tracks & live sets. Sacramento Kings anthem vibes." />
         <meta name="keywords" content="Sacramento music, Sacramento artist, Sacramento hip hop, Sacramento DJ, Sacramento musician, Sacramento producer, MC Mysterious Sacramento, Sacramento rap, Sacramento music scene, Sacramento Kings music, SoundCloud Sacramento, Sacramento entertainment" />
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </Helmet>
@@ -23,7 +23,7 @@ const Music = () => {
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: `url(${musicHero})` }}
             role="img"
-            aria-label="MC Myster?ous with gold headphones - Sorcerer of Sound"
+            aria-label="MC Mysterious with gold headphones - Sorcerer of Sound"
           >
             <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/20 to-background/80" />
           </div>
@@ -32,7 +32,7 @@ const Music = () => {
               className="text-4xl md:text-6xl font-black tracking-wider text-primary mb-4 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]"
               style={{ fontFamily: "'Orbitron', sans-serif" }}
             >
-              MC Myster?ous
+              MC Mysterious
             </h1>
             <p className="text-lg md:text-xl text-foreground/90 max-w-2xl mx-auto drop-shadow-[0_1px_6px_rgba(0,0,0,0.8)]">
               Sorcerer of Sound — Mixes, originals & live sets across every platform.
@@ -47,7 +47,7 @@ const Music = () => {
               <div className="absolute -inset-1 bg-gradient-to-br from-primary/30 to-primary/5 rounded-2xl blur-sm" />
               <img
                 src={studioMixing}
-                alt="MC Myster?ous at the mixing board in the studio"
+                alt="MC Mysterious at the mixing board in the studio"
                 className="relative w-full rounded-2xl border border-border shadow-xl object-cover aspect-video"
                 loading="lazy"
               />
@@ -55,7 +55,7 @@ const Music = () => {
             <div className="space-y-4">
               <img
                 src={logoStone}
-                alt="MC Myster?ous runic stone logo"
+                alt="MC Mysterious runic stone logo"
                 className="w-20 h-20 rounded-full border-2 border-primary/30 shadow-[0_0_20px_hsla(50,100%,50%,0.3)] object-cover"
                 loading="lazy"
               />

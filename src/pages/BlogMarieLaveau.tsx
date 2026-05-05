@@ -17,7 +17,7 @@ const BlogMarieLaveau = () => {
     "description": "Explore the true history of Marie Laveau, the legendary Voodoo Queen of New Orleans — herbalist, healer, community leader, and the most powerful spiritual figure in American history.",
     "author": {
       "@type": "Person",
-      "name": "MC Myster?ous"
+      "name": "MC Mysterious"
     },
     "publisher": {
       "@type": "Organization",
@@ -99,7 +99,7 @@ const BlogMarieLaveau = () => {
                   Marie Laveau: The Voodoo Queen of New Orleans — Her True Story
                 </CardTitle>
                 <CardDescription className="text-lg mt-4">
-                  By MC Myster?ous • February 2026
+                  By MC Mysterious • February 2026
                 </CardDescription>
               </CardHeader>
               
@@ -262,7 +262,7 @@ const BlogMarieLaveau = () => {
                     <p className="text-foreground font-medium italic m-0">
                       "Marie Laveau reminds us that real power doesn't come from fear or secrecy — it comes from knowledge, compassion, and the fearless blending of traditions that others want to keep separate. That's the spirit behind everything we do."
                     </p>
-                    <span className="block mt-3 text-sm text-primary font-bold">— MC Myster?ous</span>
+                    <span className="block mt-3 text-sm text-primary font-bold">— MC Mysterious</span>
                   </div>
                 </div>
 
@@ -285,7 +285,7 @@ const BlogMarieLaveau = () => {
               #Youknowwedomagic
             </p>
             <p className="text-muted-foreground">
-              Magic & History by MC Myster?ous
+              Magic & History by MC Mysterious
             </p>
           </div>
         </section>

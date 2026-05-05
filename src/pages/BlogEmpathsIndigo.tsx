@@ -16,7 +16,7 @@ const BlogEmpathsIndigo = () => {
     "description": "Explore the world of empaths and indigo children — highly sensitive souls who perceive energy, emotions, and truths that others miss. Learn the origins, traits, and spiritual significance of these gifted individuals.",
     "author": {
       "@type": "Person",
-      "name": "MC Myster?ous"
+      "name": "MC Mysterious"
     },
     "publisher": {
       "@type": "Organization",
@@ -96,7 +96,7 @@ const BlogEmpathsIndigo = () => {
                   Empaths & Indigo Children: Those Who See What Others Cannot
                 </CardTitle>
                 <CardDescription className="text-lg mt-4">
-                  By MC Myster?ous • February 2026
+                  By MC Mysterious • February 2026
                 </CardDescription>
               </CardHeader>
 
@@ -259,13 +259,13 @@ const BlogEmpathsIndigo = () => {
                     At Cryptic Store, we've always been drawn to those who see differently — who feel the currents beneath the surface, who refuse to accept the world at face value. Empaths and indigo children represent the kind of spirit we celebrate: <strong className="text-foreground">people who dare to be sensitive in a world that rewards numbness</strong>.
                   </p>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    As MC Myster?ous, I've always felt the pull of other people's energy — the ability to read a room before a word is spoken, to sense what's real and what's performance. That sensitivity is woven into everything we create, from the music to the clothing to the spiritual services we offer.
+                    As MC Mysterious, I've always felt the pull of other people's energy — the ability to read a room before a word is spoken, to sense what's real and what's performance. That sensitivity is woven into everything we create, from the music to the clothing to the spiritual services we offer.
                   </p>
                   <div className="bg-primary/10 rounded-lg p-6 my-6 border border-primary/30">
                     <p className="text-foreground font-medium italic m-0">
                       "Being an empath isn't a weakness — it's a frequency. When you learn to tune it, you don't just feel the world. You understand it. And when you understand it, you can change it."
                     </p>
-                    <span className="block mt-3 text-sm text-primary font-bold">— MC Myster?ous</span>
+                    <span className="block mt-3 text-sm text-primary font-bold">— MC Mysterious</span>
                   </div>
                 </div>
 
@@ -288,7 +288,7 @@ const BlogEmpathsIndigo = () => {
               #Youknowwedomagic
             </p>
             <p className="text-muted-foreground">
-              Magic & Spirit by MC Myster?ous
+              Magic & Spirit by MC Mysterious
             </p>
           </div>
         </section>

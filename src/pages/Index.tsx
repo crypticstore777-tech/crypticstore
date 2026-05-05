@@ -28,7 +28,7 @@ const Index = () => {
       "@id": "https://crypticstore.com/#website",
       "url": "https://crypticstore.com",
       "name": "Cryptic Store",
-      "description": "Sacramento's premier online boutique featuring exclusive streetwear, DJ services, music & apparel by artist DJ MC Myster?ous. Sacramento Kings inspired black & gold fashion.",
+      "description": "Sacramento's premier online boutique featuring exclusive streetwear, DJ services, music & apparel by artist DJ MC Mysterious. Sacramento Kings inspired black & gold fashion.",
       "potentialAction": {
         "@type": "SearchAction",
         "target": "https://crypticstore.com/search?q={search_term_string}",
@@ -40,10 +40,10 @@ const Index = () => {
       "name": "Cryptic Store",
       "url": "https://crypticstore.com",
       "logo": "https://crypticstore.com/favicon.jpg",
-      "description": "Sacramento boutique & entertainment company. DJ services, music, urban apparel by artist MC Myster?ous. Sacramento Kings inspired streetwear. #Youknowwedomagic",
+      "description": "Sacramento boutique & entertainment company. DJ services, music, urban apparel by artist MC Mysterious. Sacramento Kings inspired streetwear. #Youknowwedomagic",
       "founder": {
         "@type": "Person",
-        "name": "DJ MC Myster?ous"
+        "name": "DJ MC Mysterious"
       },
       "sameAs": MC_MYSTERIOUS_SOCIAL_PROFILES
     }, {
@@ -64,7 +64,7 @@ const Index = () => {
       "@id": "https://crypticstore.com/#homepage",
       "url": "https://crypticstore.com",
       "name": "Cryptic Store - Sacramento Boutique | DJ, Music, Artists & Apparel",
-      "description": "Sacramento's premier online boutique. DJ services, music, urban apparel by artist MC Myster?ous. Sacramento Kings inspired streetwear.",
+      "description": "Sacramento's premier online boutique. DJ services, music, urban apparel by artist MC Mysterious. Sacramento Kings inspired streetwear.",
       "isPartOf": {
         "@id": "https://crypticstore.com/#website"
       },
@@ -88,14 +88,14 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Cryptic Store | Sacramento Boutique - DJ Services, Music, Artists & Urban Apparel</title>
-        <meta name="description" content="Sacramento's premier online boutique & DJ services. Shop Dare2Wear & Imitable Lives streetwear collections by artist DJ MC Myster?ous. Sacramento Kings inspired black & gold apparel. Music, entertainment & spiritual services. Free shipping $75+." />
+        <meta name="description" content="Sacramento's premier online boutique & DJ services. Shop Dare2Wear & Imitable Lives streetwear collections by artist DJ MC Mysterious. Sacramento Kings inspired black & gold apparel. Music, entertainment & spiritual services. Free shipping $75+." />
         <meta name="keywords" content="Sacramento boutique, Sacramento DJ, Sacramento artists, Sacramento music, Sacramento apparel, Sacramento Kings fashion, Cryptic Store, online boutique Sacramento CA, DJ services Sacramento, hip hop artist Sacramento, urban apparel Sacramento, streetwear Sacramento, DJ MC Mysterious, Dare2Wear collection, Imitable Lives collection, trending streetwear, bestselling graphic tees, black gold streetwear, Sacramento entertainment, Sacramento Kings inspired, Youknowwedomagic" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href="https://crypticstore.com" />
         
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Cryptic Store | Sacramento Boutique - DJ, Music, Artists & Apparel" />
-        <meta property="og:description" content="Sacramento's hottest boutique. Shop streetwear by artist DJ MC Myster?ous. Sacramento Kings inspired black & gold apparel. DJ services & music. Free shipping $75+." />
+        <meta property="og:description" content="Sacramento's hottest boutique. Shop streetwear by artist DJ MC Mysterious. Sacramento Kings inspired black & gold apparel. DJ services & music. Free shipping $75+." />
         <meta property="og:image" content="https://crypticstore.com/dare2wear-collection-hero.jpg" />
         <meta property="og:url" content="https://crypticstore.com" />
         <meta property="og:site_name" content="Cryptic Store" />
@@ -103,7 +103,7 @@ const Index = () => {
         
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Cryptic Store | Sacramento Boutique - DJ, Music & Apparel" />
-        <meta name="twitter:description" content="Sacramento's hottest boutique. Streetwear by artist DJ MC Myster?ous. Sacramento Kings inspired fashion. #Youknowwedomagic" />
+        <meta name="twitter:description" content="Sacramento's hottest boutique. Streetwear by artist DJ MC Mysterious. Sacramento Kings inspired fashion. #Youknowwedomagic" />
         <meta name="twitter:image" content="https://crypticstore.com/dare2wear-collection-hero.jpg" />
         
         <script type="application/ld+json">
@@ -129,7 +129,7 @@ const Index = () => {
           </div>
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 text-foreground" style={{ textShadow: '0 2px 4px rgba(0,0,0,1), 0 4px 20px rgba(0,0,0,0.8)' }}>
-            Crypt?c Store
+            Cryptic Store
           </h1>
           
           <p className="text-2xl md:text-3xl text-primary font-black tracking-widest mb-8" style={{ textShadow: '0 0 20px hsla(50,100%,50%,0.4), 0 2px 8px rgba(0,0,0,0.9)' }}>
@@ -160,7 +160,7 @@ const Index = () => {
           <Zap className="h-5 w-5 text-primary" />
           <span className="text-lg font-bold text-foreground tracking-wider">#Youknowwedomagic</span>
           <span className="hidden sm:inline text-primary">|</span>
-          <span className="text-muted-foreground font-medium">Magic & Music by MC Myster?ous</span>
+          <span className="text-muted-foreground font-medium">Magic & Music by MC Mysterious</span>
           <Zap className="h-5 w-5 text-primary" />
         </div>
       </section>
@@ -202,7 +202,7 @@ const Index = () => {
               <div className="absolute -inset-1 bg-gradient-to-br from-primary/40 to-primary/10 rounded-2xl blur-sm group-hover:blur-md transition-all duration-500" />
               <img
                 src={founderImage}
-                alt="MC Myster?ous - Founder of Cryptic Store wearing gold headphones"
+                alt="MC Mysterious - Founder of Cryptic Store wearing gold headphones"
                 className="relative w-full rounded-2xl border border-primary/20 shadow-2xl object-cover aspect-[3/4]"
                 loading="lazy"
               />
@@ -212,7 +212,7 @@ const Index = () => {
                 Meet the <span className="text-primary">Founder</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                MC Myster?ous — Hip Hop DJ, producer, and the creative force behind Cryptic Store. Where music culture, bold fashion, and mysticism converge.
+                MC Mysterious — Hip Hop DJ, producer, and the creative force behind Cryptic Store. Where music culture, bold fashion, and mysticism converge.
               </p>
               <Button asChild variant="outline" className="border-primary/30 hover:bg-primary/10">
                 <Link to="/about">
@@ -233,7 +233,7 @@ const Index = () => {
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-4 rounded-full shadow-[0_0_10px_hsla(50,100%,50%,0.5)]" />
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Best selling magic & music apparel by DJ MC Myster?ous
+            Best selling magic & music apparel by DJ MC Mysterious
           </p>
         </div>
 
@@ -293,7 +293,7 @@ const Index = () => {
                   <h3 className="text-2xl font-black text-foreground">The Collective</h3>
                 </div>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Music, DJ services, audio engineering & artist promotion — the full entertainment experience by MC Myster?ous.
+                  Music, DJ services, audio engineering & artist promotion — the full entertainment experience by MC Mysterious.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
                   <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold border border-primary/20">DJ Services</span>

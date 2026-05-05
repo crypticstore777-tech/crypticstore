@@ -14,13 +14,13 @@ const DJServices = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "EntertainmentBusiness",
-    "name": "DJ Services by MC Myster?ous",
+    "name": "DJ Services by MC Mysterious",
     "description": "Sacramento's premier mobile DJ and entertainment services for weddings, corporate events, parties, and special occasions. Best DJ in Sacramento CA.",
     "url": "https://crypticstore.com/dj-services",
     "sameAs": MC_MYSTERIOUS_SOCIAL_PROFILES,
     "founder": {
       "@type": "Person",
-      "name": "MC Myster?ous"
+      "name": "MC Mysterious"
     },
     "areaServed": {"@type": "City", "name": "Sacramento", "containedInPlace": {"@type": "State", "name": "California"}},
     "priceRange": "$$",
@@ -48,20 +48,20 @@ const DJServices = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Sacramento DJ Services | MC Myster?ous - Best Mobile DJ Sacramento CA | Cryptic Store</title>
-        <meta name="description" content="Best DJ in Sacramento CA. Book MC Myster?ous for weddings, corporate events, parties & more. Sacramento's top mobile DJ with professional sound systems & lighting. Sacramento Kings events welcome. Book now at MysteriousEnterprise.com" />
+        <title>Sacramento DJ Services | MC Mysterious - Best Mobile DJ Sacramento CA | Cryptic Store</title>
+        <meta name="description" content="Best DJ in Sacramento CA. Book MC Mysterious for weddings, corporate events, parties & more. Sacramento's top mobile DJ with professional sound systems & lighting. Sacramento Kings events welcome. Book now at MysteriousEnterprise.com" />
         <meta name="keywords" content="Sacramento DJ, DJ Sacramento CA, best DJ Sacramento, Sacramento wedding DJ, Sacramento mobile DJ, Sacramento corporate DJ, Sacramento party DJ, MC Mysterious, Sacramento event entertainment, Sacramento Kings DJ, professional DJ Sacramento, DJ services Sacramento California, Dream Dare Drip" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://crypticstore.com/dj-services" />
         
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Sacramento DJ Services | MC Myster?ous - Best Mobile DJ" />
+        <meta property="og:title" content="Sacramento DJ Services | MC Mysterious - Best Mobile DJ" />
         <meta property="og:description" content="Sacramento's best mobile DJ & entertainment services. Weddings, corporate events, parties. Book now at MysteriousEnterprise.com" />
         <meta property="og:url" content="https://crypticstore.com/dj-services" />
         <meta property="og:site_name" content="Cryptic Store" />
         
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Sacramento DJ Services | MC Myster?ous" />
+        <meta name="twitter:title" content="Sacramento DJ Services | MC Mysterious" />
         <meta name="twitter:description" content="Sacramento's best mobile DJ & entertainment services. Weddings, parties, corporate events. Book now!" />
         
         <script type="application/ld+json">
@@ -86,7 +86,7 @@ const DJServices = () => {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-6 text-foreground">
               DJ Services
               <span className="block text-primary drop-shadow-[0_0_30px_hsla(50,100%,50%,0.6)]">
-                by MC Myster?ous
+                by MC Mysterious
               </span>
             </h1>
             
@@ -123,14 +123,14 @@ const DJServices = () => {
             <div className="relative w-72 md:w-96 rounded-2xl overflow-hidden shadow-[0_0_40px_hsla(50,100%,50%,0.3)] border-2 border-primary/30">
               <img 
                 src={djHeroImage} 
-                alt="MC Myster?ous - Professional DJ and entertainment services" 
+                alt="MC Mysterious - Professional DJ and entertainment services" 
                 className="w-full h-auto object-cover"
                 loading="eager"
               />
             </div>
             <img
               src={logoGold}
-              alt="MC Myster?ous gold hexagon brand badge"
+              alt="MC Mysterious gold hexagon brand badge"
               className="w-20 h-20 rounded-full border-2 border-primary/30 shadow-[0_0_20px_hsla(50,100%,50%,0.3)] object-cover"
               loading="lazy"
             />
@@ -174,7 +174,7 @@ const DJServices = () => {
           <div className="rounded-2xl overflow-hidden border-2 border-primary/30 shadow-[0_0_20px_hsla(50,100%,50%,0.15)] hover:shadow-[0_0_30px_hsla(50,100%,50%,0.3)] transition-all duration-300 group">
             <img
               src={weddingDancing}
-              alt="Wedding guests dancing at outdoor reception with DJ MC Myster?ous"
+              alt="Wedding guests dancing at outdoor reception with DJ MC Mysterious"
               className="w-full h-72 md:h-80 object-cover group-hover:scale-105 transition-transform duration-500"
               loading="lazy"
             />
@@ -197,7 +197,7 @@ const DJServices = () => {
             Ready to Make Your Event Unforgettable?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-xl mx-auto">
-            Let MC Myster?ous bring the magic to your next event
+            Let MC Mysterious bring the magic to your next event
           </p>
           <Button 
             asChild 
