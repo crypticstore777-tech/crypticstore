@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram, Youtube, Music2 } from "lucide-react";
+import { Instagram, Youtube, Music2, Facebook } from "lucide-react";
 import logo from "@/assets/cryptic-store-logo.jpg";
 
 export const Footer = () => {
@@ -19,10 +19,13 @@ export const Footer = () => {
             </p>
             <p className="text-muted-foreground text-xs mt-1">#Youknowwedomagic</p>
             <div className="flex items-center gap-3 mt-4">
-              <a href="https://www.instagram.com/mcmysterious" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Instagram">
+              <a href="https://www.facebook.com/RiseCrypticProductions" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Facebook">
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a href="https://www.instagram.com/mc_mysterious" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Instagram">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="https://www.youtube.com/@mcmysterious" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="YouTube">
+              <a href="https://www.youtube.com/@mcmysterous999" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="YouTube">
                 <Youtube className="h-5 w-5" />
               </a>
               <a href="https://www.tiktok.com/@mcmysterious" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="TikTok">
@@ -30,6 +33,9 @@ export const Footer = () => {
               </a>
               <a href="https://soundcloud.com/mcmysterious" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="SoundCloud">
                 <Music2 className="h-5 w-5" />
+              </a>
+              <a href="https://www.mixcloud.com/mcmysterious/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Mixcloud">
+                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M2.462 8.596C1.192 9.387.4 10.717.4 12.208s.792 2.82 2.062 3.611l.46-.706c-1.014-.633-1.62-1.716-1.62-2.905s.606-2.272 1.62-2.905l-.46-.707zm3.077 1.924c-.635.397-1.014 1.074-1.014 1.818s.379 1.422 1.014 1.818l.46-.706a1.33 1.33 0 01-.572-1.112c0-.45.216-.826.572-1.112l-.46-.706zm14.999-2.616c-.635.397-1.014 1.074-1.014 1.818V12h-2.5V9.722c0-.744-.38-1.421-1.015-1.818l-.46.706c.357.287.573.663.573 1.112V12h-2.5V9.722c0-.744-.38-1.421-1.015-1.818l-.46.706c.357.287.573.663.573 1.112V12h-2.5V9.722c0-.744-.38-1.421-1.015-1.818l-.46.706c.357.287.573.663.573 1.112v2.278c0 .744.38 1.421 1.015 1.818l.46-.706a1.33 1.33 0 01-.573-1.112h2.5c0 .45-.216.826-.573 1.112l.46.706c.636-.397 1.015-1.074 1.015-1.818h2.5c0 .45-.216.826-.573 1.112l.46.706c.636-.397 1.015-1.074 1.015-1.818h2.5c0 .45-.216.826-.573 1.112l.46.706c.636-.397 1.015-1.074 1.015-1.818V9.722c0-.45.216-.826.572-1.112l-.46-.706z"/></svg>
               </a>
             </div>
           </div>

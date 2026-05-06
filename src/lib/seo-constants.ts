@@ -1,8 +1,9 @@
 // Shared SEO constants for schema.org structured data
 
 export const MC_MYSTERIOUS_SOCIAL_PROFILES = [
-  "https://www.instagram.com/mcmysterious",
-  "https://www.youtube.com/@mcmysterious",
+  "https://www.facebook.com/RiseCrypticProductions",
+  "https://www.instagram.com/mc_mysterious",
+  "https://www.youtube.com/@mcmysterous999",
   "https://soundcloud.com/mcmysterious",
   "https://www.tiktok.com/@mcmysterious",
   "https://www.mixcloud.com/mcmysterious/",
