@@ -4,8 +4,8 @@ import { InstagramReels } from "@/components/InstagramReels";
 import { Helmet } from "react-helmet";
 import { Music, Shirt, Sparkles, Mic } from "lucide-react";
 import { MC_MYSTERIOUS_SOCIAL_PROFILES } from "@/lib/seo-constants";
-import mcStudio from "@/assets/mc-mysterious-studio.jpeg";
-import moonlitPortrait2 from "@/assets/mc-mysterious-moonlit-2.jpeg";
+import mcPortrait from "@/assets/mc-mysterious-bw-portrait.png";
+import djLiveVenue from "@/assets/dj-live-blue-venue.png";
 import logoBadge from "@/assets/mc-mysterious-logo-badge.jpeg";
 
 const About = () => {
@@ -53,8 +53,8 @@ const About = () => {
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-br from-primary/40 to-primary/10 rounded-2xl blur-sm group-hover:blur-md transition-all duration-500" />
                 <img
-                  src={mcStudio}
-                  alt="MC Mysterious wearing gold headphones with Cryptic Store logo and treasure chest"
+                  src={mcPortrait}
+                  alt="MC Mysterious - B&W portrait with Beats headphones and chain necklace"
                   className="relative w-full rounded-2xl border border-primary/20 shadow-2xl object-cover aspect-[3/4]"
                   loading="eager"
                 />
@@ -70,8 +70,8 @@ const About = () => {
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-br from-accent/30 to-accent/5 rounded-2xl blur-sm group-hover:blur-md transition-all duration-500" />
                 <img
-                  src={moonlitPortrait2}
-                  alt="MC Mysterious moonlit portrait"
+                  src={djLiveVenue}
+                  alt="MC Mysterious performing live at a venue with blue lighting"
                   className="relative w-full rounded-2xl border border-accent/20 shadow-xl object-cover aspect-[3/4]"
                   loading="lazy"
                 />

@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import crypticStoreHero from "@/assets/cryptic-store-hero.jpg";
-import founderImage from "@/assets/mc-mysterious-founder.jpeg";
+import founderImage from "@/assets/mc-mysterious-bw-portrait.png";
 import { MC_MYSTERIOUS_SOCIAL_PROFILES } from "@/lib/seo-constants";
 
 const Index = () => {

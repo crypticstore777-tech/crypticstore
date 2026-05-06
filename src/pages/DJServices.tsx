@@ -4,11 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Helmet } from "react-helmet";
 import { Music, Mic2, PartyPopper, Volume2, Lightbulb, Calendar, ExternalLink, Play } from "lucide-react";
-import djHeroImage from "@/assets/dj-services-hero.jpeg";
+import djHeroImage from "@/assets/dj-live-blue-venue.png";
 import weddingDancing from "@/assets/dj-wedding-dancing.jpeg";
 import weddingParty from "@/assets/dj-wedding-party.jpeg";
 import weddingGroupKiss from "@/assets/wedding-group-kiss.jpeg";
 import djPrideEvent from "@/assets/dj-pride-event.jpeg";
+import outdoorEventParty from "@/assets/outdoor-event-party.png";
 import logoGold from "@/assets/mc-mysterious-logo-gold.jpeg";
 import { MC_MYSTERIOUS_SOCIAL_PROFILES } from "@/lib/seo-constants";
 
@@ -199,8 +200,8 @@ const DJServices = () => {
           </div>
         </div>
 
-        {/* Pride Event Feature */}
-        <div className="mt-12 max-w-2xl mx-auto">
+        {/* Community Events */}
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           <div className="rounded-2xl overflow-hidden border-2 border-primary/30 shadow-[0_0_20px_hsla(50,100%,50%,0.15)] hover:shadow-[0_0_30px_hsla(50,100%,50%,0.3)] transition-all duration-300 group">
             <img
               src={djPrideEvent}
@@ -208,10 +209,21 @@ const DJServices = () => {
               className="w-full h-72 md:h-80 object-cover group-hover:scale-105 transition-transform duration-500"
               loading="lazy"
             />
+            <p className="text-center text-muted-foreground py-3 text-sm bg-card/50">
+              Pride community event in Sacramento
+            </p>
           </div>
-          <p className="text-center text-muted-foreground mt-4 text-sm">
-            MC Mysterious performing at community events across Sacramento
-          </p>
+          <div className="rounded-2xl overflow-hidden border-2 border-primary/30 shadow-[0_0_20px_hsla(50,100%,50%,0.15)] hover:shadow-[0_0_30px_hsla(50,100%,50%,0.3)] transition-all duration-300 group">
+            <img
+              src={outdoorEventParty}
+              alt="Guests socializing and dancing at an outdoor MC Mysterious event"
+              className="w-full h-72 md:h-80 object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+            <p className="text-center text-muted-foreground py-3 text-sm bg-card/50">
+              Live outdoor event entertainment
+            </p>
+          </div>
         </div>
       </section>
 

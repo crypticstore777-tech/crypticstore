@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Music, Shirt, Sparkles, Crown, MapPin, Disc3, Star, ArrowRight } from "lucide-react";
 import heroImg from "@/assets/sacramento-landing-hero.jpg";
-import founderImg from "@/assets/mc-mysterious-founder.jpeg";
+import founderImg from "@/assets/mc-mysterious-bw-portrait.png";
 import logoGold from "@/assets/mc-mysterious-logo-gold.jpeg";
 import { MC_MYSTERIOUS_SOCIAL_PROFILES } from "@/lib/seo-constants";
 
