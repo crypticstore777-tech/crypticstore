@@ -1,5 +1,6 @@
-import { Star, Calendar, MapPin, Trophy, ExternalLink } from "lucide-react";
+import { Star, Calendar, MapPin, Trophy, ExternalLink, Shield, Newspaper } from "lucide-react";
 import { Button } from "./ui/button";
+import sfBayTimesPress from "@/assets/sf-bay-times-press.jpeg";
 
 const stats = [
   {
@@ -64,6 +65,39 @@ export const SocialProof = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Trust Badges */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12">
+          <div className="flex items-center gap-3 px-6 py-4 rounded-2xl border border-primary/20 bg-card/50">
+            <Shield className="h-8 w-8 text-primary" />
+            <div>
+              <div className="font-bold text-foreground text-sm">BBB Accredited</div>
+              <div className="text-xs text-muted-foreground">Since February 2025</div>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 px-6 py-4 rounded-2xl border border-primary/20 bg-card/50">
+            <Newspaper className="h-8 w-8 text-primary" />
+            <div>
+              <div className="font-bold text-foreground text-sm">Featured in Press</div>
+              <div className="text-xs text-muted-foreground">San Francisco Bay Times</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Press Feature */}
+        <div className="max-w-md mx-auto mb-12">
+          <div className="rounded-2xl overflow-hidden border border-primary/20 shadow-[0_0_20px_hsla(50,100%,50%,0.1)] hover:shadow-[0_0_30px_hsla(50,100%,50%,0.2)] transition-all duration-300 group">
+            <img
+              src={sfBayTimesPress}
+              alt="MC Mysterious featured in San Francisco Bay Times newspaper - January 2020"
+              className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+          </div>
+          <p className="text-center text-xs text-muted-foreground mt-2 italic">
+            DJ Mysterious D featured in the San Francisco Bay Times, January 2020
+          </p>
         </div>
 
         {/* Featured Review / CTA */}

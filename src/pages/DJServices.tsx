@@ -7,6 +7,8 @@ import { Music, Mic2, PartyPopper, Volume2, Lightbulb, Calendar, ExternalLink, P
 import djHeroImage from "@/assets/dj-services-hero.jpeg";
 import weddingDancing from "@/assets/dj-wedding-dancing.jpeg";
 import weddingParty from "@/assets/dj-wedding-party.jpeg";
+import weddingGroupKiss from "@/assets/wedding-group-kiss.jpeg";
+import djPrideEvent from "@/assets/dj-pride-event.jpeg";
 import logoGold from "@/assets/mc-mysterious-logo-gold.jpeg";
 import { MC_MYSTERIOUS_SOCIAL_PROFILES } from "@/lib/seo-constants";
 
@@ -170,7 +172,7 @@ const DJServices = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           <div className="rounded-2xl overflow-hidden border-2 border-primary/30 shadow-[0_0_20px_hsla(50,100%,50%,0.15)] hover:shadow-[0_0_30px_hsla(50,100%,50%,0.3)] transition-all duration-300 group">
             <img
               src={weddingDancing}
@@ -187,6 +189,29 @@ const DJServices = () => {
               loading="lazy"
             />
           </div>
+          <div className="rounded-2xl overflow-hidden border-2 border-primary/30 shadow-[0_0_20px_hsla(50,100%,50%,0.15)] hover:shadow-[0_0_30px_hsla(50,100%,50%,0.3)] transition-all duration-300 group">
+            <img
+              src={weddingGroupKiss}
+              alt="Full wedding group photo with bride and groom kissing - event by MC Mysterious"
+              className="w-full h-72 md:h-80 object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        {/* Pride Event Feature */}
+        <div className="mt-12 max-w-2xl mx-auto">
+          <div className="rounded-2xl overflow-hidden border-2 border-primary/30 shadow-[0_0_20px_hsla(50,100%,50%,0.15)] hover:shadow-[0_0_30px_hsla(50,100%,50%,0.3)] transition-all duration-300 group">
+            <img
+              src={djPrideEvent}
+              alt="MC Mysterious DJing at a pride community event in Sacramento"
+              className="w-full h-72 md:h-80 object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+          </div>
+          <p className="text-center text-muted-foreground mt-4 text-sm">
+            MC Mysterious performing at community events across Sacramento
+          </p>
         </div>
       </section>
 
