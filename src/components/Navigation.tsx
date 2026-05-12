@@ -25,10 +25,11 @@ interface DropdownGroup {
 
 const dropdownGroups: DropdownGroup[] = [
   {
-    label: "Shop",
+    label: "Collections",
     items: [
       { to: "/collections/dare2wear", label: "Dare2Wear", description: "Bold streetwear collection" },
       { to: "/collections/imitable-lives", label: "Imitable Lives", description: "Egyptian-inspired luxury" },
+      { to: "/youknowwedomagic", label: "#YouKnowWeDoMagic", description: "Spiritual & creative services" },
     ],
   },
   {
@@ -43,7 +44,6 @@ const dropdownGroups: DropdownGroup[] = [
     label: "Explore",
     items: [
       { to: "/sacramento", label: "Sacramento", description: "Sac-town culture & events" },
-      { to: "/youknowwedomagic", label: "#YouKnowWeDoMagic", description: "Spiritual & creative services" },
       { to: "/blog", label: "Blog", description: "The Cryptic Chronicles" },
     ],
   },
@@ -73,9 +73,9 @@ const allNavLinks = [
 // Mobile grouped links for accordion-style sections
 const mobileGroups = [
   { label: null, items: [{ to: "/", label: "Home", exact: true }, { to: "/about", label: "About", exact: false }] },
-  { label: "Shop", items: [{ to: "/collections/dare2wear", label: "Dare2Wear", exact: false }, { to: "/collections/imitable-lives", label: "Imitable Lives", exact: false }] },
+  { label: "Collections", items: [{ to: "/collections/dare2wear", label: "Dare2Wear", exact: false }, { to: "/collections/imitable-lives", label: "Imitable Lives", exact: false }, { to: "/youknowwedomagic", label: "#YouKnowWeDoMagic", exact: false }] },
   { label: "Entertainment", items: [{ to: "/dj-services", label: "DJ Services", exact: false }, { to: "/music", label: "Music", exact: false }, { to: "/sync-hub", label: "Sync Hub", exact: false }] },
-  { label: "Explore", items: [{ to: "/sacramento", label: "Sacramento", exact: false }, { to: "/youknowwedomagic", label: "#YouKnowWeDoMagic", exact: false }, { to: "/blog", label: "Blog", exact: false }] },
+  { label: "Explore", items: [{ to: "/sacramento", label: "Sacramento", exact: false }, { to: "/blog", label: "Blog", exact: false }] },
   { label: null, items: [{ to: "/contact", label: "Contact", exact: false }] },
 ];
 
