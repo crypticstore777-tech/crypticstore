@@ -19,7 +19,7 @@ const DJServices = () => {
     "@type": "EntertainmentBusiness",
     "name": "DJ Services by MC Mysterious",
     "description": "Sacramento's premier mobile DJ and entertainment services for weddings, corporate events, parties, and special occasions. Best DJ in Sacramento CA.",
-    "url": "https://crypticstore.com/dj-services",
+    "url": "https://crypticstore.shop/dj-services",
     "sameAs": MC_MYSTERIOUS_SOCIAL_PROFILES,
     "founder": {
       "@type": "Person",
@@ -55,12 +55,12 @@ const DJServices = () => {
         <meta name="description" content="Best DJ in Sacramento CA. Book MC Mysterious for weddings, corporate events, parties & more. Sacramento's top mobile DJ with professional sound systems & lighting. Sacramento Kings events welcome. Book now at MysteriousEnterprise.com" />
         <meta name="keywords" content="Sacramento DJ, DJ Sacramento CA, best DJ Sacramento, Sacramento wedding DJ, Sacramento mobile DJ, Sacramento corporate DJ, Sacramento party DJ, MC Mysterious, Sacramento event entertainment, Sacramento Kings DJ, professional DJ Sacramento, DJ services Sacramento California, Dream Dare Drip" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://crypticstore.com/dj-services" />
+        <link rel="canonical" href="https://crypticstore.shop/dj-services" />
         
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Sacramento DJ Services | MC Mysterious - Best Mobile DJ" />
         <meta property="og:description" content="Sacramento's best mobile DJ & entertainment services. Weddings, corporate events, parties. Book now at MysteriousEnterprise.com" />
-        <meta property="og:url" content="https://crypticstore.com/dj-services" />
+        <meta property="og:url" content="https://crypticstore.shop/dj-services" />
         <meta property="og:site_name" content="Cryptic Store" />
         
         <meta name="twitter:card" content="summary_large_image" />

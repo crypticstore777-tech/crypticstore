@@ -53,7 +53,7 @@ const Contact = () => {
     "@type": "ContactPage",
     "name": "Contact Cryptic Store",
     "description": "Contact Sacramento's Cryptic Store boutique & Mysterious Enterprise. DJ services, apparel orders, spiritual consultations in Sacramento CA.",
-    "url": "https://crypticstore.com/contact",
+    "url": "https://crypticstore.shop/contact",
     "mainEntity": {
       "@type": "Organization",
       "name": "Cryptic Store",
@@ -71,12 +71,12 @@ const Contact = () => {
         <meta name="description" content="Contact Cryptic Store, Sacramento's boutique & entertainment company. Book Sacramento DJ services, shop apparel, spiritual consultations. Sacramento Kings events welcome." />
         <meta name="keywords" content="contact Cryptic Store Sacramento, Sacramento DJ booking, Sacramento boutique contact, Mysterious Enterprise Sacramento, Sacramento entertainment booking, Sacramento artist contact" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://crypticstore.com/contact" />
+        <link rel="canonical" href="https://crypticstore.shop/contact" />
         
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Contact Sacramento DJ & Boutique | Cryptic Store" />
         <meta property="og:description" content="Contact Sacramento's Cryptic Store for DJ bookings, apparel orders, spiritual consultations & more." />
-        <meta property="og:url" content="https://crypticstore.com/contact" />
+        <meta property="og:url" content="https://crypticstore.shop/contact" />
         
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}

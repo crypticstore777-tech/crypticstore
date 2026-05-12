@@ -14,7 +14,7 @@ const About = () => {
     "@type": "AboutPage",
     name: "About Cryptic Store & MC Mysterious",
     description: "Sacramento boutique founded by Hip Hop DJ & artist MC Mysterious. Where Sacramento music, fashion, and mysticism converge. Sacramento Kings culture.",
-    url: "https://crypticstore.com/about",
+    url: "https://crypticstore.shop/about",
     mainEntity: {
       "@type": "Organization",
       name: "Cryptic Store",
@@ -34,11 +34,11 @@ const About = () => {
         <title>About MC Mysterious | Sacramento DJ, Artist & Boutique Owner | Cryptic Store</title>
         <meta name="description" content="Meet MC Mysterious — Sacramento's own Hip Hop DJ, artist, streetwear designer & boutique owner. Founder of Cryptic Store. Sacramento Kings culture, music & bold fashion converge. #Youknowwedomagic" />
         <meta name="keywords" content="MC Mysterious Sacramento, Sacramento DJ, Sacramento artist, Sacramento boutique owner, Sacramento streetwear designer, Sacramento hip hop, Sacramento Kings, Cryptic Store founder, Sacramento music, Sacramento entertainment, Youknowwedomagic" />
-        <link rel="canonical" href="https://crypticstore.com/about" />
+        <link rel="canonical" href="https://crypticstore.shop/about" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="About MC Mysterious | Sacramento DJ, Artist & Boutique Owner" />
         <meta property="og:description" content="Meet MC Mysterious — Sacramento's own Hip Hop DJ, artist, and founder of Cryptic Store boutique." />
-        <meta property="og:url" content="https://crypticstore.com/about" />
+        <meta property="og:url" content="https://crypticstore.shop/about" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
 

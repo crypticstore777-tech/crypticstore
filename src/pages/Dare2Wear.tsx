@@ -47,13 +47,13 @@ const Dare2Wear = () => {
         <title>Dare2Wear Collection - Sacramento Streetwear & Bold Apparel | Cryptic Store Boutique</title>
         <meta name="description" content="Shop the Dare2Wear Collection at Cryptic Store, Sacramento's boldest boutique. Streetwear, urban apparel & statement fashion by Sacramento artist DJ MC Mysterious. Sacramento Kings black & gold vibes. Free shipping over $75." />
         <meta name="keywords" content="Dare2Wear collection, Sacramento streetwear, Sacramento apparel, Sacramento boutique, Sacramento fashion, bold streetwear Sacramento, urban apparel Sacramento, graphic tees, Sacramento artist, DJ MC Mysterious, Sacramento Kings apparel, trending streetwear, bestselling fashion, politely toxic, hip hop clothing, Youknowwedomagic" />
-        <link rel="canonical" href="https://crypticstore.com/collections/dare2wear" />
+        <link rel="canonical" href="https://crypticstore.shop/collections/dare2wear" />
         
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Dare2Wear Collection - Bold Streetwear USA | Cryptic Store" />
         <meta property="og:description" content="Shop the Dare2Wear Collection. Bold streetwear and provocative statement pieces for those who dare to be different. Free shipping over $75 USA. #Youknowwedomagic" />
-        <meta property="og:url" content="https://crypticstore.com/collections/dare2wear" />
+        <meta property="og:url" content="https://crypticstore.shop/collections/dare2wear" />
         <meta property="og:image" content="https://cryptic-store.lovable.app/dare2wear-og.jpg" />
         
         {/* Twitter Card */}

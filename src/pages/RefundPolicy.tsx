@@ -61,7 +61,7 @@ const RefundPolicy = () => {
                 <span className="flex-shrink-0 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold">1</span>
                 <div>
                   <h3 className="font-medium">Contact Us</h3>
-                  <p className="text-muted-foreground">Email us at returns@crypticstore.com with your order number and reason for return.</p>
+                  <p className="text-muted-foreground">Email us at returns@crypticstore.shop with your order number and reason for return.</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -170,7 +170,7 @@ const RefundPolicy = () => {
             </p>
             <div className="p-4 bg-card rounded-lg border border-border">
               <p className="font-medium">Cryptic Store Returns Department</p>
-              <p className="text-muted-foreground">Email: returns@crypticstore.com</p>
+              <p className="text-muted-foreground">Email: returns@crypticstore.shop</p>
               <p className="text-muted-foreground">Response time: 24-48 hours</p>
             </div>
           </section>

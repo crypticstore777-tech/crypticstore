@@ -27,10 +27,10 @@ const ImitableLives = () => {
     "@graph": [
       {
         "@type": "CollectionPage",
-        "@id": "https://crypticstore.com/collections/imitable-lives#collection",
+        "@id": "https://crypticstore.shop/collections/imitable-lives#collection",
         name: "Imitable Lives Collection - Ancient Luxury Meets Modern Streetwear",
         description: "Shop the Imitable Lives Collection at Cryptic Store. Inspired by Marc Anthony and Cleopatra - ancient Egyptian luxury meets modern urban streetwear. Premium graphic tees featuring pyramids, cosmic imagery, and historical symbolism.",
-        url: "https://crypticstore.com/collections/imitable-lives",
+        url: "https://crypticstore.shop/collections/imitable-lives",
         mainEntity: {
           "@type": "ItemList",
           numberOfItems: imitableLivesProducts?.length || 0,
@@ -40,7 +40,7 @@ const ImitableLives = () => {
             item: {
               "@type": "Product",
               name: product.node.title,
-              url: `https://crypticstore.com/product/${product.node.handle}`,
+              url: `https://crypticstore.shop/product/${product.node.handle}`,
               image: product.node.images.edges[0]?.node.url,
               brand: {
                 "@type": "Brand",
@@ -58,25 +58,25 @@ const ImitableLives = () => {
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://crypticstore.com/collections/imitable-lives#breadcrumb",
+        "@id": "https://crypticstore.shop/collections/imitable-lives#breadcrumb",
         itemListElement: [
           {
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://crypticstore.com"
+            item: "https://crypticstore.shop"
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "Collections",
-            item: "https://crypticstore.com/collections"
+            item: "https://crypticstore.shop/collections"
           },
           {
             "@type": "ListItem",
             position: 3,
             name: "Imitable Lives",
-            item: "https://crypticstore.com/collections/imitable-lives"
+            item: "https://crypticstore.shop/collections/imitable-lives"
           }
         ]
       }
@@ -90,14 +90,14 @@ const ImitableLives = () => {
         <meta name="description" content="Dream Dare Drip. Shop Imitable Lives at Cryptic Store, Sacramento's luxury streetwear boutique. Egyptian pyramid graphic tees, ancient luxury meets modern apparel by Sacramento artist DJ MC Mysterious. Sacramento Kings colors. Free shipping $75+." />
         <meta name="keywords" content="Imitable Lives Collection, Sacramento streetwear, Sacramento boutique, Sacramento apparel, Sacramento artist, Egyptian streetwear, pyramid graphic tee, Sacramento luxury fashion, Sacramento Kings streetwear, cosmic streetwear, Cryptic Store Sacramento, DJ MC Mysterious, Youknowwedomagic, bestselling graphic tees" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
-        <link rel="canonical" href="https://crypticstore.com/collections/imitable-lives" />
+        <link rel="canonical" href="https://crypticstore.shop/collections/imitable-lives" />
         
         {/* Open Graph - Social Sharing */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Imitable Lives Collection - Egyptian Luxury Streetwear | Cryptic Store" />
         <meta property="og:description" content="Ancient luxury meets modern streetwear. Egyptian pyramid graphic tees inspired by Marc Anthony & Cleopatra. Premium black tees with cosmic designs. Free shipping $75+." />
-        <meta property="og:url" content="https://crypticstore.com/collections/imitable-lives" />
-        <meta property="og:image" content="https://crypticstore.com/speed-of-light-pyramid-tee.jpg" />
+        <meta property="og:url" content="https://crypticstore.shop/collections/imitable-lives" />
+        <meta property="og:image" content="https://crypticstore.shop/speed-of-light-pyramid-tee.jpg" />
         <meta property="og:site_name" content="Cryptic Store" />
         <meta property="og:locale" content="en_US" />
         
@@ -105,7 +105,7 @@ const ImitableLives = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Imitable Lives Collection - Egyptian Streetwear | Cryptic Store" />
         <meta name="twitter:description" content="Ancient luxury meets modern streetwear. Egyptian pyramid tees inspired by royalty. #Youknowwedomagic" />
-        <meta name="twitter:image" content="https://crypticstore.com/speed-of-light-pyramid-tee.jpg" />
+        <meta name="twitter:image" content="https://crypticstore.shop/speed-of-light-pyramid-tee.jpg" />
         
         {/* Additional SEO */}
         <meta name="author" content="Cryptic Store by Mysterious Enterprise" />

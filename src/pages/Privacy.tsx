@@ -107,7 +107,7 @@ const Privacy = () => {
             </p>
             <div className="mt-4 p-4 bg-card rounded-lg border border-border">
               <p className="font-medium">Mysterious Enterprise LLC</p>
-              <p className="text-muted-foreground">Email: privacy@crypticstore.com</p>
+              <p className="text-muted-foreground">Email: privacy@crypticstore.shop</p>
               <p className="text-muted-foreground">Website: MysteriousEnterprise.com</p>
             </div>
           </section>
