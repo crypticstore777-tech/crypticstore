@@ -12,6 +12,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { INCERUNMEN_PRODUCTS } from "@/lib/partner-products";
 import imitableClubHero from "@/assets/imitable-club-hero.jpg";
+import imitableStorefront from "@/assets/imitable-lives-storefront.jpg";
 
 const ImitableLives = () => {
   // Fetch products tagged with imitable-lives directly from Shopify
@@ -119,54 +120,49 @@ const ImitableLives = () => {
 
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="relative py-16 md:py-24 overflow-hidden bg-background">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
-            {/* Text Content */}
-            <div className="flex-1 text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 text-primary mb-6 border border-primary/40 backdrop-blur-sm shadow-[0_0_20px_hsla(50,100%,50%,0.3)]">
-                <Crown className="h-4 w-4" />
-                <span className="text-sm font-bold tracking-wider uppercase">Premium Collection</span>
-              </div>
-              
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 text-foreground tracking-tight">
-                IMITABLE <span className="text-primary">LIVES</span>
-              </h1>
-              
-              <p className="text-lg md:text-xl text-foreground/80 mb-2 font-light tracking-widest uppercase">
-                Ancient Luxury • Modern Streetwear
-              </p>
-              
-              <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-xl font-medium">
-                Inspired by Marc Anthony & Cleopatra. Where Egyptian mysticism meets cosmic science. 
-                Premium graphic tees for those who live like royalty.
-              </p>
+      {/* Hero Section — Full-width storefront */}
+      <section className="relative h-screen min-h-[600px] overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${imitableStorefront})` }}
+          role="img"
+          aria-label="Cryptic Store — Imitable Lives Collection storefront window display"
+        />
+        {/* Dark gradient overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/50" />
+        
+        <div className="relative h-full container mx-auto px-4 flex flex-col justify-end items-center text-center pb-16 md:pb-24">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 text-primary mb-6 border border-primary/40 backdrop-blur-sm shadow-[0_0_20px_hsla(50,100%,50%,0.3)]">
+            <Crown className="h-4 w-4" />
+            <span className="text-sm font-bold tracking-wider uppercase">Premium Collection</span>
+          </div>
+          
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-4 text-white tracking-tight" style={{ textShadow: '0 2px 4px rgba(0,0,0,1), 0 4px 20px rgba(0,0,0,0.8)' }}>
+            IMITABLE <span className="text-primary">LIVES</span>
+          </h1>
+          
+          <p className="text-lg md:text-xl text-white/80 mb-2 font-light tracking-widest uppercase" style={{ textShadow: '0 1px 6px rgba(0,0,0,0.9)' }}>
+            Ancient Luxury • Modern Streetwear
+          </p>
+          
+          <p className="text-xl md:text-2xl text-white/70 mb-8 max-w-xl font-medium" style={{ textShadow: '0 1px 4px rgba(0,0,0,0.8)' }}>
+            Inspired by Marc Anthony & Cleopatra. Where Egyptian mysticism meets cosmic science. 
+            Premium graphic tees for those who live like royalty.
+          </p>
 
-              <div className="flex flex-wrap justify-center lg:justify-start gap-4 text-sm text-muted-foreground">
-                <span className="flex items-center gap-2 px-3 py-1 rounded-full bg-muted/50">
-                  <Sparkles className="h-4 w-4 text-primary" />
-                  Egyptian Designs
-                </span>
-                <span className="flex items-center gap-2 px-3 py-1 rounded-full bg-muted/50">
-                  <Sparkles className="h-4 w-4 text-primary" />
-                  Premium Cotton
-                </span>
-                <span className="flex items-center gap-2 px-3 py-1 rounded-full bg-muted/50">
-                  <Sparkles className="h-4 w-4 text-primary" />
-                  USA Shipping
-                </span>
-              </div>
-            </div>
-
-            {/* Hero Image */}
-            <div className="flex-1 flex justify-center">
-              <img
-                src={imitableClubHero}
-                alt="Imitable Lives Collection - Ancient Egyptian luxury meets modern streetwear"
-                className="rounded-2xl w-full max-w-lg object-cover shadow-[0_0_40px_hsla(50,100%,50%,0.3)]"
-              />
-            </div>
+          <div className="flex flex-wrap justify-center gap-4 text-sm text-white/70">
+            <span className="flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-sm border border-white/10">
+              <Sparkles className="h-4 w-4 text-primary" />
+              Egyptian Designs
+            </span>
+            <span className="flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-sm border border-white/10">
+              <Sparkles className="h-4 w-4 text-primary" />
+              Premium Cotton
+            </span>
+            <span className="flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-sm border border-white/10">
+              <Sparkles className="h-4 w-4 text-primary" />
+              USA Shipping
+            </span>
           </div>
         </div>
       </section>
