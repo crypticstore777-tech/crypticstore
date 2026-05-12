@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import crypticStoreHero from "@/assets/cryptic-store-hero.jpg";
+import crypticStoreLogo from "@/assets/cryptic-store-logo-gold.jpg";
 import founderImage from "@/assets/mc-mysterious-bw-portrait.png";
 import { MC_MYSTERIOUS_SOCIAL_PROFILES } from "@/lib/seo-constants";
 
@@ -115,25 +116,20 @@ const Index = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative h-screen min-h-[600px] overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-ken-burns" 
-          style={{ backgroundImage: `url(${crypticStoreHero})` }} 
-          role="img" 
-          aria-label="Cryptic Store - Black and gold streetwear boutique by Mysterious Enterprise"
-        />
+      <section className="relative min-h-screen overflow-hidden bg-black">
+        {/* Subtle radial glow behind logo */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsla(43,80%,40%,0.08)_0%,transparent_70%)]" />
         
-        <div className="relative h-full container mx-auto px-4 flex flex-col justify-center items-center text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-transparent text-primary mb-6 border border-primary/60 shadow-[0_0_20px_hsla(50,100%,50%,0.3)]">
-            <Sparkles className="h-4 w-4 drop-shadow-[0_0_6px_rgba(0,0,0,0.8)]" />
-            <span className="text-sm font-bold tracking-wide drop-shadow-[0_1px_4px_rgba(0,0,0,0.9)]">Welcome</span>
-          </div>
+        <div className="relative h-full min-h-screen container mx-auto px-4 flex flex-col justify-center items-center text-center py-24">
+          {/* Cryptic Store Logo */}
+          <img
+            src={crypticStoreLogo}
+            alt="Cryptic Store - Gold M emblem with treasure chest logo"
+            className="w-64 sm:w-80 md:w-96 lg:w-[28rem] h-auto mb-8 drop-shadow-[0_0_40px_hsla(43,80%,50%,0.3)] animate-fade-in"
+          />
+          <h1 className="sr-only">Cryptic Store</h1>
           
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 text-foreground" style={{ textShadow: '0 2px 4px rgba(0,0,0,1), 0 4px 20px rgba(0,0,0,0.8)' }}>
-            Cryptic Store
-          </h1>
-          
-          <p className="text-2xl md:text-3xl text-primary font-black tracking-widest mb-8" style={{ textShadow: '0 0 20px hsla(50,100%,50%,0.4), 0 2px 8px rgba(0,0,0,0.9)' }}>
+          <p className="text-2xl md:text-3xl text-primary font-black tracking-widest mb-10" style={{ textShadow: '0 0 20px hsla(50,100%,50%,0.4), 0 2px 8px rgba(0,0,0,0.9)' }}>
             Dream Dare Drip
           </p>
           
