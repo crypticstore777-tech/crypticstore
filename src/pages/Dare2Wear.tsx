@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { getProducts } from "@/lib/shopify";
+import { getProductsByCollection } from "@/lib/shopify";
 import { ProductCard } from "@/components/ProductCard";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
@@ -10,7 +10,7 @@ import dare2wearHero from "@/assets/dare2wear-collection-hero.jpg";
 const Dare2Wear = () => {
   const { data: dare2wearProducts, isLoading } = useQuery({
     queryKey: ['products', 'dare2wear'],
-    queryFn: () => getProducts(50),
+    queryFn: () => getProductsByCollection('Dare2Wear', 50),
   });
 
   // Structured data for collection page
