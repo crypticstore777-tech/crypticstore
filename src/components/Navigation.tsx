@@ -27,6 +27,7 @@ const dropdownGroups: DropdownGroup[] = [
   {
     label: "Collections",
     items: [
+      { to: "/collections", label: "All Collections", description: "Browse all collections" },
       { to: "/collections/dare2wear", label: "Dare2Wear", description: "Bold streetwear collection" },
       { to: "/collections/imitable-lives", label: "Imitable Lives", description: "Egyptian-inspired luxury" },
       { to: "/youknowwedomagic", label: "#YouKnowWeDoMagic", description: "Spiritual & creative services" },

@@ -1,6 +1,10 @@
+import { useQuery } from "@tanstack/react-query";
+import { getProducts, getProductsByCollection, type ShopifyProduct } from "@/lib/shopify";
+import { ProductCard } from "@/components/ProductCard";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { Skeleton } from "@/components/ui/skeleton";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Music, Mic2, Sparkles, Eye, Coins, Stars, Flame } from "lucide-react";
 import { Helmet } from "react-helmet";
@@ -56,6 +60,27 @@ const YouKnowWeDoMagic = () => {
       color: "text-orange-400"
     }
   ];
+
+  // Fetch YouKnowWeDoMagic tagged products + spiritual partner products
+  const { data: magicProducts, isLoading: isLoadingProducts } = useQuery({
+    queryKey: ['products', 'youknowwedomagic-all'],
+    queryFn: async () => {
+      const [tagged, collective] = await Promise.all([
+        getProductsByCollection('YouKnowWeDoMagic', 50),
+        getProducts(50, 'tag:"Shopify Collective"'),
+      ]);
+      // Merge and deduplicate; exclude streetwear partners (Niepce)
+      const seen = new Set<string>();
+      const merged: ShopifyProduct[] = [];
+      for (const p of [...tagged, ...collective]) {
+        if (!seen.has(p.node.id) && !p.node.tags.includes('Niepce')) {
+          seen.add(p.node.id);
+          merged.push(p);
+        }
+      }
+      return merged;
+    },
+  });
 
   return (
     <>
@@ -202,6 +227,44 @@ const YouKnowWeDoMagic = () => {
                 </CardHeader>
               </Card>
             </div>
+          </div>
+        </section>
+
+        {/* Spiritual Products Section */}
+        <section className="py-16 px-4 bg-secondary/5">
+          <div className="container mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Mystical <span className="text-primary">Products</span>
+              </h2>
+              <div className="w-24 h-1 bg-primary mx-auto mb-4 rounded-full shadow-[0_0_10px_hsla(50,100%,50%,0.5)]" />
+              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+                Spiritual accessories, incense, crystals, candles & more — curated for the mystic in you
+              </p>
+            </div>
+
+            {isLoadingProducts ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                {[...Array(8)].map((_, i) => (
+                  <div key={i} className="space-y-4">
+                    <Skeleton className="aspect-square w-full" />
+                    <Skeleton className="h-4 w-3/4" />
+                    <Skeleton className="h-4 w-1/2" />
+                  </div>
+                ))}
+              </div>
+            ) : magicProducts && magicProducts.length > 0 ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                {magicProducts.map((product) => (
+                  <ProductCard key={product.node.id} product={product} />
+                ))}
+              </div>
+            ) : (
+              <div className="text-center py-12">
+                <Sparkles className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
+                <p className="text-muted-foreground">Mystical products coming soon...</p>
+              </div>
+            )}
           </div>
         </section>
 
