@@ -29,6 +29,7 @@ import SyncHub from "./pages/SyncHub";
 import Sacramento from "./pages/Sacramento";
 import IncerunmenProduct from "./pages/IncerunmenProduct";
 import SmsOptIn from "./pages/SmsOptIn";
+import Collections from "./pages/Collections";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -67,6 +68,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/collections" element={<Collections />} />
           <Route path="/collections/dare2wear" element={<Dare2Wear />} />
           <Route path="/collections/imitable-lives" element={<ImitableLives />} />
           <Route path="/dj-services" element={<DJServices />} />
