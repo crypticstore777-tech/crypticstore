@@ -23,8 +23,8 @@ const BlogSacramentoDJs = () => {
   return (
     <>
       <Helmet>
-        <title>Best DJs in Sacramento CA — Top Mobile DJ Guide 2026 | Cryptic Store Blog</title>
-        <meta name="description" content="Looking for the best DJ in Sacramento? Our guide covers Sacramento's top DJs for weddings, parties, corporate events & Kings watch parties. Book MC Mysterious today." />
+        <title>Best DJs in Sacramento | Cryptic Store Blog</title>
+        <meta name="description" content="The best DJs in Sacramento CA for events, weddings & parties. Hire top local talent including MC Mysterious." />
         <meta name="keywords" content="best DJs Sacramento, Sacramento DJ, Sacramento wedding DJ, top DJ Sacramento CA, mobile DJ Sacramento, Sacramento party DJ, Sacramento corporate DJ, Sacramento Kings DJ, MC Mysterious Sacramento, hire DJ Sacramento" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href="https://crypticstore.lovable.app/blog/best-djs-sacramento" />

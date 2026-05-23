@@ -85,8 +85,8 @@ const YouKnowWeDoMagic = () => {
   return (
     <>
       <Helmet>
-        <title>#YouKnowWeDoMagic - Sacramento DJ, Music & Spiritual Services | Cryptic Store</title>
-        <meta name="description" content="Sacramento's premier DJ, music & spiritual services. MC Mysterious offers mobile DJ, audio engineering, artist promotion, tarot readings, scrying & astrology in Sacramento CA. #Youknowwedomagic" />
+        <title>You Know We Do Magic | Cryptic Store</title>
+        <meta name="description" content="Explore mystical & spiritual products at Cryptic Store Sacramento. Curated magic, crystals & spiritual lifestyle." />
         <meta name="keywords" content="Sacramento DJ services, Sacramento music services, Sacramento artist, Sacramento entertainment, Sacramento spiritual services, Sacramento tarot, Sacramento mobile DJ, audio engineering Sacramento, Sacramento Kings events, Dream Dare Drip, Youknowwedomagic" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://crypticstore.lovable.app/youknowwedomagic" />

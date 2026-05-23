@@ -30,8 +30,8 @@ const BlogEmpathsIndigo = () => {
   return (
     <>
       <Helmet>
-        <title>Empaths & Indigo Children: The Souls Who Feel Everything | Cryptic Store Blog</title>
-        <meta name="description" content="Explore empaths and indigo children — highly sensitive souls who perceive energy, emotions, and hidden truths. Learn about indigo auras, empathic gifts, and spiritual sensitivity." />
+        <title>Empaths & Indigo Children | Cryptic Store Blog</title>
+        <meta name="description" content="A guide to empaths and indigo children — spiritual awareness, energy & intuition. From Cryptic Store Sacramento." />
         <meta name="keywords" content="empaths, indigo children, indigo aura, empathic abilities, highly sensitive person, spiritual gifts, energy reading, intuition, aura colors, Cryptic Store" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://crypticstore.lovable.app/blog/empaths-indigo-children" />

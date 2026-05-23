@@ -10,8 +10,8 @@ const Music = () => {
   return (
     <>
       <Helmet>
-        <title>Sacramento Music Artist | MC Mysterious - Hip Hop DJ, Producer & Artist Sacramento CA</title>
-        <meta name="description" content="Sacramento music artist MC Mysterious. Listen on SoundCloud, Mixcloud & YouTube. Sacramento's top Hip Hop DJ with original mixes, tracks & live sets. Sacramento Kings anthem vibes." />
+        <title>Music by MC Mysterious | Cryptic Store</title>
+        <meta name="description" content="Stream & discover music by Sacramento hip-hop artist MC Mysterious. Beats, tracks & vibes from Cryptic Store." />
         <meta name="keywords" content="Sacramento music, Sacramento artist, Sacramento hip hop, Sacramento DJ, Sacramento musician, Sacramento producer, MC Mysterious Sacramento, Sacramento rap, Sacramento music scene, Sacramento Kings music, SoundCloud Sacramento, Sacramento entertainment" />
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </Helmet>
