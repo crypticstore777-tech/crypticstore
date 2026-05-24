@@ -30,8 +30,8 @@ const BlogCrossroads = () => {
   return (
     <>
       <Helmet>
-        <title>At the Crossroads: Magic & Music History | Cryptic Store Blog</title>
-        <meta name="description" content="Explore the mystical connection between magic and music. From Robert Johnson's legendary crossroads deal to MC Mysterious's own mysterious journey." />
+        <title>Crossroads of Magic & Music | Cryptic Store Blog</title>
+        <meta name="description" content="Explore where magic meets music — culture, mysticism & hip-hop intersect at Cryptic Store Sacramento." />
         <meta name="keywords" content="Robert Johnson crossroads, magic and music history, blues legend, mystical music, shamanic music, MC Mysterious, Cryptic Store blog" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://crypticstore.lovable.app/blog/crossroads-magic-music" />

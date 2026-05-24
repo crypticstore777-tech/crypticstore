@@ -23,8 +23,8 @@ const BlogSacStreetwear = () => {
   return (
     <>
       <Helmet>
-        <title>Sacramento Streetwear Boutiques — Best Urban Fashion & Apparel 2026 | Cryptic Store Blog</title>
-        <meta name="description" content="Explore Sacramento's best streetwear boutiques and urban fashion. Discover bold graphic tees, Sacramento Kings–inspired apparel, and local brands like Cryptic Store by MC Mysterious." />
+        <title>Sacramento Streetwear Boutiques | Cryptic Store</title>
+        <meta name="description" content="Top streetwear boutiques in Sacramento CA. Discover local fashion, urban style & independent brands in the 916." />
         <meta name="keywords" content="Sacramento streetwear, Sacramento boutiques, Sacramento fashion, Sacramento apparel, urban fashion Sacramento, Sacramento clothing stores, Sacramento Kings apparel, Sacramento graphic tees, Cryptic Store Sacramento, best boutiques Sacramento CA" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href="https://crypticstore.lovable.app/blog/sacramento-streetwear-boutiques" />

@@ -23,8 +23,8 @@ const BlogAries = () => {
   return (
     <>
       <Helmet>
-        <title>Aries Zodiac Deep Dive — March vs April Aries, Rare Facts & Cosmic Secrets | Cryptic Chronicles</title>
-        <meta name="description" content="The ultimate Aries zodiac guide. Rare facts, ancient mythology, March Aries vs April Aries cosmic differences, decan breakdowns & hidden traits by MC Mysterious." />
+        <title>Aries Zodiac Style Guide | Cryptic Store Blog</title>
+        <meta name="description" content="Discover bold Aries zodiac fashion & energy. Streetwear picks for the fire sign from Cryptic Store Sacramento." />
         <meta name="keywords" content="Aries zodiac, March Aries, April Aries, Aries personality, Aries traits, Aries decan, Aries mythology, Aries rare facts, zodiac deep dive, MC Mysterious astrology" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href="https://crypticstore.lovable.app/blog/aries-zodiac" />

@@ -89,23 +89,23 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Cryptic Store | Sacramento Boutique - DJ Services, Music, Artists & Urban Apparel</title>
-        <meta name="description" content="Sacramento's premier online boutique & DJ services. Shop Dare2Wear & Imitable Lives streetwear collections by artist DJ MC Mysterious. Sacramento Kings inspired black & gold apparel. Music, entertainment & spiritual services. Free shipping $75+." />
+        <title>Cryptic Store | Sacramento Boutique by MC Mysterious</title>
+        <meta name="description" content="Sacramento boutique by DJ MC Mysterious. Shop Dare2Wear & Imitable Lives streetwear, book DJ services & explore music. Free shipping $75+." />
         <meta name="keywords" content="Sacramento boutique, Sacramento DJ, Sacramento artists, Sacramento music, Sacramento apparel, Sacramento Kings fashion, Cryptic Store, online boutique Sacramento CA, DJ services Sacramento, hip hop artist Sacramento, urban apparel Sacramento, streetwear Sacramento, DJ MC Mysterious, Dare2Wear collection, Imitable Lives collection, trending streetwear, bestselling graphic tees, black gold streetwear, Sacramento entertainment, Sacramento Kings inspired, Youknowwedomagic" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href="https://crypticstore.shop" />
         
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Cryptic Store | Sacramento Boutique - DJ, Music, Artists & Apparel" />
-        <meta property="og:description" content="Sacramento's hottest boutique. Shop streetwear by artist DJ MC Mysterious. Sacramento Kings inspired black & gold apparel. DJ services & music. Free shipping $75+." />
+        <meta property="og:title" content="Cryptic Store | Sacramento Boutique by MC Mysterious" />
+        <meta property="og:description" content="Sacramento boutique by DJ MC Mysterious. Shop streetwear, book DJ services & explore music. Free shipping $75+." />
         <meta property="og:image" content="https://crypticstore.shop/dare2wear-collection-hero.jpg" />
         <meta property="og:url" content="https://crypticstore.shop" />
         <meta property="og:site_name" content="Cryptic Store" />
         <meta property="og:locale" content="en_US" />
         
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Cryptic Store | Sacramento Boutique - DJ, Music & Apparel" />
-        <meta name="twitter:description" content="Sacramento's hottest boutique. Streetwear by artist DJ MC Mysterious. Sacramento Kings inspired fashion. #Youknowwedomagic" />
+        <meta name="twitter:title" content="Cryptic Store | Sacramento Boutique by MC Mysterious" />
+        <meta name="twitter:description" content="Sacramento boutique by DJ MC Mysterious. Shop streetwear, book DJ services & explore music. #Youknowwedomagic" />
         <meta name="twitter:image" content="https://crypticstore.shop/dare2wear-collection-hero.jpg" />
         
         <script type="application/ld+json">

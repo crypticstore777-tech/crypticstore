@@ -86,8 +86,8 @@ const ImitableLives = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Imitable Lives Collection - Sacramento Luxury Streetwear & Egyptian Apparel | Cryptic Store Boutique</title>
-        <meta name="description" content="Dream Dare Drip. Shop Imitable Lives at Cryptic Store, Sacramento's luxury streetwear boutique. Egyptian pyramid graphic tees, ancient luxury meets modern apparel by Sacramento artist DJ MC Mysterious. Sacramento Kings colors. Free shipping $75+." />
+        <title>Imitable Lives Collection | Cryptic Store</title>
+        <meta name="description" content="Shop Imitable Lives — ancient luxury meets modern streetwear. Premium urban apparel from Cryptic Store Sacramento." />
         <meta name="keywords" content="Imitable Lives Collection, Sacramento streetwear, Sacramento boutique, Sacramento apparel, Sacramento artist, Egyptian streetwear, pyramid graphic tee, Sacramento luxury fashion, Sacramento Kings streetwear, cosmic streetwear, Cryptic Store Sacramento, DJ MC Mysterious, Youknowwedomagic, bestselling graphic tees" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href="https://crypticstore.shop/collections/imitable-lives" />

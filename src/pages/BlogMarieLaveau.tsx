@@ -31,8 +31,8 @@ const BlogMarieLaveau = () => {
   return (
     <>
       <Helmet>
-        <title>Marie Laveau: The Voodoo Queen of New Orleans | Cryptic Store Blog</title>
-        <meta name="description" content="The true history of Marie Laveau — New Orleans' legendary Voodoo Queen, herbalist, healer, and community leader. Born 1801, her legacy endures to this day." />
+        <title>Marie Laveau — Voodoo Queen | Cryptic Store Blog</title>
+        <meta name="description" content="The story of Marie Laveau, New Orleans Voodoo Queen. History, legacy & spiritual influence. Cryptic Store blog." />
         <meta name="keywords" content="Marie Laveau, Voodoo Queen, New Orleans Voodoo, Louisiana Voodoo, herbalist, healer, gris-gris, French Quarter, Saint Louis Cemetery, Cryptic Store" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://crypticstore.lovable.app/blog/marie-laveau" />
