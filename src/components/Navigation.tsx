@@ -106,13 +106,13 @@ export const Navigation = () => {
   return (
     <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
-          <NavLink to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+        <div className="flex items-center justify-between gap-2">
+          <NavLink to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity shrink-0">
             <img src={logo} alt="Cryptic Store Logo" className="h-10 w-10 object-contain" />
-            <span className="text-xl font-bold">Cryptic Store</span>
+            <span className="text-xl font-bold hidden sm:inline">Cryptic Store</span>
           </NavLink>
           
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 lg:gap-4">
             {/* Desktop Navigation */}
             <NavigationMenu className="hidden lg:flex">
               <NavigationMenuList>
@@ -178,8 +178,8 @@ export const Navigation = () => {
               </NavigationMenuList>
             </NavigationMenu>
 
-            {/* Search Bar */}
-            <div className="hidden md:block">
+            {/* Search Bar - hidden on small, visible on xl+ to save space */}
+            <div className="hidden xl:block">
               <SearchBar />
             </div>
 
@@ -257,8 +257,12 @@ export const Navigation = () => {
               </SheetContent>
             </Sheet>
 
-            <UserMenu />
-            <CartDrawer />
+            <div className="shrink-0">
+              <UserMenu />
+            </div>
+            <div className="shrink-0">
+              <CartDrawer />
+            </div>
           </div>
         </div>
       </div>
