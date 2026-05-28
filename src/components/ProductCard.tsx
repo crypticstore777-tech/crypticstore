@@ -12,6 +12,7 @@ interface ProductCardProps {
 
 export const ProductCard = ({ product }: ProductCardProps) => {
   const addItem = useCartStore(state => state.addItem);
+  const setCartOpen = useCartStore(state => state.setCartOpen);
   const { node } = product;
   
   const firstVariant = node.variants.edges[0]?.node;
@@ -35,6 +36,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
       quantity: 1,
       selectedOptions: firstVariant.selectedOptions || []
     });
+    setCartOpen(true);
     toast.success("Added to cart", {
       description: `${node.title} has been added to your cart.`,
     });

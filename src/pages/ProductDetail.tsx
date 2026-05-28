@@ -15,6 +15,7 @@ import { Helmet } from "react-helmet";
 const ProductDetail = () => {
   const { handle } = useParams<{ handle: string }>();
   const addItem = useCartStore(state => state.addItem);
+  const setCartOpen = useCartStore(state => state.setCartOpen);
   const [selectedVariantIndex, setSelectedVariantIndex] = useState(0);
 
   const { data: product, isLoading } = useQuery({
@@ -141,6 +142,7 @@ const ProductDetail = () => {
       quantity: 1,
       selectedOptions: selectedVariant.selectedOptions || []
     });
+    setCartOpen(true);
     toast.success("Added to cart", {
       description: `${product.title} has been added to your cart.`,
     });
