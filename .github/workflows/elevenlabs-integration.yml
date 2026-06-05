@@ -1,0 +1,48 @@
+name: ElevenLabs Integration
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  elevenlabs_job:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the repository code
+      - name: Checkout Code
+        uses: actions/checkout@v3
+      
+      # Set up Python (if the ElevenLabs SDK/API is used)
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+
+      # Install ElevenLabs SDK
+      - name: Install ElevenLabs SDK
+        run: pip install elevenlabs
+
+      # Run a script to interact with ElevenLabs
+      - name: Run ElevenLabs Script
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: |
+          python -c "
+import os
+from elevenlabs import set_api_key, generate, save
+
+# Set API Key
+set_api_key(os.getenv('ELEVENLABS_API_KEY'))
+
+# Generate Audio
+audio = generate(
+    text='Hello from CrypticStore integration with ElevenLabs!',
+    voice='Bella'
+)
+
+# Save the audio locally or process it
+save(audio, 'output.mp3')
+print('Audio generated and saved as output.mp3')
+"
