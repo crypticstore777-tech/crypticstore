@@ -1,0 +1,41 @@
+name: Sync Printful Products
+
+on:
+  schedule:
+    # Run every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Printful sync
+        env:
+          VITE_PRINTFUL_API_KEY: ${{ secrets.PRINTFUL_API_KEY }}
+          VITE_SHOPIFY_STORE_URL: ${{ secrets.SHOPIFY_STORE_URL }}
+          VITE_SHOPIFY_STOREFRONT_TOKEN: ${{ secrets.SHOPIFY_STOREFRONT_TOKEN }}
+          VITE_SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+        run: npm run sync
+
+      - name: Notify on success
+        if: success()
+        run: echo "✓ Printful sync completed successfully"
+
+      - name: Notify on failure
+        if: failure()
+        run: echo "✗ Printful sync failed" && exit 1
