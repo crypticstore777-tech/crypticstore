@@ -111,7 +111,7 @@ const BlogVirgo = () => {
           <p className="text-muted-foreground mb-4 leading-relaxed">
             In <strong>Egypt</strong>, the maiden was linked to <strong>Isis</strong> — and the myth says that while fleeing
             with the infant Horus, she dropped an armful of wheat, scattering it across the sky as the Milky Way. Isis is the
-            goddess of magic *because* she is the goddess of exact procedure: she reassembled Osiris piece by piece. That is
+            goddess of magic <em>because</em> she is the goddess of exact procedure: she reassembled Osiris piece by piece. That is
             Virgo's true occult signature — magic that works because every detail was done correctly.
           </p>
           <p className="text-muted-foreground mb-8 leading-relaxed">

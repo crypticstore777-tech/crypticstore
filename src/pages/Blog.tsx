@@ -122,27 +122,27 @@ const Blog = () => {
         <Navigation />
 
         {/* Hero */}
-        <section className="relative py-20 md:py-28 px-4 overflow-hidden">
-          <img
-            src={chroniclesHero}
-            alt="The Cryptic Chronicles — The Zodiac Codex: golden zodiac wheel with all twelve constellations on a black starfield"
-            className="absolute inset-0 w-full h-full object-cover"
-            loading="eager"
-          />
-          <div className="absolute inset-0 bg-background/70" />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-background/70" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsla(50,100%,50%,0.10)_0%,transparent_65%)]" />
-          <div className="container mx-auto relative z-10 text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 text-primary mb-6 border border-primary/40">
-              <Sparkles className="h-4 w-4" />
-              <span className="text-sm font-bold">The Cryptic Chronicles</span>
+        <section className="relative pt-8 md:pt-12 pb-10 px-4 overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsla(50,100%,50%,0.08)_0%,transparent_65%)]" />
+          <div className="container mx-auto relative z-10 max-w-5xl">
+            <h1 className="sr-only">The Cryptic Chronicles — Stories of Magic, Music &amp; Mystery by MC Mysterious</h1>
+            <div className="rounded-2xl overflow-hidden border border-primary/30 shadow-[0_0_40px_hsla(50,100%,50%,0.15)]">
+              <img
+                src={chroniclesHero}
+                alt="The Cryptic Chronicles — The Zodiac Codex: golden zodiac wheel with all twelve constellations on a black starfield"
+                className="w-full h-auto"
+                loading="eager"
+              />
             </div>
-            <h1 className="text-5xl md:text-7xl font-black mb-4 text-foreground">
-              The Cryptic Chronicles
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              Stories of Magic, Music & Mystery — by MC Mysterious
-            </p>
+            <div className="text-center mt-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 text-primary mb-4 border border-primary/40">
+                <Sparkles className="h-4 w-4" />
+                <span className="text-sm font-bold">The Cryptic Chronicles</span>
+              </div>
+              <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+                Stories of Magic, Music &amp; Mystery — by MC Mysterious
+              </p>
+            </div>
           </div>
         </section>
 
