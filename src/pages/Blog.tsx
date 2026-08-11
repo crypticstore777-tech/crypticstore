@@ -11,8 +11,19 @@ import magicHeroImage from "@/assets/youknowwedomagic-hero.jpg";
 import sacDjsImage from "@/assets/blog-sacramento-djs.jpg";
 import sacStreetwearImage from "@/assets/blog-sacramento-streetwear.jpg";
 import ariesImage from "@/assets/blog-aries-zodiac.jpg";
+import leoImage from "@/assets/blog-leo-zodiac.jpg";
 
 const blogPosts = [
+{
+  title: "Leo: The Solar Lion — Hidden Secrets & July vs August Differences",
+  description: "The ultimate Leo deep dive. Rare cosmic facts, the royal star Regulus, ancient lion mythology, decan breakdowns, and the real differences between July Leo and August Leo.",
+  path: "/blog/leo-zodiac",
+  image: leoImage,
+  icon: Crown,
+  date: "August 2026",
+  color: "primary",
+  glow: "hsla(45,100%,50%,0.35)"
+},
 {
   title: "Aries: The Cosmic Ram — Deep Secrets & March vs April Differences",
   description: "The ultimate Aries deep dive. Rare cosmic facts, ancient mythology, decan breakdowns, and the powerful differences between March Aries and April Aries.",
