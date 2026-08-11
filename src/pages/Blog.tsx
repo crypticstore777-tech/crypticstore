@@ -2,7 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Sparkles, ArrowRight, Music, Crown, Eye, Disc3, Shirt, Flame } from "lucide-react";
+import { Sparkles, ArrowRight, Music, Crown, Eye, Disc3, Shirt, Flame, Wheat } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import djHeroImage from "@/assets/dj-services-hero.jpeg";
@@ -12,8 +12,20 @@ import sacDjsImage from "@/assets/blog-sacramento-djs.jpg";
 import sacStreetwearImage from "@/assets/blog-sacramento-streetwear.jpg";
 import ariesImage from "@/assets/blog-aries-zodiac.jpg";
 import leoImage from "@/assets/blog-leo-zodiac.jpg";
+import virgoImage from "@/assets/blog-virgo-zodiac.jpg";
+import chroniclesHero from "@/assets/chronicles-hero.jpg";
 
 const blogPosts = [
+{
+  title: "Virgo: The Sacred Harvest — Hidden Secrets & August vs September Differences",
+  description: "The ultimate Virgo deep dive. The star Spica, the wheat-maiden myth of Astraea and Isis, rare cosmic facts, decan breakdowns, and the real differences between August Virgo and September Virgo.",
+  path: "/blog/virgo-zodiac",
+  image: virgoImage,
+  icon: Wheat,
+  date: "August 2026",
+  color: "primary",
+  glow: "hsla(150,60%,45%,0.35)"
+},
 {
   title: "Leo: The Solar Lion — Hidden Secrets & July vs August Differences",
   description: "The ultimate Leo deep dive. Rare cosmic facts, the royal star Regulus, ancient lion mythology, decan breakdowns, and the real differences between July Leo and August Leo.",
@@ -111,8 +123,15 @@ const Blog = () => {
 
         {/* Hero */}
         <section className="relative py-20 md:py-28 px-4 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/15 via-background to-purple-900/10" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsla(50,100%,50%,0.08)_0%,transparent_60%)]" />
+          <img
+            src={chroniclesHero}
+            alt="The Cryptic Chronicles — The Zodiac Codex: golden zodiac wheel with all twelve constellations on a black starfield"
+            className="absolute inset-0 w-full h-full object-cover"
+            loading="eager"
+          />
+          <div className="absolute inset-0 bg-background/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-background/70" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsla(50,100%,50%,0.10)_0%,transparent_65%)]" />
           <div className="container mx-auto relative z-10 text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 text-primary mb-6 border border-primary/40">
               <Sparkles className="h-4 w-4" />
