@@ -2,7 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Sparkles, ArrowRight, Music, Crown, Eye, Disc3, Shirt, Flame, Wheat } from "lucide-react";
+import { ArrowRight, Music, Crown, Eye, Disc3, Shirt, Flame, Wheat } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import djHeroImage from "@/assets/dj-services-hero.jpeg";
@@ -133,15 +133,6 @@ const Blog = () => {
                 className="w-full h-auto"
                 loading="eager"
               />
-            </div>
-            <div className="text-center mt-6">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 text-primary mb-4 border border-primary/40">
-                <Sparkles className="h-4 w-4" />
-                <span className="text-sm font-bold">The Cryptic Chronicles</span>
-              </div>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-                Stories of Magic, Music &amp; Mystery — by MC Mysterious
-              </p>
             </div>
           </div>
         </section>
