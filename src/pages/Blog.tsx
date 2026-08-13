@@ -2,7 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Sparkles, ArrowRight, Music, Crown, Eye, Disc3, Shirt, Flame } from "lucide-react";
+import { Sparkles, ArrowRight, Music, Crown, Eye, Disc3, Shirt, Flame, Wheat } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import djHeroImage from "@/assets/dj-services-hero.jpeg";
@@ -11,8 +11,31 @@ import magicHeroImage from "@/assets/youknowwedomagic-hero.jpg";
 import sacDjsImage from "@/assets/blog-sacramento-djs.jpg";
 import sacStreetwearImage from "@/assets/blog-sacramento-streetwear.jpg";
 import ariesImage from "@/assets/blog-aries-zodiac.jpg";
+import leoImage from "@/assets/blog-leo-zodiac.jpg";
+import virgoImage from "@/assets/blog-virgo-zodiac.jpg";
+import chroniclesHero from "@/assets/chronicles-hero.jpg";
 
 const blogPosts = [
+{
+  title: "Virgo: The Sacred Harvest — Hidden Secrets & August vs September Differences",
+  description: "The ultimate Virgo deep dive. The star Spica, the wheat-maiden myth of Astraea and Isis, rare cosmic facts, decan breakdowns, and the real differences between August Virgo and September Virgo.",
+  path: "/blog/virgo-zodiac",
+  image: virgoImage,
+  icon: Wheat,
+  date: "August 2026",
+  color: "primary",
+  glow: "hsla(150,60%,45%,0.35)"
+},
+{
+  title: "Leo: The Solar Lion — Hidden Secrets & July vs August Differences",
+  description: "The ultimate Leo deep dive. Rare cosmic facts, the royal star Regulus, ancient lion mythology, decan breakdowns, and the real differences between July Leo and August Leo.",
+  path: "/blog/leo-zodiac",
+  image: leoImage,
+  icon: Crown,
+  date: "August 2026",
+  color: "primary",
+  glow: "hsla(45,100%,50%,0.35)"
+},
 {
   title: "Aries: The Cosmic Ram — Deep Secrets & March vs April Differences",
   description: "The ultimate Aries deep dive. Rare cosmic facts, ancient mythology, decan breakdowns, and the powerful differences between March Aries and April Aries.",
@@ -99,20 +122,27 @@ const Blog = () => {
         <Navigation />
 
         {/* Hero */}
-        <section className="relative py-20 md:py-28 px-4 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/15 via-background to-purple-900/10" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsla(50,100%,50%,0.08)_0%,transparent_60%)]" />
-          <div className="container mx-auto relative z-10 text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 text-primary mb-6 border border-primary/40">
-              <Sparkles className="h-4 w-4" />
-              <span className="text-sm font-bold">The Cryptic Chronicles</span>
+        <section className="relative pt-8 md:pt-12 pb-10 px-4 overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsla(50,100%,50%,0.08)_0%,transparent_65%)]" />
+          <div className="container mx-auto relative z-10 max-w-5xl">
+            <h1 className="sr-only">The Cryptic Chronicles — Stories of Magic, Music &amp; Mystery by MC Mysterious</h1>
+            <div className="rounded-2xl overflow-hidden border border-primary/30 shadow-[0_0_40px_hsla(50,100%,50%,0.15)]">
+              <img
+                src={chroniclesHero}
+                alt="The Cryptic Chronicles — The Zodiac Codex: golden zodiac wheel with all twelve constellations on a black starfield"
+                className="w-full h-auto"
+                loading="eager"
+              />
             </div>
-            <h1 className="text-5xl md:text-7xl font-black mb-4 text-foreground">
-              The Cryptic Chronicles
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              Stories of Magic, Music & Mystery — by MC Mysterious
-            </p>
+            <div className="text-center mt-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 text-primary mb-4 border border-primary/40">
+                <Sparkles className="h-4 w-4" />
+                <span className="text-sm font-bold">The Cryptic Chronicles</span>
+              </div>
+              <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+                Stories of Magic, Music &amp; Mystery — by MC Mysterious
+              </p>
+            </div>
           </div>
         </section>
 
