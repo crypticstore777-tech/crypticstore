@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Instagram, Youtube, Music2, Facebook } from "lucide-react";
 import logo from "@/assets/cryptic-store-logo.jpg";
+import DunsBadge from "./DunsBadge";
 
 export const Footer = () => {
   return (
@@ -107,18 +108,21 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} Mysterious Enterprise LLC. All rights reserved.
-          </p>
-          <a 
-            href="https://mysteriousenterprise.com" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-sm text-muted-foreground hover:text-primary transition-colors"
-          >
-            MysteriousEnterprise.com
-          </a>
+        <div className="border-t border-border mt-8 pt-8 flex flex-col items-center gap-6">
+          <DunsBadge />
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 w-full">
+            <p className="text-muted-foreground text-sm">
+              © {new Date().getFullYear()} Mysterious Enterprise LLC. All rights reserved.
+            </p>
+            <a 
+              href="https://mysteriousenterprise.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-sm text-muted-foreground hover:text-primary transition-colors"
+            >
+              MysteriousEnterprise.com
+            </a>
+          </div>
         </div>
       </div>
     </footer>

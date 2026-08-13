@@ -4,6 +4,7 @@ import { ProductCard } from "@/components/ProductCard";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Sparkles, ArrowRight, Zap, Eye, Flame, Stars, Music } from "lucide-react";
+import PromoVideo from "@/components/PromoVideo";
 import { SocialProof } from "@/components/SocialProof";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
@@ -149,6 +150,8 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <PromoVideo />
 
       {/* Brand Accent Bar */}
       <section className="relative py-6 bg-gradient-to-r from-background via-primary/10 to-background border-y border-primary/20">
