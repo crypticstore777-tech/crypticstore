@@ -99,12 +99,11 @@ const Collections = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>
-          Collections — Dare2Wear, Imitable Lives & #YouKnowWeDoMagic | Cryptic
-          Store
+          Collections | Dare2Wear & Imitable Lives — Cryptic Store
         </title>
         <meta
           name="description"
-          content="Explore all Cryptic Store collections. Dare2Wear bold streetwear, Imitable Lives Egyptian luxury apparel, and #YouKnowWeDoMagic spiritual & entertainment services by Sacramento artist DJ MC Mysterious."
+          content="Shop all Cryptic Store collections: Dare2Wear streetwear, Imitable Lives luxury apparel, and #YouKnowWeDoMagic spiritual goods by MC Mysterious."
         />
         <meta
           name="keywords"

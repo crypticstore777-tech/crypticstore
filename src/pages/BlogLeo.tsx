@@ -28,7 +28,7 @@ const BlogLeo = () => {
         <title>Leo Zodiac Deep Dive | Cryptic Store Blog</title>
         <meta
           name="description"
-          content="Leo zodiac deep dive: rare facts, Regulus the royal star, ancient lion mythology, and the real differences between July Leo and August Leo. Bold fire-sign energy from Cryptic Store Sacramento."
+          content="Leo zodiac deep dive: rare facts, Regulus the royal star, lion mythology, and the real difference between July and August Leos. Bold fire-sign energy."
         />
         <meta
           name="keywords"
