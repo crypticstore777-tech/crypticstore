@@ -28,7 +28,7 @@ const BlogVirgo = () => {
         <title>Virgo Zodiac Deep Dive | Cryptic Store Blog</title>
         <meta
           name="description"
-          content="Virgo zodiac deep dive: rare facts, the star Spica, the wheat-maiden myth, and the real differences between August Virgo and September Virgo. Earth-sign mysticism from Cryptic Store Sacramento."
+          content="Virgo zodiac deep dive: rare facts, the star Spica, the wheat-maiden myth, and the real difference between August and September Virgos. Earth-sign magic."
         />
         <meta
           name="keywords"

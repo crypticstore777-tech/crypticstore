@@ -146,11 +146,11 @@ const Sacramento = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>
-          Sacramento DJ, Boutique & Artist | Cryptic Store — MC Mysterious
+          Sacramento DJ & Boutique | Cryptic Store
         </title>
         <meta
           name="description"
-          content="Sacramento's own Cryptic Store — boutique streetwear, DJ services, music & spiritual arts by artist MC Mysterious. Sacramento Kings–inspired black & gold fashion. Book Sacramento's best DJ today."
+          content="Sacramento's Cryptic Store: boutique streetwear, DJ services, music & spiritual arts by MC Mysterious. Kings-inspired black & gold. Book your DJ today."
         />
         <meta
           name="keywords"
