@@ -7,13 +7,13 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import djHeroImage from "@/assets/dj-services-hero.jpeg";
 import empathsImage from "@/assets/empaths-indigo-hero.jpg";
-import magicHeroImage from "@/assets/youknowwedomagic-hero.jpg";
 import sacDjsImage from "@/assets/blog-sacramento-djs.jpg";
 import sacStreetwearImage from "@/assets/blog-sacramento-streetwear.jpg";
 import ariesImage from "@/assets/blog-aries-zodiac.jpg";
 import leoImage from "@/assets/blog-leo-zodiac.jpg";
 import virgoImage from "@/assets/blog-virgo-zodiac.jpg";
 import chroniclesHero from "@/assets/chronicles-hero.jpg";
+import marieLaveauEmblem from "@/assets/marie-laveau-truth-emblem.jpg";
 
 const blogPosts = [
 {
@@ -80,7 +80,7 @@ const blogPosts = [
   title: "Marie Laveau: The Voodoo Queen of New Orleans",
   description: "The true history of New Orleans' most powerful spiritual figure — healer, herbalist, and community leader who shaped American spirituality.",
   path: "/blog/marie-laveau",
-  image: magicHeroImage,
+  image: marieLaveauEmblem,
   icon: Crown,
   date: "February 2026",
   color: "purple-500",
