@@ -2,7 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Music, Crown, Eye, Disc3, Shirt, Flame, Wheat } from "lucide-react";
+import { ArrowRight, Music, Crown, Eye, Disc3, Shirt, Flame, Wheat, Moon, Users, Leaf, Key } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import djHeroImage from "@/assets/dj-services-hero.jpeg";
@@ -14,6 +14,10 @@ import leoImage from "@/assets/blog-leo-zodiac.jpg";
 import virgoImage from "@/assets/blog-virgo-zodiac.jpg";
 import chroniclesHero from "@/assets/chronicles-hero.jpg";
 import marieLaveauEmblem from "@/assets/marie-laveau-truth-emblem.jpg";
+import cancerImage from "@/assets/blog-cancer-hero.jpg";
+import geminiImage from "@/assets/blog-gemini-zodiac.jpg";
+import taurusImage from "@/assets/blog-taurus-zodiac.jpg";
+import papaLegbaImage from "@/assets/blog-papa-legba.jpg";
 
 const blogPosts = [
 {
@@ -37,6 +41,26 @@ const blogPosts = [
   glow: "hsla(45,100%,50%,0.35)"
 },
 {
+  title: "Cancer: The Moon Child — Rare Facts, Decans & Lunar Magick",
+  description: "The ultimate Cancer deep dive. Karkinos myth, the Beehive Cluster (M44), the Tropic of Cancer origin, Moon magick, decans, and famous Cancers led by Missy Elliott.",
+  path: "/blog/cancer-zodiac",
+  image: cancerImage,
+  icon: Moon,
+  date: "June 2026",
+  color: "primary",
+  glow: "hsla(210,60%,60%,0.35)"
+},
+{
+  title: "Gemini: The Cosmic Twins — Rare Facts, Decans & Mercury Magick",
+  description: "An accurate, lengthy Gemini deep dive. Castor & Pollux mythology, the Geminids meteor shower from asteroid 3200 Phaethon, decans, and the truth about the 'two-faced' label.",
+  path: "/blog/gemini-zodiac",
+  image: geminiImage,
+  icon: Users,
+  date: "May 2026",
+  color: "primary",
+  glow: "hsla(50,100%,50%,0.3)"
+},
+{
   title: "Aries: The Cosmic Ram — Deep Secrets & March vs April Differences",
   description: "The ultimate Aries deep dive. Rare cosmic facts, ancient mythology, decan breakdowns, and the powerful differences between March Aries and April Aries.",
   path: "/blog/aries-zodiac",
@@ -45,6 +69,26 @@ const blogPosts = [
   date: "April 2026",
   color: "primary",
   glow: "hsla(0,80%,50%,0.3)"
+},
+{
+  title: "Taurus: The Cosmic Bull — Money Sign, Loyalty & Misunderstood Horns",
+  description: "The ultimate Taurus deep dive. Why Taurus is the money sign, food as love, legendary loyalty, decans, and why Beyoncé's 'Six Inch' is pure Taurus energy.",
+  path: "/blog/taurus-zodiac",
+  image: taurusImage,
+  icon: Leaf,
+  date: "April 2026",
+  color: "primary",
+  glow: "hsla(140,50%,40%,0.3)"
+},
+{
+  title: "Papa Legba: The Gatekeeper, Trickster & Father — True History of Vodun",
+  description: "Restoring the accurate history of Vodun (One Source). Papa Legba as gatekeeper of the spirits, the Orishas in the Haitian Revolution, and the spiritual gifts of African descendants.",
+  path: "/blog/papa-legba-vodun-history",
+  image: papaLegbaImage,
+  icon: Key,
+  date: "April 2026",
+  color: "purple-500",
+  glow: "hsla(280,60%,40%,0.35)"
 },
 {
   title: "Best DJs in Sacramento: The Ultimate Guide",
