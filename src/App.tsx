@@ -20,6 +20,10 @@ import BlogSacramentoDJs from "./pages/BlogSacramentoDJs";
 import BlogSacStreetwear from "./pages/BlogSacStreetwear";
 import BlogAries from "./pages/BlogAries";
 import BlogLeo from "./pages/BlogLeo";
+import BlogCancer from "./pages/BlogCancer";
+import BlogGemini from "./pages/BlogGemini";
+import BlogTaurus from "./pages/BlogTaurus";
+import BlogPapaLegba from "./pages/BlogPapaLegba";
 import BlogVirgo from "./pages/BlogVirgo";
 import Auth from "./pages/Auth";
 import Privacy from "./pages/Privacy";
@@ -84,6 +88,10 @@ const App = () => {
           <Route path="/blog/sacramento-streetwear-boutiques" element={<BlogSacStreetwear />} />
           <Route path="/blog/aries-zodiac" element={<BlogAries />} />
           <Route path="/blog/leo-zodiac" element={<BlogLeo />} />
+          <Route path="/blog/cancer-zodiac" element={<BlogCancer />} />
+          <Route path="/blog/gemini-zodiac" element={<BlogGemini />} />
+          <Route path="/blog/taurus-zodiac" element={<BlogTaurus />} />
+          <Route path="/blog/papa-legba-vodun-history" element={<BlogPapaLegba />} />
           <Route path="/blog/virgo-zodiac" element={<BlogVirgo />} />
           <Route path="/product/:handle" element={<ProductDetail />} />
           <Route path="/auth" element={<Auth />} />
