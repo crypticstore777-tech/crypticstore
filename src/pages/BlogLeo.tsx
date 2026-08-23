@@ -53,7 +53,7 @@ const BlogLeo = () => {
         <section className="relative h-[55vh] min-h-[400px] overflow-hidden">
           <img
             src={heroImg}
-            alt="Mystical Leo lion with a golden solar mane and the Leo constellation glowing in a cosmic night sky"
+            alt="Golden constellation lion standing on a rock beneath the Leo star pattern with the royal star Regulus labeled"
             className="absolute inset-0 w-full h-full object-cover"
             loading="eager"
           />
