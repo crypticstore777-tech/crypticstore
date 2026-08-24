@@ -19,6 +19,10 @@ import BlogEmpathsIndigo from "./pages/BlogEmpathsIndigo";
 import BlogSacramentoDJs from "./pages/BlogSacramentoDJs";
 import BlogSacStreetwear from "./pages/BlogSacStreetwear";
 import BlogAries from "./pages/BlogAries";
+import DigitalVault from "./pages/DigitalVault";
+import DigitalProductDetail from "./pages/DigitalProductDetail";
+import DigitalSuccess from "./pages/DigitalSuccess";
+import MyPurchases from "./pages/MyPurchases";
 import BlogLeo from "./pages/BlogLeo";
 import BlogCancer from "./pages/BlogCancer";
 import BlogGemini from "./pages/BlogGemini";
@@ -87,6 +91,10 @@ const App = () => {
           <Route path="/blog/best-djs-sacramento" element={<BlogSacramentoDJs />} />
           <Route path="/blog/sacramento-streetwear-boutiques" element={<BlogSacStreetwear />} />
           <Route path="/blog/aries-zodiac" element={<BlogAries />} />
+          <Route path="/digital" element={<DigitalVault />} />
+          <Route path="/digital/success" element={<DigitalSuccess />} />
+          <Route path="/digital/:slug" element={<DigitalProductDetail />} />
+          <Route path="/my-purchases" element={<MyPurchases />} />
           <Route path="/blog/leo-zodiac" element={<BlogLeo />} />
           <Route path="/blog/cancer-zodiac" element={<BlogCancer />} />
           <Route path="/blog/gemini-zodiac" element={<BlogGemini />} />
