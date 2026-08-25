@@ -1,3 +1,4 @@
+import { resetCookieConsent } from "@/components/CookieConsent";
 import { Helmet } from "react-helmet";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
@@ -96,8 +97,16 @@ const Privacy = () => {
             <h2 className="text-2xl font-semibold mb-4">7. Cookies</h2>
             <p className="text-muted-foreground leading-relaxed">
               We use cookies and similar technologies to enhance your browsing experience, analyze site 
-              traffic, and personalize content. You can manage cookie preferences through your browser settings.
+              traffic, and personalize content. You can manage cookie preferences through your browser settings,
+              or update the choice you made in our cookie banner at any time.
             </p>
+            <button
+              type="button"
+              onClick={resetCookieConsent}
+              className="mt-4 text-primary underline underline-offset-4 hover:opacity-80"
+            >
+              Change cookie preferences
+            </button>
           </section>
 
           <section>
