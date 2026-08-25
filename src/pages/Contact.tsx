@@ -182,7 +182,7 @@ const Contact = () => {
                       <Mail className="h-5 w-5 text-primary mt-1" />
                       <div>
                         <p className="font-medium">Email</p>
-                        <p className="text-muted-foreground">DJ@mysteriousenterprise.com</p>
+                        <a href="mailto:ceo@mysteriousdj.com" className="text-muted-foreground hover:text-primary transition-colors">ceo@mysteriousdj.com</a>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
