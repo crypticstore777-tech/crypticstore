@@ -30,6 +30,7 @@ import BlogGemini from "./pages/BlogGemini";
 import BlogTaurus from "./pages/BlogTaurus";
 import BlogPapaLegba from "./pages/BlogPapaLegba";
 import BlogVirgo from "./pages/BlogVirgo";
+import BlogLibra from "./pages/BlogLibra";
 import Auth from "./pages/Auth";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
@@ -103,6 +104,7 @@ const App = () => {
           <Route path="/blog/taurus-zodiac" element={<BlogTaurus />} />
           <Route path="/blog/papa-legba-vodun-history" element={<BlogPapaLegba />} />
           <Route path="/blog/virgo-zodiac" element={<BlogVirgo />} />
+          <Route path="/blog/libra-zodiac" element={<BlogLibra />} />
           <Route path="/product/:handle" element={<ProductDetail />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/privacy" element={<Privacy />} />
