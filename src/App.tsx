@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useCartSync } from "@/hooks/useCartSync";
 import { Toaster } from "@/components/ui/toaster";
+import { CookieConsent } from "@/components/CookieConsent";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -76,6 +77,7 @@ const App = () => {
       <Sonner />
       <GlobalChatWidget />
       <BrowserRouter>
+        <CookieConsent />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/collections" element={<Collections />} />
