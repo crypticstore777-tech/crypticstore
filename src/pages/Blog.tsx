@@ -2,7 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Music, Crown, Eye, Disc3, Shirt, Flame, Wheat, Moon, Users, Leaf, Key } from "lucide-react";
+import { Scale, ArrowRight, Music, Crown, Eye, Disc3, Shirt, Flame, Wheat, Moon, Users, Leaf, Key } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import djHeroImage from "@/assets/dj-services-hero.jpeg";
@@ -12,6 +12,7 @@ import sacStreetwearImage from "@/assets/blog-sacramento-streetwear.jpg";
 import ariesImage from "@/assets/blog-aries-zodiac.jpg";
 import leoImage from "@/assets/blog-leo-zodiac.jpg";
 import virgoImage from "@/assets/blog-virgo-zodiac.jpg";
+import libraImage from "@/assets/blog-libra-zodiac.jpg";
 import chroniclesHero from "@/assets/chronicles-hero.jpg";
 import marieLaveauEmblem from "@/assets/marie-laveau-truth-emblem.jpg";
 import cancerImage from "@/assets/blog-cancer-hero.jpg";
@@ -20,6 +21,16 @@ import taurusImage from "@/assets/blog-taurus-zodiac.jpg";
 import papaLegbaImage from "@/assets/blog-papa-legba.jpg";
 
 const blogPosts = [
+{
+  title: "Libra: The Weighing of the Heart — Hidden Secrets & September vs October Differences",
+  description: "The ultimate Libra deep dive. The claws Libra was carved from, the only green star visible to the naked eye, the scales of Ma'at, decan breakdowns, and the real differences between September Libra and October Libra.",
+  path: "/blog/libra-zodiac",
+  image: libraImage,
+  icon: Scale,
+  date: "August 2026",
+  color: "primary",
+  glow: "hsla(340,60%,55%,0.35)"
+},
 {
   title: "Virgo: The Sacred Harvest — Hidden Secrets & August vs September Differences",
   description: "The ultimate Virgo deep dive. The star Spica, the wheat-maiden myth of Astraea and Isis, rare cosmic facts, decan breakdowns, and the real differences between August Virgo and September Virgo.",
