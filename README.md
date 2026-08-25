@@ -1,3 +1,8 @@
+> ## ⚠️ ARCHIVED — DO NOT SHIP FROM THIS REPO
+>
+> The live CrypticStore site (crypticstore.lovable.app) builds from **crypticstore777-tech/crypticstore-3180dd63**.
+> All work has been consolidated there. This repo is kept for history only.
+
 # Welcome to your Lovable project
 
 ## Project info
