@@ -115,12 +115,12 @@ export const Footer = () => {
               © {new Date().getFullYear()} Mysterious Enterprise LLC. All rights reserved.
             </p>
             <a 
-              href="https://mysteriousenterprise.com" 
+              href="https://mysteriousdj.com" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-sm text-muted-foreground hover:text-primary transition-colors"
             >
-              MysteriousEnterprise.com
+              MysteriousDJ.com
             </a>
           </div>
         </div>
