@@ -1,13 +1,23 @@
 name: Sync Printful Products
 
 on:
-  # Schedule paused: `npm run sync` is not defined in package.json and
-  # src/services/sync.ts imports ./printful and ./shopify, which don't exist,
-  # so every scheduled run fails. Re-enable once a real sync script exists.
+  # Schedule paused until the sync has been reviewed and a manual dry run looks right.
+  # Scheduled runs stay in dry-run mode unless the repo variable
+  # PRINTFUL_SYNC_DRY_RUN is set to 'false' (Settings > Secrets and variables > Actions > Variables).
   # schedule:
   #   # Run every 6 hours
   #   - cron: '0 */6 * * *'
   workflow_dispatch: # Allow manual trigger
+    inputs:
+      dry_run:
+        description: "Dry run: read Printful/Shopify and log the plan, write nothing"
+        type: choice
+        options: ['true', 'false']
+        default: 'true'
+      limit:
+        description: "Only process the first N Printful products (blank = all)"
+        required: false
+        default: ''
 
 jobs:
   sync:
@@ -26,8 +36,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Run unit tests
+        run: npm test
+
       - name: Run Printful sync
         env:
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || vars.PRINTFUL_SYNC_DRY_RUN || 'true' }}
+          SYNC_LIMIT: ${{ inputs.limit }}
+          PRINTFUL_STORE_ID: ${{ secrets.PRINTFUL_STORE_ID }}
+          SHOPIFY_ADMIN_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ADMIN_ACCESS_TOKEN }}
           VITE_PRINTFUL_API_KEY: ${{ secrets.PRINTFUL_API_KEY }}
           VITE_SHOPIFY_STORE_URL: ${{ secrets.SHOPIFY_STORE_URL }}
           VITE_SHOPIFY_STOREFRONT_TOKEN: ${{ secrets.SHOPIFY_STOREFRONT_TOKEN }}
