@@ -1,9 +1,12 @@
 name: Sync Printful Products
 
 on:
-  schedule:
-    # Run every 6 hours
-    - cron: '0 */6 * * *'
+  # Schedule paused: `npm run sync` is not defined in package.json and
+  # src/services/sync.ts imports ./printful and ./shopify, which don't exist,
+  # so every scheduled run fails. Re-enable once a real sync script exists.
+  # schedule:
+  #   # Run every 6 hours
+  #   - cron: '0 */6 * * *'
   workflow_dispatch: # Allow manual trigger
 
 jobs:
